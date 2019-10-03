@@ -1,5 +1,6 @@
 import re
 import json
+from tqdm import tqdm
 
 def decontracted(phrase):
     # specific
@@ -27,15 +28,17 @@ def merge_phrases(phrases):
     return re.sub(r"  ", " ", phrases)
 
 
-i = 1
 review_dic = {}
-data_file = 'reviewSamples20.json'
-with open(data_file, 'r') as json_file:
-    for line in json_file:
-        review = json.loads(line)
-        review['text'] = merge_phrases(split_review(decontracted(review['text'])))
-        review_dic[i] = review
-        i = i + 1
+data_file = 'Data/reviewSelected100.json'
 
-with open('processed_data.json', 'w') as json_file:
+with open(data_file, 'r') as json_file:
+    reviews = json_file.readlines()
+
+for i in tqdm(range(len(reviews))):
+    review = json.loads(reviews[i])
+    review['text'] = merge_phrases(split_review(decontracted(review['text'])))
+    review_dic[i] = review
+    i += 1
+
+with open('Data/processed_data.json', 'w') as json_file:
     json.dump(review_dic, json_file)
