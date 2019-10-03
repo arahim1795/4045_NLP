@@ -7,7 +7,6 @@ import nltk
 from nltk.stem import SnowballStemmer
 # from nltk.stem import LancasterStemmer
 from nltk.corpus import stopwords
-import numpy as np
 from tqdm import tqdm
 
 # * Parameters

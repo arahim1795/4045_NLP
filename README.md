@@ -5,7 +5,9 @@
 ## Requirements
 
 1. [Python](https://www.python.org/)
-2. [Pipenv](https://github.com/pypa/pipenv)
+2. [matplotlib](https://matplotlib.org/)
+3. [nltk](https://www.nltk.org/)
+4. [tdqm](https://github.com/tqdm/tqdm)
 
 ## Setup
 
@@ -29,8 +31,10 @@
 2. Copy path to cloned/downloaded project directory after successful clone/download
 3. Open _cmd_ (administrator)
 4. Input `cd <path to cloned/downloaded project path>`
-5. Input `pipenv install nltk`
-6. Place dataset _(*.json)_ into Data folder
+5. Input `pipenv install matplotlib`
+6. Input `pipenv install nltk`
+7. Input `pipenv install tdqm`
+8. Place dataset _(*.json)_ into Data folder
 
 ## Execution
 
