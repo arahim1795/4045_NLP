@@ -14,7 +14,7 @@ from operator import itemgetter
 
 # * Parameters
 # * - Read JSON
-data_file = '/Users/tohyue-sheng/Documents/GitHub/CZ4045/4045_NLP/Data/processed_data_test.json'
+data_file = '../Data/processed_data_test.json'
 review_dic = {}
 
 # * - Tokenise and Stem
@@ -68,7 +68,7 @@ def plot_bar(common_dict, chart_title, output_filename, bar_color='blue'):
     for bar in bars:
         bar.set_color(bar_color)
     plt.title(chart_title)
-    plt.savefig('/Users/tohyue-sheng/Documents/GitHub/CZ4045/4045_NLP/Data/' + str(output_filename) + '.png')
+    plt.savefig('../Data/' + str(output_filename) + '.png')
     plt.close()
 
 
@@ -125,7 +125,7 @@ def plot_bar_with_val(common_dict, chart_title, output_filename, bar_color='blue
         bar_width = bar.get_width()
         plt.text(bar.get_x()+(bar_width/2), y + 100, y, ha='center')
     plt.title(chart_title)
-    plt.savefig('/Users/tohyue-sheng/Documents/GitHub/CZ4045/4045_NLP/Data/' + str(output_filename) + '.png')
+    plt.savefig('../Data/' + str(output_filename) + '.png')
     plt.close()
 
 
