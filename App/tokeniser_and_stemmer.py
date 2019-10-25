@@ -196,15 +196,15 @@ def counters_for_cross_entropy(rating):
     unique_adj_in_reviews_ratings = list(set(adj_list))
     adj_list_counter_reviews_ratings = Counter(adj_list)
 
-    return num_adj_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings
-    #return num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings
+    #return num_adj_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings
+    return num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings
 
     ########end #######
 
 
 
-def cross_entropy(num_adj_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings,
-                  num_adj_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all):
+def cross_entropy(num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings,
+                  num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all):
 
     cross_entropy_list = []
 
@@ -212,14 +212,14 @@ def cross_entropy(num_adj_in_reviews_ratings, unique_adj_in_reviews_ratings, adj
 
     for adj in unique_adj_in_reviews_ratings:
         count_specific_adj = adj_list_counter_reviews_all[adj]
-        count_all_adj = num_adj_in_reviews_all
+        count_all_words = num_words_in_reviews_all
 
-        prob_adj = count_specific_adj / count_all_adj
+        prob_adj = count_specific_adj / count_all_words
 
         count_specific_adj_in_ratings = adj_list_counter_reviews_ratings[adj]
-        count_all_adj_in_ratings = num_adj_in_reviews_ratings
+        count_all_words_in_ratings = num_words_in_reviews_ratings
 
-        prob_adj_given_ratings = count_specific_adj_in_ratings / count_all_adj_in_ratings
+        prob_adj_given_ratings = count_specific_adj_in_ratings / count_all_words_in_ratings
 
         cross_entropy = prob_adj_given_ratings * math.log10(prob_adj_given_ratings/prob_adj)
 
@@ -231,21 +231,21 @@ def cross_entropy(num_adj_in_reviews_ratings, unique_adj_in_reviews_ratings, adj
 
 
 print("Testing with rating 1")
-num_adj_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1 = counters_for_cross_entropy(1.0)
+num_words_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1 = counters_for_cross_entropy(1.0)
 print(unique_adj_in_reviews_1)
-# num_adj_in_reviews_2, unique_adj_in_reviews_2, adj_list_counter_reviews_2 = counters_for_cross_entropy("2.0")
-# num_adj_in_reviews_3, unique_adj_in_reviews_3, adj_list_counter_reviews_3 = counters_for_cross_entropy("3.0")
-# num_adj_in_reviews_4, unique_adj_in_reviews_4, adj_list_counter_reviews_4 = counters_for_cross_entropy("4.0")
-num_adj_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5 = counters_for_cross_entropy(5.0)
+# num_words_in_reviews_2, unique_adj_in_reviews_2, adj_list_counter_reviews_2 = counters_for_cross_entropy("2.0")
+# num_words_in_reviews_3, unique_adj_in_reviews_3, adj_list_counter_reviews_3 = counters_for_cross_entropy("3.0")
+# num_words_in_reviews_4, unique_adj_in_reviews_4, adj_list_counter_reviews_4 = counters_for_cross_entropy("4.0")
+num_words_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5 = counters_for_cross_entropy(5.0)
 print("Testing with all ratings")
-num_adj_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all = counters_for_cross_entropy(-1)
+num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all = counters_for_cross_entropy(-1)
 
 
-cross_entropy_list_1 = cross_entropy(num_adj_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1,
-                                     num_adj_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
+cross_entropy_list_1 = cross_entropy(num_words_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1,
+                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
 
-cross_entropy_list_5 = cross_entropy(num_adj_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5,
-                                     num_adj_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
+cross_entropy_list_5 = cross_entropy(num_words_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5,
+                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
 
 
 
