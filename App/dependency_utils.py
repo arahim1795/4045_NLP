@@ -35,7 +35,6 @@ def create_graph_from_dependency_tree_dict(dependency_tree_dict):
     second level after the root node will contain adjectives.
     third level after the root node will contain adverbs.
     """
-    print(dependency_tree_dict)
     predicted_heads = dependency_tree_dict['predicted_heads']
     predicted_dependencies = dependency_tree_dict['predicted_dependencies']
     pos = dependency_tree_dict['pos']
@@ -80,8 +79,11 @@ def create_graph_from_dependency_tree_dict(dependency_tree_dict):
                 continue
             while not (G.has_node(head_index) and len(list(G.predecessors(head_index))) > 0 and pos[list(G.predecessors(head_index))[0]] in INTERESTED_NOUN_POS):
                 head_index = predicted_heads[head_index] - 1
-            head_index = list(G.predecessors(head_index))[0]
-            add_edge_from_first_node_to_second_node(G, head_index, i)
+                if head_index == -1:
+                    break
+            if head_index != -1:
+                head_index = list(G.predecessors(head_index))[0]
+                add_edge_from_first_node_to_second_node(G, head_index, i)
     return G
 
 def get_noun_groupings(dependency_tree_dict, noun_index):
@@ -127,16 +129,19 @@ def get_noun_adjective_pairs_from_graph(G, dependency_tree_dict):
             else:
                 adverbs = []
                 adverb_indexes.sort()
-                for i in range(adverb_indexes[0] - 1, -1, -1):
-                    #Used to handle cases in sentences like 'Tan Ah Kao is very cool but not very calm'
-                    #where not is attached to cool instead of calm
-                    if pos[i] not in INTERESTED_ADVERB_POS:
-                        break
-                    adverb_indexes.insert(0, i)
-                for adverb_index in adverb_indexes:
-                    adverbs.append(words[adverb_index])
-                adjective_groupings = ' '.join(adverbs)
-                adjective_groupings += " " + words[adjective_index]
+                if adverb_indexes[-1] < adjective_index:
+                    for i in range(adverb_indexes[0] - 1, -1, -1):
+                        #Used to handle cases in sentences like 'Tan Ah Kao is very cool but not very calm'
+                        #where not is attached to cool instead of calm
+                        if pos[i] not in INTERESTED_ADVERB_POS:
+                            break
+                        adverb_indexes.insert(0, i)
+                    for adverb_index in adverb_indexes:
+                        adverbs.append(words[adverb_index])
+                    adjective_groupings = ' '.join(adverbs)
+                    adjective_groupings += " " + words[adjective_index]
+                else:
+                    adjective_groupings = words[adjective_index]
                 noun_adjective_pairs.append((noun_groupings, adjective_groupings))
                 for temp_noun_index in temp_noun_indexes:
                     temp_noun_groupings = get_noun_groupings(dependency_tree_dict, temp_noun_index)
