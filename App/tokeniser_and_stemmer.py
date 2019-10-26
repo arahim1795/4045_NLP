@@ -14,7 +14,7 @@ from operator import itemgetter
 
 # * Parameters
 # * - Read JSON
-data_file = '../Data/processed_data_test.json'
+data_file = '../Data/processed_data.json'
 review_dic = {}
 
 # * - Tokenise and Stem
@@ -226,6 +226,29 @@ def cross_entropy(num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, a
 
     return cross_entropy_list
 
+def export_data(list_1,list_2,list_3,list_4,list_5,list_all,cross_entropy_list_1,cross_entropy_list_2,cross_entropy_list_3,cross_entropy_list_4,cross_entropy_list_5):
+    adj_list = []
+    adj_list.append(list_1)
+    adj_list.append(list_2)
+    adj_list.append(list_3)
+    adj_list.append(list_4)
+    adj_list.append(list_5)
+    adj_list.append(list_all)
+    
+    cross_entropy_list = []
+    cross_entropy_list.append(cross_entropy_list_1)
+    cross_entropy_list.append(cross_entropy_list_2)
+    cross_entropy_list.append(cross_entropy_list_3)
+    cross_entropy_list.append(cross_entropy_list_4)
+    cross_entropy_list.append(cross_entropy_list_5)
+    filename = "../Out/results.txt"
+    with open(filename, "w") as f:
+        for i in range(5):
+            f.write("\nTop 10 most frequent adjectives for " + str(i+1) + " star rating:\n")
+            f.write(str(adj_list[i].most_common(10)))
+            f.write("\nTop 10 most indicative adjectives for "+str(i+1)+" star ratings:\n") 
+            f.write(str(cross_entropy_list[i][-10:][::-1]))
+
 
 
 num_words_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1 = counters_for_cross_entropy(1.0)
@@ -252,24 +275,26 @@ cross_entropy_list_5 = cross_entropy(num_words_in_reviews_5, unique_adj_in_revie
                                      num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
 
 
-print("Top 10 adjectives for 1 star ratings:\n", adj_list_counter_reviews_1.most_common(10))
-print("\nTop 10 adjectives for 2 stars ratings:\n", adj_list_counter_reviews_2.most_common(10))
-print("\nTop 10 adjectives for 3 stars ratings:\n", adj_list_counter_reviews_3.most_common(10))
-print("\nTop 10 adjectives for 4 stars ratings:\n", adj_list_counter_reviews_4.most_common(10))
-print("\nTop 10 adjectives for 5 stars ratings:\n", adj_list_counter_reviews_5.most_common(10))
+# print("Top 10 adjectives for 1 star ratings:\n", adj_list_counter_reviews_1.most_common(10))
+# print("\nTop 10 adjectives for 2 stars ratings:\n", adj_list_counter_reviews_2.most_common(10))
+# print("\nTop 10 adjectives for 3 stars ratings:\n", adj_list_counter_reviews_3.most_common(10))
+# print("\nTop 10 adjectives for 4 stars ratings:\n", adj_list_counter_reviews_4.most_common(10))
+# print("\nTop 10 adjectives for 5 stars ratings:\n", adj_list_counter_reviews_5.most_common(10))
 
 
 cross_entropy_list_1 = sorted(cross_entropy_list_1, key=itemgetter(1))
-print("\nTop 10 most indicative adjectives for 1 star ratings:\n", cross_entropy_list_1[-10:][::-1])
+#print("\nTop 10 most indicative adjectives for 1 star ratings:\n", cross_entropy_list_1[-10:][::-1])
 
 cross_entropy_list_2 = sorted(cross_entropy_list_2, key=itemgetter(1))
-print("\nTop 10 most indicative adjectives for 2 stars ratings:\n", cross_entropy_list_2[-10:][::-1])
+#print("\nTop 10 most indicative adjectives for 2 stars ratings:\n", cross_entropy_list_2[-10:][::-1])
 
 cross_entropy_list_3 = sorted(cross_entropy_list_3, key=itemgetter(1))
-print("\nTop 10 most indicative adjectives for 3 stars ratings:\n", cross_entropy_list_3[-10:][::-1])
+#print("\nTop 10 most indicative adjectives for 3 stars ratings:\n", cross_entropy_list_3[-10:][::-1])
 
 cross_entropy_list_4 = sorted(cross_entropy_list_4, key=itemgetter(1))
-print("\nTop 10 most indicative adjectives for 4 stars ratings:\n", cross_entropy_list_4[-10:][::-1])
+#print("\nTop 10 most indicative adjectives for 4 stars ratings:\n", cross_entropy_list_4[-10:][::-1])
 
 cross_entropy_list_5 = sorted(cross_entropy_list_5, key=itemgetter(1))
-print("\nTop 10 most indicative adjectives for 5 stars ratings:\n", cross_entropy_list_5[-10:][::-1])
+#print("\nTop 10 most indicative adjectives for 5 stars ratings:\n", cross_entropy_list_5[-10:][::-1])
+export_data(adj_list_counter_reviews_1,adj_list_counter_reviews_2,adj_list_counter_reviews_3,adj_list_counter_reviews_4,adj_list_counter_reviews_5,adj_list_counter_reviews_all
+    ,cross_entropy_list_1,cross_entropy_list_2,cross_entropy_list_3,cross_entropy_list_4,cross_entropy_list_5)
