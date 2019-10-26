@@ -165,17 +165,17 @@ def counters_for_cross_entropy(rating):
             if review_dic.get(key, {}).get('stars') == rating:
                 review = review_dic.get(key, {}).get('text')
                 sentences_list_ratings.append(review)
-        print(sentences_list_ratings)
+        #print(sentences_list_ratings)
 
     for i in tqdm(range(len(sentences_list_ratings))):
         tokens = nltk.word_tokenize(sentences_list_ratings[i])
         for token in tokens:
             words_without_stemming_ratings.append(token)  # List of all tokens without stemming in
 
-    print(words_without_stemming_ratings)
+    #print(words_without_stemming_ratings)
     words_without_stemming_adjusted_ratings = remove_unwanted_phrase(words_without_stemming_ratings)
     num_words_in_reviews_ratings = len(words_without_stemming_adjusted_ratings)
-    print(words_without_stemming_adjusted_ratings)
+    #print(words_without_stemming_adjusted_ratings)
 
     ########### End Tokenisation#########
 
@@ -208,7 +208,6 @@ def cross_entropy(num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, a
 
     cross_entropy_list = []
 
-    print(adj_list_counter_reviews_ratings)
 
     for adj in unique_adj_in_reviews_ratings:
         count_specific_adj = adj_list_counter_reviews_all[adj]
@@ -229,29 +228,48 @@ def cross_entropy(num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, a
 
 
 
-
-print("Testing with rating 1")
 num_words_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1 = counters_for_cross_entropy(1.0)
-print(unique_adj_in_reviews_1)
-# num_words_in_reviews_2, unique_adj_in_reviews_2, adj_list_counter_reviews_2 = counters_for_cross_entropy("2.0")
-# num_words_in_reviews_3, unique_adj_in_reviews_3, adj_list_counter_reviews_3 = counters_for_cross_entropy("3.0")
-# num_words_in_reviews_4, unique_adj_in_reviews_4, adj_list_counter_reviews_4 = counters_for_cross_entropy("4.0")
+num_words_in_reviews_2, unique_adj_in_reviews_2, adj_list_counter_reviews_2 = counters_for_cross_entropy(2.0)
+num_words_in_reviews_3, unique_adj_in_reviews_3, adj_list_counter_reviews_3 = counters_for_cross_entropy(3.0)
+num_words_in_reviews_4, unique_adj_in_reviews_4, adj_list_counter_reviews_4 = counters_for_cross_entropy(4.0)
 num_words_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5 = counters_for_cross_entropy(5.0)
-print("Testing with all ratings")
 num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all = counters_for_cross_entropy(-1)
 
 
 cross_entropy_list_1 = cross_entropy(num_words_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1,
                                      num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
 
+cross_entropy_list_2 = cross_entropy(num_words_in_reviews_2, unique_adj_in_reviews_2, adj_list_counter_reviews_2,
+                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
+
+cross_entropy_list_3 = cross_entropy(num_words_in_reviews_3, unique_adj_in_reviews_3, adj_list_counter_reviews_3,
+                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
+
+cross_entropy_list_4 = cross_entropy(num_words_in_reviews_4, unique_adj_in_reviews_4, adj_list_counter_reviews_4,
+                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
+
 cross_entropy_list_5 = cross_entropy(num_words_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5,
                                      num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
 
 
+print("Top 10 adjectives for 1 star ratings:\n", adj_list_counter_reviews_1.most_common(10))
+print("\nTop 10 adjectives for 2 stars ratings:\n", adj_list_counter_reviews_2.most_common(10))
+print("\nTop 10 adjectives for 3 stars ratings:\n", adj_list_counter_reviews_3.most_common(10))
+print("\nTop 10 adjectives for 4 stars ratings:\n", adj_list_counter_reviews_4.most_common(10))
+print("\nTop 10 adjectives for 5 stars ratings:\n", adj_list_counter_reviews_5.most_common(10))
 
-print("Cross Entropy for Rating 1:")
+
 cross_entropy_list_1 = sorted(cross_entropy_list_1, key=itemgetter(1))
-print(cross_entropy_list_1)
+print("\nTop 10 most indicative adjectives for 1 star ratings:\n", cross_entropy_list_1[-10:][::-1])
+
+cross_entropy_list_2 = sorted(cross_entropy_list_2, key=itemgetter(1))
+print("\nTop 10 most indicative adjectives for 2 stars ratings:\n", cross_entropy_list_2[-10:][::-1])
+
+cross_entropy_list_3 = sorted(cross_entropy_list_3, key=itemgetter(1))
+print("\nTop 10 most indicative adjectives for 3 stars ratings:\n", cross_entropy_list_3[-10:][::-1])
+
+cross_entropy_list_4 = sorted(cross_entropy_list_4, key=itemgetter(1))
+print("\nTop 10 most indicative adjectives for 4 stars ratings:\n", cross_entropy_list_4[-10:][::-1])
+
 cross_entropy_list_5 = sorted(cross_entropy_list_5, key=itemgetter(1))
-print("Cross Entropy for Rating 5:")
-print(cross_entropy_list_5)
+print("\nTop 10 most indicative adjectives for 5 stars ratings:\n", cross_entropy_list_5[-10:][::-1])
