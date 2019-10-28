@@ -16,9 +16,12 @@
 
 1. [Python](https://www.python.org/)
 2. [Pipenv](https://github.com/pypa/pipenv)
-3. [nltk](https://www.nltk.org/)
-4. [StanfordNLP](https://stanfordnlp.github.io/stanfordnlp/)
-5. [AllenNLP](https://allennlp.org/)
+3. [AllenNLP](https://allennlp.org/)
+4. [MatPlotLib](#https://matplotlib.org/)
+5. [nltk](https://www.nltk.org/)
+6. [NumPy](https://numpy.org/)
+7. [StanfordNLP](https://stanfordnlp.github.io/stanfordnlp/)
+8. [tqdm](https://tqdm.github.io/)
 
 &nbsp;
 
@@ -44,8 +47,10 @@
 2. Copy path to cloned/downloaded project directory after successful clone/download
 3. Open _cmd_ (administrator)
 4. Input `cd <path to cloned/downloaded project path>`
-5. Input `pipenv install nltk`
-6. Place dataset _(*.json)_ into Data folder
+5. Input `pipenv install matplotlib numpy nltk tqdm`
+6. Input `pipenv run pip install torch==1.3.0+cpu torchvision==0.4.1+cpu -f https://download.pytorch.org/whl/torch_stable.html`
+7. Input `pipenv run pip install --upgrade stanfordnlp`
+8. Place dataset _(*.json)_ into Data folder
 
 &nbsp;
 
