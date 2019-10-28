@@ -1,26 +1,25 @@
 from collections import Counter
 import json
-import string
 import matplotlib.pyplot as plt
 import nltk
-import stanfordnlp
-# from nltk.stem import PorterStemmer
-from nltk.stem import SnowballStemmer
-# from nltk.stem import LancasterStemmer
 from nltk.corpus import stopwords
+from nltk.stem import SnowballStemmer
+import string
 from tqdm import tqdm
-import math
-from operator import itemgetter
 
-# * Parameters
-# * - Read JSON
-data_file = '../Data/processed_data.json'
+nltk.download("punkt")
+nltk.download("stopwords")
+
+# import data
 review_dic = {}
+data_file = "../Data/processed_data.json"
 
-# * - Tokenise and Stem
-# stemmer = PorterStemmer()
+with open(data_file, "r") as json_file:
+    review_dic = json.load(json_file)
+
+
+# tokenise and stem
 stemmer = SnowballStemmer("english")
-# stemmer = LancasterStemmer()
 
 sentences_list = []
 sentences_list_with_stemming = []
@@ -29,25 +28,23 @@ word_count_without_stemming = []
 words_with_stemming = []
 words_without_stemming = []
 
-# * Read JSON
-with open(data_file, 'r') as json_file:
-    review_dic = json.load(json_file)
-
-# * Extract Sentences
+# extract sentences
 for key in review_dic:
-    review = review_dic.get(key, {}).get('text')
-    sentences_list.append(review) #list of sentences regardless of reviews
+    review = review_dic.get(key, {}).get("text")
+    sentences_list.append(review)
 
-# * Tokenise and Stem
+# tokenise and stem
 for i in tqdm(range(len(sentences_list))):
     tokens = nltk.word_tokenize(sentences_list[i])
     word_count_without_stemming.append(len(tokens))
     new_sentence_as_list = []
     for token in tokens:
-        words_without_stemming.append(token) #List of all tokens without stemming in
-        new_sentence_as_list.append(stemmer.stem(token)) #List of all tokens with stemmming
+        words_without_stemming.append(token)  # list of tokens before stemming
+        new_sentence_as_list.append(
+            stemmer.stem(token)
+        )  # list of tokens after stemming
     new_sentence = " ".join(new_sentence_as_list)
-    sentences_list_with_stemming.append(new_sentence) #sentence list
+    sentences_list_with_stemming.append(new_sentence)  # sentence list
 
 for i in tqdm(range(len(sentences_list_with_stemming))):
     tokens = nltk.word_tokenize(sentences_list_with_stemming[i])
@@ -58,32 +55,31 @@ for i in tqdm(range(len(sentences_list_with_stemming))):
 word_count_with_stemming_counter = Counter(word_count_with_stemming)
 word_count_without_stemming_counter = Counter(word_count_without_stemming)
 
-# * Plot Graph
 
-
-def plot_bar(common_dict, chart_title, output_filename, bar_color='blue'):
+# plot graph: type 1
+def plot_bar(common_dict, chart_title, output_filename, bar_color="blue"):
     fig = plt.gcf()
     fig.set_size_inches(18.5, 10.5)
     bars = plt.bar(common_dict.keys(), common_dict.values())
     for bar in bars:
         bar.set_color(bar_color)
     plt.title(chart_title)
-    plt.savefig('../Data/' + str(output_filename) + '.png')
+    plt.savefig("../Data/" + str(output_filename) + ".png")
     plt.close()
 
 
 plot_bar(
     word_count_without_stemming_counter,
-    'Distribution Without Stemming',
-    'distribution_without_stem',
-    'blue'
-    )
+    "Distribution Without Stemming",
+    "distribution_without_stem",
+    "blue",
+)
 plot_bar(
     word_count_with_stemming_counter,
-    'Distribution With Stemming',
-    'distribution_with_stem',
-    'orange'
-    )
+    "Distribution With Stemming",
+    "distribution_with_stem",
+    "orange",
+)
 
 # * Top 20 Words (Before and After Stemming)
 # * - iterative method to remove stopwords, punctuations, and other phrases ('s)
@@ -91,15 +87,15 @@ plot_bar(
 
 
 def remove_unwanted_phrase(input_list, ignore_special_case=True):
-    stop_words = set(stopwords.words('english'))
+    stop_words = set(stopwords.words("english"))
     punctuations = string.punctuation
-    other = ['...', '\'\'', '``']
-    output_list = []   
-    if (ignore_special_case):
-        other.append('\'s')
+    other = ["...", "''", "``"]
+    output_list = []
+    if ignore_special_case:
+        other.append("'s")
     for i in tqdm(range(len(input_list))):
         word = input_list[i].lower()
-        if (word in stop_words or word in punctuations or word in other):
+        if word in stop_words or word in punctuations or word in other:
             continue
         else:
             output_list.append(word)
@@ -115,17 +111,18 @@ words_with_stemming_counter = Counter(words_with_stemming_adjusted)
 # * Plotting & Saving Results
 
 
-def plot_bar_with_val(common_dict, chart_title, output_filename, bar_color='blue'):
-    fig = plt.gcf()
-    fig.set_size_inches(18.5, 10.5)
-    bars = plt.bar(common_dict.keys(), common_dict.values())
-    for bar in bars:
-        bar.set_color(bar_color)
-        y = bar.get_height()
-        bar_width = bar.get_width()
-        plt.text(bar.get_x()+(bar_width/2), y + 100, y, ha='center')
-    plt.title(chart_title)
-    plt.savefig('../Data/' + str(output_filename) + '.png')
+def plot_bar_with_val(common_dict, chart_title, output_filename, bar_color="blue"):
+    fig, ax = plt.subplots(figsize=(18.5, 10.5))
+    ax.set_title(chart_title)
+    # ax.set_ylabel("Accuracy")
+    # ax.set_xlabel("Epoch")
+
+    ax.bar(common_dict.keys(), common_dict.values(), color=bar_color)
+    xlocs, xlabs = plt.xticks()
+    # xlocs = [i for i in range(len(common_dict.keys()))]
+    for i, v in enumerate(common_dict.values()):
+        ax.text(xlocs[i], v, str(v), ha="center", va="bottom")
+    fig.savefig("../Data/" + str(output_filename) + ".png")
     plt.close()
 
 
@@ -133,168 +130,16 @@ def plot_bar_with_val(common_dict, chart_title, output_filename, bar_color='blue
 common_without_stem = dict(words_without_stemming_counter.most_common(20))
 plot_bar_with_val(
     common_without_stem,
-    '20 Most Common Words Before Stemming',
-    'common_without_stem',
-    'blue'
-    )
+    "20 Most Common Words Before Stemming",
+    "common_without_stem",
+    "blue",
+)
 
 # * - after stemming
 common_with_stem = dict(words_with_stemming_counter.most_common(20))
 plot_bar_with_val(
     common_with_stem,
-    '20 Most Common Words After Stemming',
-    'common_with_stem',
-    'orange'
-    )
-
-
-
-
-
-def counters_for_cross_entropy(rating):
-    ######## tokenise the all the sentences within the specific ratings ########
-    sentences_list_ratings = []
-    words_without_stemming_ratings = []
-
-    if rating == -1:
-        for key in review_dic:
-            review = review_dic.get(key, {}).get('text')
-            sentences_list_ratings.append(review)
-    else:
-        for key in review_dic:
-            if review_dic.get(key, {}).get('stars') == rating:
-                review = review_dic.get(key, {}).get('text')
-                sentences_list_ratings.append(review)
-        #print(sentences_list_ratings)
-
-    for i in tqdm(range(len(sentences_list_ratings))):
-        tokens = nltk.word_tokenize(sentences_list_ratings[i])
-        for token in tokens:
-            words_without_stemming_ratings.append(token)  # List of all tokens without stemming in
-
-    #print(words_without_stemming_ratings)
-    words_without_stemming_adjusted_ratings = remove_unwanted_phrase(words_without_stemming_ratings)
-    num_words_in_reviews_ratings = len(words_without_stemming_adjusted_ratings)
-    #print(words_without_stemming_adjusted_ratings)
-
-    ########### End Tokenisation#########
-
-    ############ Take the tokens and only grab the adjectives out with POS tagging into adj_list ###########
-    adj_list = []
-    nlp = stanfordnlp.Pipeline(processors="tokenize,mwt,lemma,pos")
-    for token in tqdm(words_without_stemming_adjusted_ratings):
-        doc = nlp(token)
-        for sent in doc.sentences:
-            for wrd in sent.words:
-                if wrd.upos == "ADJ":
-                    adj_list.append(token)
-
-    ############## End POS tagging and adj_list ##############
-
-    ######## Evaluate the counters ################
-    num_adj_in_reviews_ratings = len(adj_list)
-    unique_adj_in_reviews_ratings = list(set(adj_list))
-    adj_list_counter_reviews_ratings = Counter(adj_list)
-
-    #return num_adj_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings
-    return num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings
-
-    ########end #######
-
-
-
-def cross_entropy(num_words_in_reviews_ratings, unique_adj_in_reviews_ratings, adj_list_counter_reviews_ratings,
-                  num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all):
-
-    cross_entropy_list = []
-
-
-    for adj in unique_adj_in_reviews_ratings:
-        count_specific_adj = adj_list_counter_reviews_all[adj]
-        count_all_words = num_words_in_reviews_all
-
-        prob_adj = count_specific_adj / count_all_words
-
-        count_specific_adj_in_ratings = adj_list_counter_reviews_ratings[adj]
-        count_all_words_in_ratings = num_words_in_reviews_ratings
-
-        prob_adj_given_ratings = count_specific_adj_in_ratings / count_all_words_in_ratings
-
-        cross_entropy = prob_adj_given_ratings * math.log10(prob_adj_given_ratings/prob_adj)
-
-        cross_entropy_list.append([adj,cross_entropy])
-
-    return cross_entropy_list
-
-def export_data(list_1,list_2,list_3,list_4,list_5,list_all,cross_entropy_list_1,cross_entropy_list_2,cross_entropy_list_3,cross_entropy_list_4,cross_entropy_list_5):
-    adj_list = []
-    adj_list.append(list_1)
-    adj_list.append(list_2)
-    adj_list.append(list_3)
-    adj_list.append(list_4)
-    adj_list.append(list_5)
-    adj_list.append(list_all)
-    
-    cross_entropy_list = []
-    cross_entropy_list.append(cross_entropy_list_1)
-    cross_entropy_list.append(cross_entropy_list_2)
-    cross_entropy_list.append(cross_entropy_list_3)
-    cross_entropy_list.append(cross_entropy_list_4)
-    cross_entropy_list.append(cross_entropy_list_5)
-    filename = "../Out/results.txt"
-    with open(filename, "w") as f:
-        for i in range(5):
-            f.write("\nTop 10 most frequent adjectives for " + str(i+1) + " star rating:\n")
-            f.write(str(adj_list[i].most_common(10)))
-            f.write("\nTop 10 most indicative adjectives for "+str(i+1)+" star ratings:\n") 
-            f.write(str(cross_entropy_list[i][-10:][::-1]))
-
-
-
-num_words_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1 = counters_for_cross_entropy(1.0)
-num_words_in_reviews_2, unique_adj_in_reviews_2, adj_list_counter_reviews_2 = counters_for_cross_entropy(2.0)
-num_words_in_reviews_3, unique_adj_in_reviews_3, adj_list_counter_reviews_3 = counters_for_cross_entropy(3.0)
-num_words_in_reviews_4, unique_adj_in_reviews_4, adj_list_counter_reviews_4 = counters_for_cross_entropy(4.0)
-num_words_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5 = counters_for_cross_entropy(5.0)
-num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all = counters_for_cross_entropy(-1)
-
-
-cross_entropy_list_1 = cross_entropy(num_words_in_reviews_1, unique_adj_in_reviews_1, adj_list_counter_reviews_1,
-                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
-
-cross_entropy_list_2 = cross_entropy(num_words_in_reviews_2, unique_adj_in_reviews_2, adj_list_counter_reviews_2,
-                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
-
-cross_entropy_list_3 = cross_entropy(num_words_in_reviews_3, unique_adj_in_reviews_3, adj_list_counter_reviews_3,
-                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
-
-cross_entropy_list_4 = cross_entropy(num_words_in_reviews_4, unique_adj_in_reviews_4, adj_list_counter_reviews_4,
-                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
-
-cross_entropy_list_5 = cross_entropy(num_words_in_reviews_5, unique_adj_in_reviews_5, adj_list_counter_reviews_5,
-                                     num_words_in_reviews_all, unique_adj_in_reviews_all, adj_list_counter_reviews_all)
-
-
-# print("Top 10 adjectives for 1 star ratings:\n", adj_list_counter_reviews_1.most_common(10))
-# print("\nTop 10 adjectives for 2 stars ratings:\n", adj_list_counter_reviews_2.most_common(10))
-# print("\nTop 10 adjectives for 3 stars ratings:\n", adj_list_counter_reviews_3.most_common(10))
-# print("\nTop 10 adjectives for 4 stars ratings:\n", adj_list_counter_reviews_4.most_common(10))
-# print("\nTop 10 adjectives for 5 stars ratings:\n", adj_list_counter_reviews_5.most_common(10))
-
-
-cross_entropy_list_1 = sorted(cross_entropy_list_1, key=itemgetter(1))
-#print("\nTop 10 most indicative adjectives for 1 star ratings:\n", cross_entropy_list_1[-10:][::-1])
-
-cross_entropy_list_2 = sorted(cross_entropy_list_2, key=itemgetter(1))
-#print("\nTop 10 most indicative adjectives for 2 stars ratings:\n", cross_entropy_list_2[-10:][::-1])
-
-cross_entropy_list_3 = sorted(cross_entropy_list_3, key=itemgetter(1))
-#print("\nTop 10 most indicative adjectives for 3 stars ratings:\n", cross_entropy_list_3[-10:][::-1])
-
-cross_entropy_list_4 = sorted(cross_entropy_list_4, key=itemgetter(1))
-#print("\nTop 10 most indicative adjectives for 4 stars ratings:\n", cross_entropy_list_4[-10:][::-1])
-
-cross_entropy_list_5 = sorted(cross_entropy_list_5, key=itemgetter(1))
-#print("\nTop 10 most indicative adjectives for 5 stars ratings:\n", cross_entropy_list_5[-10:][::-1])
-export_data(adj_list_counter_reviews_1,adj_list_counter_reviews_2,adj_list_counter_reviews_3,adj_list_counter_reviews_4,adj_list_counter_reviews_5,adj_list_counter_reviews_all
-    ,cross_entropy_list_1,cross_entropy_list_2,cross_entropy_list_3,cross_entropy_list_4,cross_entropy_list_5)
+    "20 Most Common Words After Stemming",
+    "common_with_stem",
+    "orange",
+)

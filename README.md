@@ -2,10 +2,25 @@
 
 4045 Natural Language Processing
 
+## Table of Contents <!-- omit in TOC -->
+
+- [Requirements](#requirements)
+- [Setup](#setup)
+  - [Initial](#initial)
+  - [Continued](#continued)
+- [Execution](#execution)
+
+&nbsp;
+
 ## Requirements
 
 1. [Python](https://www.python.org/)
 2. [Pipenv](https://github.com/pypa/pipenv)
+3. [nltk](https://www.nltk.org/)
+4. [StanfordNLP](https://stanfordnlp.github.io/stanfordnlp/)
+5. [AllenNLP](https://allennlp.org/)
+
+&nbsp;
 
 ## Setup
 
@@ -31,6 +46,8 @@
 4. Input `cd <path to cloned/downloaded project path>`
 5. Input `pipenv install nltk`
 6. Place dataset _(*.json)_ into Data folder
+
+&nbsp;
 
 ## Execution
 
