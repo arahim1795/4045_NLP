@@ -7,7 +7,6 @@ from nltk.corpus import stopwords
 from operator import itemgetter
 import stanfordnlp
 import string
-from tqdm import tqdm
 
 
 def remove_unwanted_phrase(input_list, ignore_special_case=True):
@@ -17,7 +16,7 @@ def remove_unwanted_phrase(input_list, ignore_special_case=True):
     output_list = []
     if ignore_special_case:
         other.append("'s")
-    for i in tqdm(range(len(input_list))):
+    for i in range(len(input_list)):
         word = input_list[i].lower()
         if word in stop_words or word in punctuations or word in other:
             continue
@@ -84,7 +83,7 @@ def extract_adjective(bundles):
         lang="en", treebank="en_gum", processors="tokenize,mwt,lemma,pos"
     )
 
-    for i in tqdm(range(len(bundles))):
+    for i in range(len(bundles)):
         bundle = bundles[i]
         temp_adj = []
         for token in bundle:
@@ -142,7 +141,24 @@ def calculate_indicativeness(
     return cross_entropy_list
 
 
-def export_indicative_data(data, threshold):
+def export_frequent_data(data, threshold, colors):
+    for i in range(len(data)):
+        # extract most frequent
+        frequent = dict(Counter(data[i]).most_common(threshold))
+
+        # plot graph
+        fig, ax = plt.subplots(figsize=(18.5, 10.5))
+        ax.set_title("Frequent Adjective - Rating: " + str(i + 1))
+
+        ax.bar(frequent.keys(), frequent.values(), color=colors[i])
+        xlocs, xlabs = plt.xticks()
+        for j, v in enumerate(frequent.values()):
+            ax.text(xlocs[j], v, str(v), ha="center", va="bottom")
+        fig.savefig("../Out/frequent_" + str(i + 1) + ".png")
+        plt.close()
+
+
+def export_indicative_data(data, threshold, colors):
     # csv export
     for i in range(len(data)):
         with open("../Out/indicative_" + str(i + 1) + ".csv", "w") as f:
@@ -151,9 +167,6 @@ def export_indicative_data(data, threshold):
                 f.write(entry[0] + "," + str(entry[1]) + "\n")
 
     # graph export
-    # parameters
-    color = ["#FF0000", "#0000FF", "#008000", "#FFA500", "#323232"]
-
     # - extract threshold amount
     words = []
     values = []
@@ -165,14 +178,13 @@ def export_indicative_data(data, threshold):
         words.append(temp_word)
         values.append(temp_val)
 
+    # - plot graph
     for i in range(len(data)):
         fig, ax = plt.subplots(figsize=(18.5, 10.5))
-        ax.set_title("Indicativeness")
+        ax.set_title("Indicativeness - Rating: " + str(i + 1))
 
-        ax.bar(words[i], values[i], color=color[i])
+        ax.bar(words[i], values[i], color=colors[i])
         xlocs, xlabs = plt.xticks()
-        # for i, v in enumerate(common_dict.values()):
-        #     ax.text(xlocs[i], v, str(v), ha="center", va="bottom")
         fig.savefig("../Out/indicative_" + str(i + 1) + ".png")
         plt.close()
 
@@ -180,7 +192,7 @@ def export_indicative_data(data, threshold):
 # download required libraries
 nltk.download("punkt")
 nltk.download("stopwords")
-# stanfordnlp.download("en_gum")
+stanfordnlp.download("en_gum")
 
 # import data
 review_dic = {}
@@ -237,7 +249,11 @@ for calc_set in indicativeness:
     sorted_indicativeness.append(sorted(calc_set, key=itemgetter(1), reverse=True))
 
 # export indicative data
-export_indicative_data(sorted_indicativeness, 10)
+# - parameters
+colors = ["#FF0000", "#0000FF", "#008000", "#FFA500", "#323232"]
+
+export_frequent_data(adjectives, 10, colors)
+export_indicative_data(sorted_indicativeness, 10, colors)
 
 # def export_data(
 #     list_1,
