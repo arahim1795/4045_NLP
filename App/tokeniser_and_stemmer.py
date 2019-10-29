@@ -29,7 +29,7 @@ def plot_bar(common_dict, chart_title, output_filename, bar_color="blue"):
     ax.set_title(chart_title)
 
     ax.bar(common_dict.keys(), common_dict.values(), color=bar_color)
-    fig.savefig("../Data/" + str(output_filename) + ".png")
+    fig.savefig("../Out/" + str(output_filename) + ".png")
     plt.close()
 
 
@@ -41,7 +41,7 @@ def plot_bar_with_val(common_dict, chart_title, output_filename, bar_color="blue
     xlocs, xlabs = plt.xticks()
     for i, v in enumerate(common_dict.values()):
         ax.text(xlocs[i], v, str(v), ha="center", va="bottom")
-    fig.savefig("../Data/" + str(output_filename) + ".png")
+    fig.savefig("../Out/" + str(output_filename) + ".png")
     plt.close()
 
 

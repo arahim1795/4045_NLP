@@ -1,6 +1,7 @@
 from collections import Counter
 import json
 import math
+import matplotlib.pyplot as plt
 import nltk
 from nltk.corpus import stopwords
 from operator import itemgetter
@@ -69,7 +70,7 @@ def tokenise(sentences_bundle):
         token_processed.append(remove_unwanted_phrase(tokens))
 
     for i in range(len(token_processed)):
-        with open("../Data/tokenised_" + str(i) + ".txt", "w") as f:
+        with open("../Out/tokenised_" + str(i + 1) + ".txt", "w") as f:
             for token in token_processed[i]:
                 f.write(token + "\n")
 
@@ -95,7 +96,7 @@ def extract_adjective(bundles):
         adj_all.append(temp_adj)
 
     for i in range(len(adj_all)):
-        with open("../Data/adjective_" + str(i + 1) + ".txt", "w") as f:
+        with open("../Out/adjective_" + str(i + 1) + ".txt", "w") as f:
             for word in adj_all[i]:
                 f.write(word + "\n")
 
@@ -104,44 +105,76 @@ def extract_adjective(bundles):
 
 def import_txt(filename):
     text_data = []
-    
-    with open("../Data/" + filename, "r") as f:
+
+    with open("../Out/" + filename, "r") as f:
         text_data = f.read().split("\n")[:-1]
-    
+
     return text_data
 
 
-def cross_entropy(
-    num_words_in_reviews_ratings,
-    unique_adj_in_reviews_ratings,
-    adj_list_counter_reviews_ratings,
-    num_words_in_reviews_all,
-    unique_adj_in_reviews_all,
-    adj_list_counter_reviews_all,
+def calculate_indicativeness(
+    per_rating_adj_list, all_adj_list, per_rating_word_count, all_word_count
 ):
-
+    # parameters
     cross_entropy_list = []
 
-    for adj in unique_adj_in_reviews_ratings:
-        count_specific_adj = adj_list_counter_reviews_all[adj]
-        count_all_words = num_words_in_reviews_all
+    # set up counters
+    per_rating_adj_counter = Counter(per_rating_adj_list)
+    all_adj_counter = Counter(all_adj_list)
 
-        prob_adj = count_specific_adj / count_all_words
+    # create set of adjective list
+    per_rating_adj_set = set(per_rating_adj_list)
 
-        count_specific_adj_in_ratings = adj_list_counter_reviews_ratings[adj]
-        count_all_words_in_ratings = num_words_in_reviews_ratings
+    for adj in per_rating_adj_set:
+        # calc 1:
+        adj_count = all_adj_counter[adj]
+        adj_prob = adj_count / all_word_count
 
-        prob_adj_given_ratings = (
-            count_specific_adj_in_ratings / count_all_words_in_ratings
-        )
+        # calc 2:
+        per_rating_adj_count = per_rating_adj_counter[adj]
+        per_rating_adj_prob = per_rating_adj_count / per_rating_word_count
 
-        cross_entropy = prob_adj_given_ratings * math.log10(
-            prob_adj_given_ratings / prob_adj
-        )
+        # final calc:
+        cross_entropy = per_rating_adj_prob * math.log10(per_rating_adj_prob / adj_prob)
 
         cross_entropy_list.append([adj, cross_entropy])
 
     return cross_entropy_list
+
+
+def export_indicative_data(data, threshold):
+    # csv export
+    for i in range(len(data)):
+        with open("../Out/indicative_" + str(i + 1) + ".csv", "w") as f:
+            f.write("word,indicativeness\n")
+            for entry in data[i]:
+                f.write(entry[0] + "," + str(entry[1]) + "\n")
+
+    # graph export
+    # parameters
+    color = ["#FF0000", "#0000FF", "#008000", "#FFA500", "#323232"]
+
+    # - extract threshold amount
+    words = []
+    values = []
+    for dataset in data:
+        temp_word, temp_val = [], []
+        for i in range(threshold):
+            temp_word.append(dataset[i][0])
+            temp_val.append(dataset[i][1])
+        words.append(temp_word)
+        values.append(temp_val)
+
+    for i in range(len(data)):
+        fig, ax = plt.subplots(figsize=(18.5, 10.5))
+        ax.set_title("Indicativeness")
+
+        ax.bar(words[i], values[i], color=color[i])
+        xlocs, xlabs = plt.xticks()
+        # for i, v in enumerate(common_dict.values()):
+        #     ax.text(xlocs[i], v, str(v), ha="center", va="bottom")
+        fig.savefig("../Out/indicative_" + str(i + 1) + ".png")
+        plt.close()
 
 
 # download required libraries
@@ -161,8 +194,20 @@ with open(data_file, "r") as json_file:
 # tokenised_sentences = tokenise(bundled_sentences)
 # adjectives = extract_adjective(bundled_sentences)
 
-adj_file_list = ["adjective_1.txt", "adjective_2.txt", "adjective_3.txt", "adjective_4.txt", "adjective_5.txt"]
-token_file_list = ["tokenised_1.txt", "tokenised_2.txt", "tokenised_3.txt", "tokenised_4.txt", "tokenised_5.txt"]
+adj_file_list = [
+    "adjective_1.txt",
+    "adjective_2.txt",
+    "adjective_3.txt",
+    "adjective_4.txt",
+    "adjective_5.txt",
+]
+token_file_list = [
+    "tokenised_1.txt",
+    "tokenised_2.txt",
+    "tokenised_3.txt",
+    "tokenised_4.txt",
+    "tokenised_5.txt",
+]
 
 adjectives, tokens = [], []
 
@@ -172,6 +217,27 @@ for file in adj_file_list:
 for file in token_file_list:
     tokens.append(import_txt(file))
 
+adj_merged, token_merged = [], []
+
+for i in range(len(adj_file_list)):
+    adj_merged += adjectives[i]
+    token_merged += tokens[i]
+
+indicativeness = []
+for i in range(len(adjectives)):
+    indicativeness.append(
+        calculate_indicativeness(
+            adjectives[i], adj_merged, len(tokens[i]), len(token_merged)
+        )
+    )
+
+# sort indicativeness descendingly
+sorted_indicativeness = []
+for calc_set in indicativeness:
+    sorted_indicativeness.append(sorted(calc_set, key=itemgetter(1), reverse=True))
+
+# export indicative data
+export_indicative_data(sorted_indicativeness, 10)
 
 # def export_data(
 #     list_1,
@@ -215,52 +281,6 @@ for file in token_file_list:
 #                 + " star ratings:\n"
 #             )
 #             f.write(str(cross_entropy_list[i][-10:][::-1]))
-
-
-# cross_entropy_list_1 = cross_entropy(
-#     num_words_in_reviews_1,
-#     unique_adj_in_reviews_1,
-#     adj_list_counter_reviews_1,
-#     num_words_in_reviews_all,
-#     unique_adj_in_reviews_all,
-#     adj_list_counter_reviews_all,
-# )
-
-# cross_entropy_list_2 = cross_entropy(
-#     num_words_in_reviews_2,
-#     unique_adj_in_reviews_2,
-#     adj_list_counter_reviews_2,
-#     num_words_in_reviews_all,
-#     unique_adj_in_reviews_all,
-#     adj_list_counter_reviews_all,
-# )
-
-# cross_entropy_list_3 = cross_entropy(
-#     num_words_in_reviews_3,
-#     unique_adj_in_reviews_3,
-#     adj_list_counter_reviews_3,
-#     num_words_in_reviews_all,
-#     unique_adj_in_reviews_all,
-#     adj_list_counter_reviews_all,
-# )
-
-# cross_entropy_list_4 = cross_entropy(
-#     num_words_in_reviews_4,
-#     unique_adj_in_reviews_4,
-#     adj_list_counter_reviews_4,
-#     num_words_in_reviews_all,
-#     unique_adj_in_reviews_all,
-#     adj_list_counter_reviews_all,
-# )
-
-# cross_entropy_list_5 = cross_entropy(
-#     num_words_in_reviews_5,
-#     unique_adj_in_reviews_5,
-#     adj_list_counter_reviews_5,
-#     num_words_in_reviews_all,
-#     unique_adj_in_reviews_all,
-#     adj_list_counter_reviews_all,
-# )
 
 
 # # print("Top 10 adjectives for 1 star ratings:\n", adj_list_counter_reviews_1.most_common(10))
