@@ -1,0 +1,5 @@
+1. Download coreNLP from this site:
+http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
+2. Unzip it.
+3. Change the path to the coreNLP folder of the following variable:
+os.environ['CORENLP_HOME'] = "/Users/tohyue-sheng/Desktop/stanford-corenlp-full-2018-10-05" ### check to your path
