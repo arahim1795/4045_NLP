@@ -35,6 +35,7 @@ def create_graph_from_dependency_tree_dict(dependency_tree_dict):
     second level after the root node will contain adjectives.
     third level after the root node will contain adverbs.
     """
+    print(dependency_tree_dict)
     predicted_heads = dependency_tree_dict['predicted_heads']
     predicted_dependencies = dependency_tree_dict['predicted_dependencies']
     pos = dependency_tree_dict['pos']

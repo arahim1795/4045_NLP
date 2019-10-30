@@ -3,6 +3,8 @@ import random
 from allennlp import pretrained
 from dependency_utils import get_noun_adjective_pairs_from_allen_nlp
 import spacy
+import time
+
 
 data_file = '../Data/test.json'
 reviews_list = []
@@ -14,10 +16,14 @@ with open(data_file, 'r') as json_file:
 
 nlp = spacy.load('en_core_web_sm')
 
-for review in random.sample(reviews_list, 5):
-  doc = nlp(review)
-  sentences = doc.sents
-  noun_adjective_pairs = []
-  for sent in sentences:
-    noun_adjective_pairs.extend(get_noun_adjective_pairs_from_allen_nlp(str(sent)))
-  print(noun_adjective_pairs)
+for review in random.sample(reviews_list, 10):
+    print(review)
+    print("===================================")
+    time.sleep(30)
+# for review in random.sample(reviews_list, 5):
+#   doc = nlp(review)
+#   sentences = doc.sents
+#   noun_adjective_pairs = []
+#   for sent in sentences:
+#     noun_adjective_pairs.extend(get_noun_adjective_pairs_from_allen_nlp(str(sent)))
+#   print(noun_adjective_pairs)

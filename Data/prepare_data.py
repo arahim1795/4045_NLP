@@ -29,7 +29,7 @@ def merge_phrases(phrases):
 
 
 review_dic = {}
-data_file = 'Data/reviewSelected100.json'
+data_file = 'reviewSelected100.json'
 
 with open(data_file, 'r') as json_file:
     reviews = json_file.readlines()
@@ -40,5 +40,5 @@ for i in tqdm(range(len(reviews))):
     review_dic[i] = review
     i += 1
 
-with open('Data/processed_data.json', 'w') as json_file:
+with open('processed_data.json', 'w') as json_file:
     json.dump(review_dic, json_file)
