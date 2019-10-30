@@ -1,6 +1,7 @@
 import json
 import nltk
 from nltk.corpus import stopwords
+# import re
 import stanfordnlp
 import string
 
@@ -75,23 +76,50 @@ def tokenise(sentences_bundle):
 # download required libraries
 nltk.download("punkt")
 nltk.download("stopwords")
-stanfordnlp.download("en_gum")
+# stanfordnlp.download("en_gum")
 
 # import data
 review_dic = {}
-data_file = "../Data/processed_data_1.json"
+data_file = "../Data/processed_data.json"
 
 with open(data_file, "r") as json_file:
     review_dic = json.load(json_file)
 
 nlp = stanfordnlp.Pipeline(
-    lang="en", treebank="en_gum", processors="tokenize,pos,depparse"
+    lang="en", treebank="en_gum", processors="tokenize,mwt,pos,depparse"
 )
 
-doc = nlp(
-    "Another solid BBQ place in Calgary. This is definitely a great place to go if you are craving something smokey and delicious."
-)
+txt = "The person from Missouri whom worked in the kitchen, in cool Calgary, is great."
 
-print(len(doc.sentences))
+# add 'space' before comma if it does not exist
+# txt = txt.replace(",", " ,")
+# print(txt)
+
+doc = nlp(txt)
+
+splitted_txt = txt.split
+
+# remove 'ADP .. NN|NNP' from statement
+phrases = []
 for s in doc.sentences:
-    print(len(s.words))
+    for i in range(len(s.words)):
+        phrase = ""
+        word = s.words[i]
+        if word.xpos == "IN":
+            phrase += word.text + " "
+
+            for j in range(int(word.index), int(s.words[-1].index) - 1):
+                noun = s.words[j]
+                if noun.xpos == "NNP" or noun.xpos == "NN":
+                    phrase += noun.text
+                    phrases.append(phrase)
+                    break
+                phrase += noun.text + " "
+
+for phrase in phrases:
+    txt = txt.replace(phrase, "")
+
+phrases.append(txt)
+
+for phrase in phrases:
+    print(phrase)
