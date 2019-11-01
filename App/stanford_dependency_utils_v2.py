@@ -1,12 +1,8 @@
 import stanfordnlp
-import networkx as nx
-import spacy
 
-G = nx.DiGraph()
 nlp = stanfordnlp.Pipeline(
     lang="en", treebank="en_ewt", processors="tokenize,mwt,pos,depparse"
 )
-spacy_nlp = spacy.load('en_core_web_sm')
 
 INTERESTED_NOUN_POS = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$', 'WP', 'WP$']
 INTERESTED_ADJ_POS = ['JJ', 'JJR', 'JJS']
@@ -48,12 +44,13 @@ def get_noun_adjective_pairs_from_reviews(review):
     for sentence in  doc.sentences:
         words_obj = sentence.words
         noun_pairs = get_noun_pairs_index(words_obj)
-        adjective_adverb_pairs = get_adjective_adverb_pairs(words_obj)
+        # adjective_adverb_pairs = get_adjective_adverb_pairs(words_obj)
         adjective_pairs = get_adjective_pairs_index(words_obj)
-        noun_adjective_pairs = get_noun_adjective_pairs(words_obj, noun_pairs, adjective_adverb_pairs, adjective_pairs)
+        noun_adjective_pairs = get_noun_adjective_pairs(words_obj, noun_pairs, adjective_pairs)
         text_of_words = get_text_of_words_obj(words_obj)
-        print(" ".join(text_of_words))
+        # print(" ".join(text_of_words))
         result.extend(noun_adjective_pairs)
+        # print(noun_adjective_pairs)
         print(noun_adjective_pairs)
     return result
 
@@ -87,31 +84,31 @@ def get_adjective_pairs_index(words_obj):
                 adj_pairs_index[predicted_heads_index] = [i]        
     return adj_pairs_index
 
-def get_adjective_adverb_pairs(words_obj):
-    predicted_heads = get_predicted_heads_from_words_obj(words_obj)
-    predicted_dependencies = get_predicted_dependencies_from_words_obj(words_obj)
-    predicted_pos = get_predicted_pos_from_words_obj(words_obj)
-    predicted_pos_of_heads = get_predicted_pos_of_heads(words_obj)
-    adjective_adverb_pairs = {}
-    for i in range(get_length_of_words_obj(words_obj)):
-        if predicted_pos[i] in INTERESTED_ADVERB_POS and  \
-            predicted_dependencies[i] in CORRECT_ADVERB_DEPENDENCIES and \
-                predicted_pos_of_heads[i] in INTERESTED_ADJ_POS:
-            predicted_heads_index = predicted_heads[i] - 1
-            if i > 0:
-                """
-                To handle cases like 'not very good' where 'not' will be attached to 'Noun'
-                """
-                previous_index = i - 1
-                if predicted_dependencies[previous_index] in CORRECT_ADVERB_DEPENDENCIES and \
-                    previous_index not in adjective_adverb_pairs:
-                    adjective_adverb_pairs[predicted_heads_index] = [previous_index]
-            if predicted_heads_index in adjective_adverb_pairs:
-                adverb_list = adjective_adverb_pairs[predicted_heads_index]
-                adverb_list.append(i)
-            else:
-                adjective_adverb_pairs[predicted_heads_index] = [i]
-    return adjective_adverb_pairs
+# def get_adjective_adverb_pairs(words_obj):
+#     predicted_heads = get_predicted_heads_from_words_obj(words_obj)
+#     predicted_dependencies = get_predicted_dependencies_from_words_obj(words_obj)
+#     predicted_pos = get_predicted_pos_from_words_obj(words_obj)
+#     predicted_pos_of_heads = get_predicted_pos_of_heads(words_obj)
+#     adjective_adverb_pairs = {}
+#     for i in range(get_length_of_words_obj(words_obj)):
+#         if predicted_pos[i] in INTERESTED_ADVERB_POS and  \
+#             predicted_dependencies[i] in CORRECT_ADVERB_DEPENDENCIES and \
+#                 predicted_pos_of_heads[i] in INTERESTED_ADJ_POS:
+#             predicted_heads_index = predicted_heads[i] - 1
+#             if i > 0:
+#                 """
+#                 To handle cases like 'not very good' where 'not' will be attached to 'Noun'
+#                 """
+#                 previous_index = i - 1
+#                 if predicted_dependencies[previous_index] in CORRECT_ADVERB_DEPENDENCIES and \
+#                     previous_index not in adjective_adverb_pairs:
+#                     adjective_adverb_pairs[predicted_heads_index] = [previous_index]
+#             if predicted_heads_index in adjective_adverb_pairs:
+#                 adverb_list = adjective_adverb_pairs[predicted_heads_index]
+#                 adverb_list.append(i)
+#             else:
+#                 adjective_adverb_pairs[predicted_heads_index] = [i]
+#     return adjective_adverb_pairs
 
 def get_possible_adjective_index_list(adjective_pairs, index_to_look_at):
     if index_to_look_at in adjective_pairs:
@@ -161,31 +158,32 @@ def get_natural_language_phrase_for_noun(noun_index, pos, texts):
     """
     natural_language_possible_indexes = [noun_index]
     for i in range(noun_index + 1, len(list(pos))):
-        if pos[i] in INTERESTED_NOUN_POS:
+        if pos[i] in INTERESTED_NOUN_POS and pos[i] == pos[noun_index]:
             natural_language_possible_indexes.append(i)
         else:
             break
     natural_language_texts = [texts[i] for i in natural_language_possible_indexes]
     return " ".join(natural_language_texts)
 
-def get_natural_language_phrase_for_adj(adj_index, adjective_adverb_pairs, texts):
+def get_natural_language_phrase_for_adj(adj_index, predicted_pos, texts):
     """
     Should be working fine.
     Might need some improvements.
     IDK lol
     """
-    if adj_index in adjective_adverb_pairs:
-        adjective_adverb_pairs_list = []
-        adverb_indexes = adjective_adverb_pairs[adj_index]
-        adjective_adverb_pairs_list.extend(adverb_indexes)
-        adjective_adverb_pairs_list.append(adj_index)
-        adjective_adverb_pairs_list_in_natural_language = [texts[j] for j in adjective_adverb_pairs_list]
-        adjective_in_natural_language = " ".join(adjective_adverb_pairs_list_in_natural_language)
-        return adjective_in_natural_language
-    else:
-        return texts[adj_index] 
+    adjective_adverb_pairs_list = []
+    adjective_adverb_pairs_list.append(adj_index)
+    for i in range(adj_index - 1, -1, -1):
+        if predicted_pos[i] in INTERESTED_ADVERB_POS:
+            adjective_adverb_pairs_list.append(i)
+        else:
+            break
+    adjective_adverb_pairs_list.reverse()
+    adjective_adverb_pairs_list_in_natural_language = [texts[j] for j in adjective_adverb_pairs_list]
+    adjective_in_natural_language = " ".join(adjective_adverb_pairs_list_in_natural_language)
+    return adjective_in_natural_language
 
-def get_noun_adjective_pairs(words_obj, noun_pairs, adjective_adverb_pairs, adjective_pairs):
+def get_noun_adjective_pairs(words_obj, noun_pairs, adjective_pairs):
     predicted_heads = get_predicted_heads_from_words_obj(words_obj)
     predicted_dependencies = get_predicted_dependencies_from_words_obj(words_obj)
     predicted_pos = get_predicted_pos_from_words_obj(words_obj)
@@ -247,7 +245,7 @@ def get_noun_adjective_pairs(words_obj, noun_pairs, adjective_adverb_pairs, adje
                 """
                 adjectives_list = [adjective_index for adjective_index in adjectives_list if adjective_index < first_noun_index]
             nouns_in_natural_language = [get_natural_language_phrase_for_noun(j, predicted_pos, texts) for j in noun_list]
-            adjectives_in_natural_lanuage = [get_natural_language_phrase_for_adj(j, adjective_adverb_pairs, texts) for j in adjectives_list]
+            adjectives_in_natural_lanuage = [get_natural_language_phrase_for_adj(j, predicted_pos, texts) for j in adjectives_list]
             for noun in nouns_in_natural_language:
                 for adjective in adjectives_in_natural_lanuage:
                     noun_adjective_pairs.append((noun, adjective))

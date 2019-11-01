@@ -10,21 +10,25 @@ from stanford_dependency_utils_v2 import get_noun_adjective_pairs_from_reviews
 
 # nlp = spacy.load('en_core_web_sm')
 
-data_file = '../Data/test.json'
+data_file = '../Data/chosen_reviews.json'
 reviews_list = []
 
 with open(data_file, 'r') as json_file:
-    for line in json_file:
-        review = json.loads(line)
-        reviews_list.append(review['text'])
-
+    reviews_list = json.load(json_file)
+    # reviews_list.append(review['text'])
+start = time.time()
+actual_noun_adjective_pairs = []
 for review in reviews_list:
-    noun_adjective_pairs = get_noun_adjective_pairs_from_reviews(review)
-    enter = input("Press a key to continue: ")
-
-  # sentences = doc.sents
+    noun_adjective_pairs = get_noun_adjective_pairs_from_reviews(review['text'])
+    actual_noun_adjective_pairs.extend(noun_adjective_pairs)
+  # sentences = doc.
+  # sents
   # for sentence in sentences:
   #   print(sentence)
   #   print(get_ne_in_sent_from(str(sentence)))
+print(actual_noun_adjective_pairs)
+end = time.time()
+print(end - start)
+
 
 
