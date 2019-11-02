@@ -2,9 +2,9 @@ import json
 import random
 import spacy
 import time
-from named_entity_recognizer import get_ne_in_sent_from
-from stanford_dependency_utils import get_noun_adjective_pairs
 from stanford_dependency_utils_v2 import get_noun_adjective_pairs_from_reviews
+from stanford_core_nlp_dependency_utils import get_noun_adjective_pairs_from_reviews
+
 
 # stanfordnlp.download("en_gum")
 
@@ -18,15 +18,8 @@ with open(data_file, 'r') as json_file:
     # reviews_list.append(review['text'])
 start = time.time()
 actual_noun_adjective_pairs = []
-for review in reviews_list:
-    noun_adjective_pairs = get_noun_adjective_pairs_from_reviews(review['text'])
-    actual_noun_adjective_pairs.extend(noun_adjective_pairs)
-  # sentences = doc.
-  # sents
-  # for sentence in sentences:
-  #   print(sentence)
-  #   print(get_ne_in_sent_from(str(sentence)))
-print(actual_noun_adjective_pairs)
+reviews = [review['text'] for review in reviews_list]
+get_noun_adjective_pairs_from_reviews(reviews)
 end = time.time()
 print(end - start)
 
