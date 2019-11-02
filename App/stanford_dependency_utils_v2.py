@@ -20,7 +20,7 @@ def get_text_of_words_obj(words_obj):
 
 def get_predicted_pos_of_heads(words_obj):
     predicted_heads = get_predicted_heads_from_words_obj(words_obj)
-    pos_of_predicted_heads = [words_obj[predicted_head - 1].xpos for predicted_head in predicted_heads]
+    pos_of_predicted_heads = [words_obj[predicted_head - 1].xpos if predicted_head > 0 else "root" for predicted_head in predicted_heads]
     return pos_of_predicted_heads
 
 def get_predicted_heads_from_words_obj(words_obj):
@@ -56,7 +56,9 @@ def get_noun_adjective_pairs_from_reviews(review):
 
 def get_noun_pairs_index(words_obj):
     predicted_heads = get_predicted_heads_from_words_obj(words_obj)
+    print(predicted_heads)
     predicted_dependencies = get_predicted_dependencies_from_words_obj(words_obj)
+    print(predicted_dependencies)
     predicted_pos = get_predicted_pos_from_words_obj(words_obj)
     noun_pairs_index = {}
     for i in range(get_length_of_words_obj(words_obj)):
@@ -188,6 +190,7 @@ def get_noun_adjective_pairs(words_obj, noun_pairs, adjective_pairs):
     predicted_dependencies = get_predicted_dependencies_from_words_obj(words_obj)
     predicted_pos = get_predicted_pos_from_words_obj(words_obj)
     predicted_pos_of_heads = get_predicted_pos_of_heads(words_obj)
+    print(predicted_pos_of_heads)
     texts = get_text_of_words_obj(words_obj)
     noun_adjective_pairs = [] 
     for i in range(get_length_of_words_obj(words_obj)):
@@ -250,3 +253,5 @@ def get_noun_adjective_pairs(words_obj, noun_pairs, adjective_pairs):
                 for adjective in adjectives_in_natural_lanuage:
                     noun_adjective_pairs.append((noun, adjective))
     return noun_adjective_pairs
+
+noun_adjective_pairs = get_noun_adjective_pairs_from_reviews("Chris Manning is a nice person.")
