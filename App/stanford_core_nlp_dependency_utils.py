@@ -1,33 +1,46 @@
 from stanfordnlp.server import CoreNLPClient
 
-INTERESTED_NOUN_POS = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$', 'WP', 'WP$']
-INTERESTED_ADJ_POS = ['JJ', 'JJR', 'JJS']
-INTERESTED_ADVERB_POS = ['RB', 'RBR', 'RBS']
-CORRECT_ADVERB_DEPENDENCIES = ['neg', 'advmod']
+INTERESTED_NOUN_POS = ["NN", "NNS", "NNP", "NNPS", "PRP", "PRP$", "WP", "WP$"]
+INTERESTED_ADJ_POS = ["JJ", "JJR", "JJS"]
+INTERESTED_ADVERB_POS = ["RB", "RBR", "RBS"]
+CORRECT_ADVERB_DEPENDENCIES = ["neg", "advmod"]
+
 
 def get_noun_pairs_index(predicted_heads_and_dependencies):
     noun_pairs_index = {}
-    for current_index, predicted_info_of_head in predicted_heads_and_dependencies.items():
-        predicted_heads_index, predicted_dep, predicted_head_pos = predicted_info_of_head[0]
+    for (
+        current_index,
+        predicted_info_of_head,
+    ) in predicted_heads_and_dependencies.items():
+        predicted_heads_index, predicted_dep, predicted_head_pos = predicted_info_of_head[
+            0
+        ]
         if predicted_head_pos in INTERESTED_NOUN_POS and predicted_dep == "conj":
             if predicted_heads_index in noun_pairs_index:
                 noun_pairs_list = noun_pairs_index[predicted_heads_index]
                 noun_pairs_list.append(current_index)
             else:
-                noun_pairs_index[predicted_heads_index] = [current_index]  
+                noun_pairs_index[predicted_heads_index] = [current_index]
     return noun_pairs_index
+
 
 def get_adjective_pairs_index(predicted_heads_and_dependencies):
     adj_pairs_index = {}
-    for current_index, predicted_info_of_head in predicted_heads_and_dependencies.items():
-        predicted_heads_index, predicted_dep, predicted_head_pos = predicted_info_of_head[0]
+    for (
+        current_index,
+        predicted_info_of_head,
+    ) in predicted_heads_and_dependencies.items():
+        predicted_heads_index, predicted_dep, predicted_head_pos = predicted_info_of_head[
+            0
+        ]
         if predicted_head_pos in INTERESTED_ADJ_POS and predicted_dep == "conj":
             if predicted_heads_index in adj_pairs_index:
                 adj_pairs_list = adj_pairs_index[predicted_heads_index]
                 adj_pairs_list.append(current_index)
             else:
-                adj_pairs_index[predicted_heads_index] = [current_index]         
+                adj_pairs_index[predicted_heads_index] = [current_index]
     return adj_pairs_index
+
 
 def get_possible_adjective_index_list(adjective_pairs, index_to_look_at):
     if index_to_look_at in adjective_pairs:
@@ -37,6 +50,7 @@ def get_possible_adjective_index_list(adjective_pairs, index_to_look_at):
     else:
         return [index_to_look_at]
 
+
 def get_possible_nouns_index_list(noun_pairs, index_to_look_at):
     if index_to_look_at in noun_pairs:
         result = [index_to_look_at]
@@ -44,6 +58,7 @@ def get_possible_nouns_index_list(noun_pairs, index_to_look_at):
         return result
     else:
         return [index_to_look_at]
+
 
 def find_first_index_of_adjective_in_between_nouns(first_index, last_index, pos_tags):
     current_index = first_index
@@ -53,6 +68,7 @@ def find_first_index_of_adjective_in_between_nouns(first_index, last_index, pos_
         current_index += 1
     return current_index
 
+
 def find_last_index_of_adjective_in_between_nouns(first_index, last_index, pos_tags):
     current_index = last_index
     for i in range(last_index, first_index - 1, -1):
@@ -60,6 +76,7 @@ def find_last_index_of_adjective_in_between_nouns(first_index, last_index, pos_t
             break
         current_index -= 1
     return current_index
+
 
 def get_first_index_of_nouns_in_between_adjective(first_index, last_index, pos_tags):
     current_index = first_index
@@ -69,10 +86,11 @@ def get_first_index_of_nouns_in_between_adjective(first_index, last_index, pos_t
         current_index += 1
     return current_index
 
+
 def get_natural_language_phrase_for_noun(noun_index, pos, texts):
     """
     Definitely need work to be done.
-    Right now its matching every noun that follows the noun that 
+    Right now its matching every noun that follows the noun that
     gets matched with an adjective
     """
     natural_language_possible_indexes = [noun_index]
@@ -84,6 +102,7 @@ def get_natural_language_phrase_for_noun(noun_index, pos, texts):
     natural_language_possible_indexes.sort()
     natural_language_texts = [texts[i] for i in natural_language_possible_indexes]
     return " ".join(natural_language_texts)
+
 
 def get_natural_language_phrase_for_adj(adj_index, predicted_pos, texts):
     """
@@ -99,54 +118,90 @@ def get_natural_language_phrase_for_adj(adj_index, predicted_pos, texts):
         else:
             break
     adjective_adverb_pairs_list.reverse()
-    adjective_adverb_pairs_list_in_natural_language = [texts[j] for j in adjective_adverb_pairs_list]
-    adjective_in_natural_language = " ".join(adjective_adverb_pairs_list_in_natural_language)
+    adjective_adverb_pairs_list_in_natural_language = [
+        texts[j] for j in adjective_adverb_pairs_list
+    ]
+    adjective_in_natural_language = " ".join(
+        adjective_adverb_pairs_list_in_natural_language
+    )
     return adjective_in_natural_language
 
-def get_noun_adjective_pairs(predicted_heads_and_dependencies, predicted_pos, texts, noun_pairs, adjective_pairs):
-    noun_adjective_pairs = [] 
+
+def get_noun_adjective_pairs(
+    predicted_heads_and_dependencies, predicted_pos, texts, noun_pairs, adjective_pairs
+):
+    noun_adjective_pairs = []
     for i in range(len(predicted_pos)):
         if i not in predicted_heads_and_dependencies:
             continue
         for j in range(len(predicted_heads_and_dependencies[i])):
-            predicted_heads_index, predicted_dep, predicted_head_pos = predicted_heads_and_dependencies[i][j]
-            if (predicted_pos[i] in INTERESTED_ADJ_POS and predicted_head_pos in INTERESTED_NOUN_POS) or \
-            (predicted_pos[i] in INTERESTED_NOUN_POS and predicted_head_pos in INTERESTED_ADJ_POS):
+            predicted_heads_index, predicted_dep, predicted_head_pos = predicted_heads_and_dependencies[
+                i
+            ][
+                j
+            ]
+            if (
+                predicted_pos[i] in INTERESTED_ADJ_POS
+                and predicted_head_pos in INTERESTED_NOUN_POS
+            ) or (
+                predicted_pos[i] in INTERESTED_NOUN_POS
+                and predicted_head_pos in INTERESTED_ADJ_POS
+            ):
                 if predicted_pos[i] in INTERESTED_ADJ_POS:
-                    adjectives_list = get_possible_adjective_index_list(adjective_pairs, i)
-                    noun_list = get_possible_nouns_index_list(noun_pairs, predicted_heads_index)
+                    adjectives_list = get_possible_adjective_index_list(
+                        adjective_pairs, i
+                    )
+                    noun_list = get_possible_nouns_index_list(
+                        noun_pairs, predicted_heads_index
+                    )
                 else:
-                    adjectives_list = get_possible_adjective_index_list(adjective_pairs, predicted_heads_index)
+                    adjectives_list = get_possible_adjective_index_list(
+                        adjective_pairs, predicted_heads_index
+                    )
                     noun_list = get_possible_nouns_index_list(noun_pairs, i)
                 noun_list.sort()
                 adjectives_list.sort()
                 if adjectives_list[0] < noun_list[0]:
                     """
-                    If statement above is 
+                    If statement above is
                     used to check if the noun and adjectives are arranged as such:
                     'Cool John'
                     """
-                    first_adjective_index = find_first_index_of_adjective_in_between_nouns(noun_list[0], noun_list[-1], predicted_pos)
+                    first_adjective_index = find_first_index_of_adjective_in_between_nouns(
+                        noun_list[0], noun_list[-1], predicted_pos
+                    )
                     """
                     The above statement is used to break up two nouns that might be connected together:
                     Such as 'Cool John and great kid'
                     where John and kid are a conjunctive pair
                     """
-                    noun_list = [noun_index for noun_index in noun_list if noun_index < first_adjective_index]
-                    first_noun_index = get_first_index_of_nouns_in_between_adjective(adjectives_list[0], adjectives_list[-1], predicted_pos)
+                    noun_list = [
+                        noun_index
+                        for noun_index in noun_list
+                        if noun_index < first_adjective_index
+                    ]
+                    first_noun_index = get_first_index_of_nouns_in_between_adjective(
+                        adjectives_list[0], adjectives_list[-1], predicted_pos
+                    )
                     """
                     The above statement is used to break up two adjectives that might be connected together:
                     Such as 'The food is great and wine is delicious.'
                     where great and delicious are a conjunctive pair
                     """
-                    adjectives_list = [adjective_index for adjective_index in adjectives_list if adjective_index < first_noun_index]
+                    adjectives_list = [
+                        adjective_index
+                        for adjective_index in adjectives_list
+                        if adjective_index < first_noun_index
+                    ]
                 else:
                     """
                     Else statement above is
                     used to check if the noun and adjectives are arranged as such:
                     'John is Cool'
                     """
-                    last_adjective_index = find_last_index_of_adjective_in_between_nouns(noun_list[0], noun_list[-1], predicted_pos)
+                    last_adjective_index = find_last_index_of_adjective_in_between_nouns(
+                        noun_list[0], noun_list[-1], predicted_pos
+                    )
                     """
                     The above statement is used to break up two nouns that might be connected together
                     by checking if there is an adjective between the connected nouns
@@ -154,24 +209,45 @@ def get_noun_adjective_pairs(predicted_heads_and_dependencies, predicted_pos, te
                     the last adjective can be used to match with the adjective that we will be using
                     for matching purposes
                     """
-                    noun_list = [noun_index for noun_index in noun_list if noun_index > last_adjective_index]
-                    first_noun_index = get_first_index_of_nouns_in_between_adjective(adjectives_list[0], adjectives_list[-1], predicted_pos)
+                    noun_list = [
+                        noun_index
+                        for noun_index in noun_list
+                        if noun_index > last_adjective_index
+                    ]
+                    first_noun_index = get_first_index_of_nouns_in_between_adjective(
+                        adjectives_list[0], adjectives_list[-1], predicted_pos
+                    )
                     """
                     The above statement is used to break up two adjectives that might be connected together:
                     Such as 'The food is great and wine is delicious.'
                     where great and delicious are a conjunctive pair
                     """
-                    adjectives_list = [adjective_index for adjective_index in adjectives_list if adjective_index < first_noun_index]
-                nouns_in_natural_language = [get_natural_language_phrase_for_noun(j, predicted_pos, texts) for j in noun_list]
-                adjectives_in_natural_lanuage = [get_natural_language_phrase_for_adj(j, predicted_pos, texts) for j in adjectives_list]
+                    adjectives_list = [
+                        adjective_index
+                        for adjective_index in adjectives_list
+                        if adjective_index < first_noun_index
+                    ]
+                nouns_in_natural_language = [
+                    get_natural_language_phrase_for_noun(j, predicted_pos, texts)
+                    for j in noun_list
+                ]
+                adjectives_in_natural_lanuage = [
+                    get_natural_language_phrase_for_adj(j, predicted_pos, texts)
+                    for j in adjectives_list
+                ]
                 for noun in nouns_in_natural_language:
                     for adjective in adjectives_in_natural_lanuage:
                         noun_adjective_pairs.append((noun, adjective))
     return noun_adjective_pairs
 
+
 def get_noun_adjective_pairs_from_reviews(reviews):
     result = []
-    with CoreNLPClient(annotators=['tokenize','ssplit','pos','depparse','lemma'], timeout=1000000000, memory='16G') as client:
+    with CoreNLPClient(
+        annotators=["tokenize", "ssplit", "pos", "depparse", "lemma"],
+        timeout=1000000000,
+        memory="16G",
+    ) as client:
         for review in reviews:
             print(review)
             ann = client.annotate(review)
@@ -179,7 +255,7 @@ def get_noun_adjective_pairs_from_reviews(reviews):
                 dependency_parse = sentence.basicDependencies
                 tokens = sentence.token
                 predicted_heads_and_dependencies = {}
-                predicted_pos = [] 
+                predicted_pos = []
                 predicted_lemm = []
 
                 for i in range(len(tokens)):
@@ -193,13 +269,26 @@ def get_noun_adjective_pairs_from_reviews(reviews):
                     dep = dependency_parse.edge[i].dep
                     head_pos = predicted_pos[source - 1]
                     if target - 1 in predicted_heads_and_dependencies:
-                        predicted_heads_and_dependencies_list = predicted_heads_and_dependencies[target - 1]
-                        predicted_heads_and_dependencies_list.append((source - 1, dep, head_pos))
+                        predicted_heads_and_dependencies_list = predicted_heads_and_dependencies[
+                            target - 1
+                        ]
+                        predicted_heads_and_dependencies_list.append(
+                            (source - 1, dep, head_pos)
+                        )
                     else:
-                        predicted_heads_and_dependencies[target - 1] = [(source - 1, dep, head_pos)]
+                        predicted_heads_and_dependencies[target - 1] = [
+                            (source - 1, dep, head_pos)
+                        ]
                 noun_pairs = get_noun_pairs_index(predicted_heads_and_dependencies)
-                adjective_pairs = get_adjective_pairs_index(predicted_heads_and_dependencies)
-                noun_adjective_pairs = get_noun_adjective_pairs(predicted_heads_and_dependencies, predicted_pos, predicted_lemm, noun_pairs, adjective_pairs)
+                adjective_pairs = get_adjective_pairs_index(
+                    predicted_heads_and_dependencies
+                )
+                noun_adjective_pairs = get_noun_adjective_pairs(
+                    predicted_heads_and_dependencies,
+                    predicted_pos,
+                    predicted_lemm,
+                    noun_pairs,
+                    adjective_pairs,
+                )
                 result.extend(noun_adjective_pairs)
     return result
-
