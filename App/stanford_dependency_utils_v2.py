@@ -1,7 +1,7 @@
 import stanfordnlp
 
 nlp = stanfordnlp.Pipeline(
-    lang="en", treebank="en_ewt", processors="tokenize,mwt,pos,depparse"
+    lang="en", treebank="en_ewt", processors="tokenize,mwt,pos,depparse,lemma"
 )
 
 INTERESTED_NOUN_POS = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$', 'WP', 'WP$']
@@ -15,7 +15,7 @@ def get_length_of_words_obj(words_obj):
 
 def get_text_of_words_obj(words_obj):
     length_of_words_obj = get_length_of_words_obj(words_obj)
-    texts = [words_obj[i].text for i in range(length_of_words_obj)]
+    texts = [words_obj[i].lemma for i in range(length_of_words_obj)]
     return texts
 
 def get_predicted_pos_of_heads(words_obj):
@@ -48,17 +48,12 @@ def get_noun_adjective_pairs_from_reviews(review):
         adjective_pairs = get_adjective_pairs_index(words_obj)
         noun_adjective_pairs = get_noun_adjective_pairs(words_obj, noun_pairs, adjective_pairs)
         text_of_words = get_text_of_words_obj(words_obj)
-        # print(" ".join(text_of_words))
         result.extend(noun_adjective_pairs)
-        # print(noun_adjective_pairs)
-        print(noun_adjective_pairs)
     return result
 
 def get_noun_pairs_index(words_obj):
     predicted_heads = get_predicted_heads_from_words_obj(words_obj)
-    print(predicted_heads)
     predicted_dependencies = get_predicted_dependencies_from_words_obj(words_obj)
-    print(predicted_dependencies)
     predicted_pos = get_predicted_pos_from_words_obj(words_obj)
     noun_pairs_index = {}
     for i in range(get_length_of_words_obj(words_obj)):
@@ -190,7 +185,6 @@ def get_noun_adjective_pairs(words_obj, noun_pairs, adjective_pairs):
     predicted_dependencies = get_predicted_dependencies_from_words_obj(words_obj)
     predicted_pos = get_predicted_pos_from_words_obj(words_obj)
     predicted_pos_of_heads = get_predicted_pos_of_heads(words_obj)
-    print(predicted_pos_of_heads)
     texts = get_text_of_words_obj(words_obj)
     noun_adjective_pairs = [] 
     for i in range(get_length_of_words_obj(words_obj)):
@@ -254,4 +248,3 @@ def get_noun_adjective_pairs(words_obj, noun_pairs, adjective_pairs):
                     noun_adjective_pairs.append((noun, adjective))
     return noun_adjective_pairs
 
-noun_adjective_pairs = get_noun_adjective_pairs_from_reviews("Chris Manning is a nice person.")

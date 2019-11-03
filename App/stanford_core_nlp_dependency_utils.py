@@ -169,12 +169,12 @@ def get_noun_adjective_pairs(predicted_heads_and_dependencies, predicted_pos, te
                         noun_adjective_pairs.append((noun, adjective))
     return noun_adjective_pairs
 
-def get_noun_adjective_pairs_from_reviews(reviews):
-    result = []
+def get_noun_adjective_pairs_from_reviews_from_core_nlp(reviews):
+    result = {}
     with CoreNLPClient(annotators=['tokenize','ssplit','pos','depparse','lemma'], timeout=1000000000, memory='16G') as client:
         for review in reviews:
-            print(review)
-            ann = client.annotate(review)
+            ann = client.annotate(review['text'])
+            business_id = review['business_id']
             for sentence in ann.sentence:
                 dependency_parse = sentence.basicDependencies
                 tokens = sentence.token
@@ -200,6 +200,11 @@ def get_noun_adjective_pairs_from_reviews(reviews):
                 noun_pairs = get_noun_pairs_index(predicted_heads_and_dependencies)
                 adjective_pairs = get_adjective_pairs_index(predicted_heads_and_dependencies)
                 noun_adjective_pairs = get_noun_adjective_pairs(predicted_heads_and_dependencies, predicted_pos, predicted_lemm, noun_pairs, adjective_pairs)
-                result.extend(noun_adjective_pairs)
+                if business_id in result:
+                    actual_noun_adjective_pairs = result[business_id]
+                    actual_noun_adjective_pairs.extend(noun_adjective_pairs)
+                else:
+                    result[business_id] = noun_adjective_pairs
     return result
+
 
