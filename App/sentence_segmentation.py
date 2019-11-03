@@ -3,16 +3,17 @@ import spacy
 from collections import Counter
 import matplotlib.pyplot as plt
 
-data_file = '../Data/test.json'
+data_file = "../Data/reviewSamples20.json"
 
 ratings_vs_sentence_count_dict = {}
 
-with open(data_file, 'r') as json_file:
+with open(data_file, "r") as json_file:
     for line in json_file:
         review = json.loads(line)
-        rating = review['stars']
-        sentences = review['text']
-        nlp = spacy.load('en_core_web_sm')
+        rating = review["stars"]
+        sentences = review["text"]
+        # run 'python -m spacy download en'
+        nlp = spacy.load("en_core_web_sm")
         doc = nlp(sentences)
         len_of_sentence = len(list(doc.sents))
         if rating in ratings_vs_sentence_count_dict:
