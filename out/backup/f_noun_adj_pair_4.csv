@@ -1,0 +1,1171 @@
+rank,noun,adj,count
+0,eye,dry,6
+1,place,other,6
+2,staff,friendly,5
+3,staff,amazing,5
+4,day,next,5
+5,I,so happy,5
+6,I,happier,5
+7,decision,best,4
+8,process,whole,4
+9,experience,great,4
+10,eye,right,4
+11,everyone,friendly,4
+12,consultation,free,4
+13,I,glad,4
+14,he,best,4
+15,procedure,quick,4
+16,eye,left,4
+17,candidate,good,4
+18,year,old,4
+19,day,few,4
+20,thing,good,4
+21,desk,front,3
+22,hand,good,3
+23,year,few,3
+24,I,very nervous,3
+25,time,first,3
+26,month,few,3
+27,doctor,best,3
+28,I,comfortable,3
+29,procedure,entire,3
+30,thing,first,3
+31,vision,better,3
+32,staff,entire,3
+33,vision institute,wellish,3
+34,consultation,initial,3
+35,I,so excited,3
+36,eye,first,3
+37,record,medical,3
+38,nothing,short,3
+39,staff,great,3
+40,doctor,great,3
+41,consultation,first,3
+42,doctor,other,3
+43,appointment,first,3
+44,candidate,eligible,3
+45,hour,post-op,3
+46,I,extremely happy,2
+47,bit,nervous,2
+48,patient,other,2
+49,staff,so great,2
+50,caring,honest,2
+51,decision,easy,2
+52,review,great,2
+53,I,calm,2
+54,vision,great,2
+55,visit,pleasant,2
+56,deal,best,2
+57,deal,big,2
+58,technology,latest,2
+59,staff,very friendly,2
+60,exam,pre-op,2
+61,eye,second,2
+62,Thursday,last,2
+63,I,satisfied,2
+64,%,satisfied,2
+65,staff,efficient,2
+66,time,minimal,2
+67,I,ready,2
+68,my,pre-op,2
+69,staff,awesome,2
+70,vision,perfect,2
+71,I,ecstatic,2
+72,procedure,relatively painless,2
+73,I,extremely impressed,2
+74,problem,other,2
+75,LASIK,30th,2
+76,June,30th,2
+77,custom,second,2
+78,Super,blurry,2
+79,procedure,blurry,2
+80,pair,next,2
+81,pair,second,2
+82,I,heartbroken,2
+83,option,possible,2
+84,option,temporary,2
+85,option,heartbroken,2
+86,humidifier,special,2
+87,supplement,additional,2
+88,kind,additional,2
+89,procedure,possible,2
+90,procedure,dry,2
+91,vision,very blurry,2
+92,night vision,really bad,2
+93,procedure,additional,2
+94,procedure,painless,2
+95,doctor,good,2
+96,hand,great,2
+97,experience,amazing,2
+98,day,same,2
+99,consultation,post-op,2
+100,surgery,actual,2
+101,thing,whole,2
+102,doctor,knowledgeable,2
+103,decision,right,2
+104,I,able,2
+105,what,best,2
+106,you,best,2
+107,member,single,2
+108,investment,best,2
+109,I,old,2
+110,it,so worth,2
+111,people,good,2
+112,LASIK,other,2
+113,patient,only,2
+114,people,other,2
+115,appointment,post-op,2
+116,thing,best,2
+117,option,different,2
+118,optometrist,regular,2
+119,result,great,2
+120,morning,next,2
+121,op,pre,2
+122,visit,first,2
+123,they,excellent,2
+124,time,several,2
+125,town,best,2
+126,I,happy,2
+127,hour,late,2
+128,staff,nice,2
+129,minute,longer,2
+130,staff,professional,2
+131,result,final,2
+132,result,surgical,2
+133,experience,entire,2
+134,surgeon,refractive,2
+135,surgeon,other,2
+136,basis,regular,2
+137,practice,phenomenal,1
+138,Dr Wellish,absolutely top-notch,1
+139,staff,incredible,1
+140,level,extra,1
+141,age,unusually young,1
+142,care,terrific,1
+143,light,sensitive,1
+144,Dr Wellish,truly terrific,1
+145,vist,follow-up,1
+146,I,very pleased,1
+147,vision,very pleased,1
+148,variance,great,1
+149,part,financial,1
+150,vision,horrible,1
+151,Dr Wellish,best,1
+152,they,very attentive,1
+153,kind,very attentive,1
+154,appointment,next,1
+155,week,past,1
+156,time,past,1
+157,test,few,1
+158,eye,deep,1
+159,job,amazing,1
+160,bit,new,1
+161,I,new,1
+162,man,new,1
+163,visión,great,1
+164,service,amazing,1
+165,it,due,1
+166,area,due,1
+167,they,located,1
+168,area,located,1
+169,patient,little,1
+170,ghetto,little,1
+171,glass,occasional,1
+172,I,still pretty nearsighted,1
+173,seat,sh*tty,1
+174,lady,just bigger,1
+175,call,wake-up,1
+176,sight,far,1
+177,tech,nice,1
+178,tech,personable,1
+179,time,nice,1
+180,time,personable,1
+181,Dr Langford,awesome,1
+182,everything,ok,1
+183,I,impressed,1
+184,my,dumb@ss,1
+185,appointment,wrong,1
+186,it,so nice,1
+187,they,so nice,1
+188,I,fine,1
+189,inconvenience,minor,1
+190,price,better,1
+191,eye,particular,1
+192,fog,thick,1
+193,practice,very busy,1
+194,practice,operate,1
+195,exam,initial,1
+196,upgrade,available,1
+197,dr.,very busy,1
+198,dr.,operate,1
+199,appointment,entire,1
+200,meat market rush,such,1
+201,what,describing-said,1
+202,I,describing-said,1
+203,profit center,huge,1
+204,feeling,for-and,1
+205,understanding,for-and,1
+206,eye,same,1
+207,eye,hazy,1
+208,pick,most likely,1
+209,go,most likely,1
+210,outfit,big,1
+211,thing,enough great,1
+212,thing,great,1
+213,care,post-op,1
+214,I,free,1
+215,glass,free,1
+216,contact,free,1
+217,time,free,1
+218,staff,excellent,1
+219,procedure,excellent,1
+220,outcome,excellent,1
+221,I,more happier,1
+222,result,more happier,1
+223,Vision Lasik,so much wellish,1
+224,cause,not sure,1
+225,hour,few,1
+226,eye,extremely dry,1
+227,eye,red,1
+228,pain,less,1
+229,he,very knowledgeable,1
+230,thing,different,1
+231,time,comfortable,1
+232,reaction,bad,1
+233,reaction,allergic,1
+234,Dr. Ortiz,able,1
+235,eyedrop,so much better,1
+236,anything,so much better,1
+237,use,great,1
+238,professionalism,excellent,1
+239,result,extremely happy,1
+240,review,full,1
+241,review,honest,1
+242,counselor,very helpful,1
+243,everyone,extremely helpful,1
+244,staff,very helpful,1
+245,procedure,very quick,1
+246,feeling,great,1
+247,drop,few,1
+248,price,small,1
+249,staff,wonderful,1
+250,Dr. Wellish,so thankful,1
+251,clinic,other,1
+252,my,pre-screen,1
+253,assistant,pre-screen,1
+254,eye,best,1
+255,appointment,pre-opp,1
+256,corneal disease,rare,1
+257,something,not good,1
+258,eye,not good,1
+259,dr,honest,1
+260,dr,skilled,1
+261,doctor welish,great,1
+262,nothing,best,1
+263,place.,peaceful,1
+264,eye doctor,regular,1
+265,research,after much,1
+266,candidate,best,1
+267,right,nervous,1
+268,calm,nervous,1
+269,he,friendly,1
+270,day,1st,1
+271,see,1st,1
+272,wait time,not bad,1
+273,tehanus,so sweet,1
+274,tehanus,remember,1
+275,Rebecca,refractive,1
+276,I,ok,1
+277,right,comfortable,1
+278,Dr. Wellish,so amazing,1
+279,Dr. Wellish,awesome,1
+280,Dr. Wellish,keep,1
+281,Dr. McCandless,so nice,1
+282,caring,so nice,1
+283,dr.langford,best,1
+284,care,awesome,1
+285,eye,pink,1
+286,I,extremely grateful,1
+287,I,not say,1
+288,Langford,enough,1
+289,staff,enough,1
+290,thanks,exceptional,1
+291,care,great,1
+292,asset,true,1
+293,deliver,true,1
+294,customer service,great,1
+295,consultation,easier,1
+296,up,most,1
+297,up,easier,1
+298,Dr.,wellish,1
+299,eye dr,best,1
+300,name everyone,familiar,1
+301,name,familiar,1
+302,he,familiar,1
+303,thing,positive,1
+304,he,cheapest,1
+305,price,lesser,1
+306,team,amazing,1
+307,team,entire,1
+308,consultation,few,1
+309,consultation,close,1
+310,home,close,1
+311,doctor,amazing,1
+312,place,right,1
+313,candidate,impeccable,1
+314,he,just wonderful,1
+315,dr.wellish,so gentle,1
+316,kind,so gentle,1
+317,minute,few,1
+318,standard,same,1
+319,he,own,1
+320,doctor,so happy,1
+321,review,not more,1
+322,product,final,1
+323,cut,clear,1
+324,question,unanswered,1
+325,result,optimal,1
+326,I,so glad,1
+327,intake,initial,1
+328,intake,so nice,1
+329,intake,professional,1
+330,intake,absolute,1
+331,intake,pre,1
+332,intake,post-op,1
+333,Bernie,pre,1
+334,Bernie,post-op,1
+335,Dr. McCandless,pre,1
+336,Dr. McCandless,post-op,1
+337,staff member,single,1
+338,staff member,so nice,1
+339,staff member,professional,1
+340,staff member,absolute,1
+341,wreck,absolute,1
+342,room,pre-op,1
+343,downstairs,young,1
+344,she,so comforting,1
+345,she,really just help,1
+346,ease,ready,1
+347,turn,ready,1
+348,I,sure,1
+349,he,just great,1
+350,regret,only,1
+351,personality,so nice,1
+352,girl,old,1
+353,everyone,so nice,1
+354,you,awesome,1
+355,guy,awesome,1
+356,who,interested,1
+357,Lasik,interested,1
+358,office,interested,1
+359,I,super,1
+360,I,nearsighted,1
+361,surgery,nearsighted,1
+362,they,very patient,1
+363,they,take,1
+364,you,comfortable,1
+365,process,comfortable,1
+366,procedure,comfortable,1
+367,effect,side,1
+368,complication,own,1
+369,result,fantastic,1
+370,habit,huge,1
+371,frustration,huge,1
+372,appointment,yearly,1
+373,its,worth,1
+374,it,worth,1
+375,eye doctor,best,1
+376,condition,extremely dry,1
+377,discomfort,too much,1
+378,surgery,botched,1
+379,you,blind,1
+380,rest,blind,1
+381,country/region,entire,1
+382,standard,stricter,1
+383,job,botched,1
+384,pupil,large,1
+385,cornea,thin,1
+386,procedure,more expensive,1
+387,glass,protective,1
+388,week,least,1
+389,cosmetic,new,1
+390,ghosting,minimal,1
+391,eye issue,dry,1
+392,lasik,satisfied,1
+393,anyone,willing,1
+394,picture,better,1
+395,outcome,possible,1
+396,people,many,1
+397,distortion,visual,1
+398,object,bright,1
+399,night,much worse,1
+400,it,much worse,1
+401,month,first,1
+402,month,much worse,1
+403,I,not sure,1
+404,thing,only,1
+405,thing,enjoyable,1
+406,it,enjoyable,1
+407,letter,white,1
+408,background,black,1
+409,movie,foreign,1
+410,glass,naked,1
+411,butt,cute,1
+412,dr.,great,1
+413,person,great,1
+414,Dr.,new,1
+415,birthday,present,1
+416,care,utmost,1
+417,caliber,highest,1
+418,review,other,1
+419,care,such,1
+420,level,extremely impressed,1
+421,eyesite,new,1
+422,eye,bad,1
+423,eye surgeon,good,1
+424,settle,good,1
+425,notch,top,1
+426,operation,good,1
+427,eye doctor,second,1
+428,eye doctor,independent,1
+429,improvement,continuous,1
+430,doctor,very thorough,1
+431,detail,great,1
+432,all,great,1
+433,miracle,short,1
+434,time,2nd,1
+435,matter,urgent,1
+436,they,friendly,1
+437,they,helpful,1
+438,patient,mutual,1
+439,touch,personal,1
+440,time,1st,1
+441,I,convinced,1
+442,visit,1st,1
+443,caring doctor,fabulous,1
+444,caring,fabulous,1
+445,time,very short,1
+446,care,amazing,1
+447,group,wonderful,1
+448,mother,old,1
+449,end,very,1
+450,experience,surreal,1
+451,staff,so friendly,1
+452,staff,sympathetic,1
+453,peace,calm,1
+454,patient,calm,1
+455,time,acceptable,1
+456,time,same,1
+457,courtesy,same,1
+458,thanks,special,1
+459,Feb,27th,1
+460,eye,27th,1
+461,team,stellar,1
+462,staff ever,nicest,1
+463,person,single,1
+464,all,rude,1
+465,sweetheart,such,1
+466,work,tehani,1
+467,she,friendly,1
+468,she,professional,1
+469,wait,long,1
+470,SOOOOO,glad,1
+471,money,so much,1
+472,lasik surgeon,best,1
+473,experience,flawless,1
+474,consultation,flawless,1
+475,my,post-op,1
+476,you,nicest,1
+477,you,most care,1
+478,staff,nicest,1
+479,staff,most care,1
+480,people,professional,1
+481,people,nicest,1
+482,people,most care,1
+483,I,nervous,1
+484,it,funny,1
+485,thing,other,1
+486,office staff,very friendly,1
+487,experience,awesome,1
+488,staff,knowledgeable,1
+489,they,pricier,1
+490,place,pricier,1
+491,Time,easy,1
+492,schedule,easy,1
+493,optometrist,own,1
+494,review,excellent,1
+495,procedure,actual,1
+496,experience,excellent,1
+497,experience,short,1
+498,procedure,right,1
+499,I,right,1
+500,procedure,other,1
+501,he,not afraid,1
+502,myself,ecstatic,1
+503,result,ecstatic,1
+504,experience,worst medical,1
+505,time,unbelievable,1
+506,drs.,as many,1
+507,drs.,other,1
+508,drs.,possible,1
+509,research,careful,1
+510,place,there cheaper,1
+511,option,top,1
+512,lady,front,1
+513,comfort,such,1
+514,comfort,never pressured,1
+515,he,definitely worthy,1
+516,master,definitely worthy,1
+517,myself,so proud,1
+518,step,huge,1
+519,I,grateful,1
+520,decision,regret-free,1
+521,freedom,visual,1
+522,checkup,routine,1
+523,everything,very nice,1
+524,way,ok,1
+525,they,very efficient,1
+526,office,comfortable,1
+527,price,same,1
+528,service,same,1
+529,car salesman,used,1
+530,everyone,wonderful,1
+531,office,wonderful,1
+532,morning,up early,1
+533,glass,old,1
+534,friend,few,1
+535,process,pretty intensive,1
+536,I,informed,1
+537,patient,great,1
+538,question,great,1
+539,day,pre-op,1
+540,surgery day,actual,1
+541,staff,different,1
+542,anything,bad,1
+543,everyone,very friendly,1
+544,surgery,unpleasant,1
+545,it,quick,1
+546,eye surgery,voluntary,1
+547,leap,pretty big,1
+548,I,really happy,1
+549,Morgan,so good,1
+550,Taylor,outstanding,1
+551,Felicia,outstanding,1
+552,role,outstanding,1
+553,shape,good,1
+554,do,good,1
+555,shape,enough,1
+556,do,enough,1
+557,examination,thorough,1
+558,explanation,thorough,1
+559,they,seriously so great,1
+560,folk,wellish,1
+561,people,competent,1
+562,mistake,very expensive,1
+563,distance,close,1
+564,glass,convenient,1
+565,I,quite disappointed,1
+566,people,very nice,1
+567,everything,great,1
+568,eye,good,1
+569,visit,great,1
+570,couple,first,1
+571,nothing,worse,1
+572,range,ok,1
+573,place,only,1
+574,statistics,low,1
+575,statistics,not representative,1
+576,dissatisfaction rate,much higher,1
+577,information,personal,1
+578,times-email,several,1
+579,telephone,several,1
+580,you,absolutely sure,1
+581,man,such,1
+582,man,sweet,1
+583,man,little,1
+584,surgery,anxious,1
+585,success,great,1
+586,pain,sharp,1
+587,eye,white,1
+588,he,willing,1
+589,I,okay,1
+590,I,finally eligible,1
+591,cataract surgery,finally eligible,1
+592,lens replacement,interocular,1
+593,device,new,1
+594,vision,presurgical,1
+595,-8.5,left,1
+596,week,last,1
+597,vision,worse,1
+598,anyone,worse,1
+599,neglect,other,1
+600,part,most offensive,1
+601,I,over-corrected,1
+602,eye,over-corrected,1
+603,eye,over-responded,1
+604,he,too interested,1
+605,group,classiest,1
+606,March,last,1
+607,they,so quick,1
+608,question,as many,1
+609,Dr. McCandless,also amazing,1
+610,freak,really sweaty,1
+611,myself,really sweaty,1
+612,cart,entire,1
+613,I,so embarrassed,1
+614,company,professional,1
+615,procedure,same,1
+616,time,just as important,1
+617,they,own,1
+618,year,past,1
+619,year,many,1
+620,lasik doctor,best,1
+621,research,much,1
+622,experience,personal,1
+623,equipment,latest/up-to-date,1
+624,method,latest/up-to-date,1
+625,doctor mistake,other,1
+626,glass,longer,1
+627,lens,longer,1
+628,surgery,quick,1
+629,surgery,painless,1
+630,surgery,anxiety-free,1
+631,man,very pleasant,1
+632,man,young,1
+633,staff,very good,1
+634,Coffee,not fresh,1
+635,lobby music,too loud,1
+636,lady,very nice,1
+637,procedure,different,1
+638,pressure,knowledgeable,1
+639,pressure,no,1
+640,its,just too expensive,1
+641,service,great,1
+642,it,important,1
+643,service,friendly,1
+644,service,efficient,1
+645,service,professional,1
+646,result,good,1
+647,hero vision,super,1
+648,followup,first,1
+649,step,extra,1
+650,fact,extra,1
+651,service,fantastic,1
+652,woman,next,1
+653,job,exceptional,1
+654,need,individual,1
+655,basis,daily,1
+656,together,daily,1
+657,prescription,quite high,1
+658,I,stable,1
+659,care,extreme,1
+660,concern,extreme,1
+661,office,beautiful,1
+662,treatment,best,1
+663,experience,really good,1
+664,review,few,1
+665,everyone,upbeat,1
+666,everyone,informative,1
+667,consultation,upbeat,1
+668,consultation,informative,1
+669,person,considerate,1
+670,pansy,gentle,1
+671,matter,such,1
+672,ophthalmologist,other,1
+673,recommend,other,1
+674,sample,free,1
+675,day,third,1
+676,person,very nice,1
+677,stock,nice,1
+678,drop,nice,1
+679,day,worth,1
+680,work,good,1
+681,work,follow,1
+682,it,always great,1
+683,service,good,1
+684,everything,satisfied,1
+685,thing,only good,1
+686,visit,many,1
+687,facility,medical,1
+688,staff,fantastic,1
+689,place,few,1
+690,place,not comfortable,1
+691,I,hesitant,1
+692,consultation,totally impressed,1
+693,consultation,ready,1
+694,exam,totally impressed,1
+695,exam,ready,1
+696,I,totally impressed,1
+697,money,more,1
+698,vision,extremely impressed,1
+699,I,very active,1
+700,!!!!!!!!!!!!!!!!!!!,free,1
+701,guy,greatest,1
+702,op,post,1
+703,he,sweetest,1
+704,he,knowledgeable,1
+705,he,walk,1
+706,they,very thorough,1
+707,exam,very thorough,1
+708,LASIK,traditional,1
+709,office,other,1
+710,man,very sweet,1
+711,nothing,bad,1
+712,wait time,long,1
+713,they,top,1
+714,field,top,1
+715,minute,worth,1
+716,penny,worth,1
+717,dr,busy,1
+718,job,excellent,1
+719,patient,very friendly,1
+720,patient,knowledgeable,1
+721,doctor,excellent,1
+722,doctor,very friendly,1
+723,you,right,1
+724,cusp,right,1
+725,story,whole,1
+726,difference,more,1
+727,gorilla,angry,1
+728,solution,only,1
+729,solution,sane,1
+730,lens,implantable,1
+731,prk,able,1
+732,you,able,1
+733,they,awesome,1
+734,regret,biggest,1
+735,end,extremely simple,1
+736,it,extremely simple,1
+737,pain,free,1
+738,healing time,longer,1
+739,vision,so great,1
+740,license,restricted,1
+741,vision correction,due,1
+742,experience,wonderful,1
+743,time,necessary,1
+744,anything,much,1
+745,desk staff,front,1
+746,desk staff,friendly,1
+747,desk staff,competent,1
+748,nurse,other,1
+749,everyone,competent,1
+750,doctor,more expensive,1
+751,town,more expensive,1
+752,bar none,best,1
+753,surgery,important,1
+754,something,as important,1
+755,vision,as important,1
+756,I,so grateful,1
+757,Dr. Wellish,so grateful,1
+758,staff,so grateful,1
+759,doubt,serious,1
+760,candidate,great,1
+761,recovery time,speedy,1
+762,battery,pre-op,1
+763,wait time,not terrible,1
+764,candidate,able,1
+765,month,able,1
+766,eyedrop,special,1
+767,stuff,other,1
+768,fine,ok,1
+769,it,nice,1
+770,fine,nice,1
+771,doctor,nice,1
+772,he,conservative,1
+773,treatment,conservative,1
+774,record,mine,1
+775,record,own,1
+776,hole voicemail,black,1
+777,I,incredibly grateful,1
+778,result,happy,1
+779,they,so knowledgable,1
+780,they,calming,1
+781,hand,once again so so so grateful,1
+782,vision,now perfect,1
+783,result,remarkable,1
+784,it,possible,1
+785,Dr. Wellish,possible,1
+786,rest,possible,1
+787,Wellish Vision Institute,possible,1
+788,day,very attentive,1
+789,day,helpful,1
+790,day,understand,1
+791,everyone,very attentive,1
+792,everyone,helpful,1
+793,everyone,understand,1
+794,professionalism,astonishing,1
+795,option,many,1
+796,Rebecca,specific,1
+797,change,big,1
+798,change,positive,1
+799,hour,emotional,1
+800,I,emotional,1
+801,tear,emotional,1
+802,time,blurry,1
+803,lens prescription,such,1
+804,lens prescription,thick,1
+805,it,impossible,1
+806,dream,able,1
+807,I,now ready,1
+808,goal,next,1
+809,lasik procedure,happy,1
+810,lasik procedure,enough,1
+811,thing,most incredible,1
+812,you,basically blind,1
+813,thing,basically blind,1
+814,life,entire,1
+815,life,basically blind,1
+816,I,so appreciative,1
+817,work,so appreciative,1
+818,vision,now better,1
+819,everyone,knowledgeable,1
+820,team,excellent,1
+821,team,wonderful,1
+822,receptionist,friendly,1
+823,receptionist,excellent,1
+824,memory,great,1
+825,Brittney,excellent,1
+826,counselor,refractive,1
+827,experience,whole,1
+828,experience,so positive,1
+829,experience,easy,1
+830,you,scared,1
+831,it,painless,1
+832,surgery day everyone,so helpful,1
+833,surgery day everyone,comforting,1
+834,surgery day,so helpful,1
+835,surgery day,comforting,1
+836,surgery,so simple,1
+837,surgery,easy,1
+838,TERRIBLE WAIT TIME,good,1
+839,delay,long,1
+840,tell,long,1
+841,she,sorry,1
+842,timing,sorry,1
+843,soooooo,disrespectful,1
+844,Dr. Wellish,friendly,1
+845,appointment,friendly,1
+846,caring,nice,1
+847,Dr. Wellish,nice,1
+848,kind,very helpful,1
+849,experience,very different,1
+850,office,main,1
+851,run,quick,1
+852,testing,pre-op,1
+853,hour,day-after,1
+854,hour,week-after,1
+855,hour month-after,post-op,1
+856,schedule,flexible,1
+857,schedule,very annoying,1
+858,people,very annoying,1
+859,life,very annoying,1
+860,husband,lucky,1
+861,husband,affect,1
+862,place,certain,1
+863,time,certain,1
+864,I,the-day-of,1
+865,power,very clear,1
+866,room,quiet,1
+867,minute,more,1
+868,minute,consecutive,1
+869,thing,darn,1
+870,wave,own,1
+871,wave,special,1
+872,word,zen-like,1
+873,word,exact,1
+874,he,good,1
+875,lady,drunk,1
+876,foot,lead,1
+877,they,aware,1
+878,request,aware,1
+879,surgery,uncomfortable,1
+880,surgery,feel,1
+881,request,very simple,1
+882,week,full,1
+883,vision,not yet perfect,1
+884,eye,more moist,1
+885,process,uncomfortable,1
+886,day,very next,1
+887,Oz,great,1
+888,Oz,powerful,1
+889,Oz,little,1
+890,cornea,open,1
+891,he,ok,1
+892,change,last,1
+893,change,minute,1
+894,change,ok,1
+895,cell phone policy,own,1
+896,request,simple,1
+897,request,ok,1
+898,you,hard,1
+899,lease,late,1
+900,explanation,late,1
+901,fist,wellish,1
+902,rule,personal,1
+903,comparison,sound,1
+904,professional,other,1
+905,machine,well oiled,1
+906,day,several,1
+907,I,anxious,1
+908,surgery day,anxious,1
+909,minute,not longer,1
+910,surgeon,best,1
+911,job,good,1
+912,front desk charm,tehani,1
+913,Superstar Dr. McCandless,tehani,1
+914,Superstar Dr Wellish,tehani,1
+915,Superstar,mega,1
+916,Superstar,tehani,1
+917,other,many,1
+918,amount,insane,1
+919,rundown,quick,1
+920,staff,very courteous,1
+921,process,entire,1
+922,testing,more,1
+923,operation,relatively quick,1
+924,operation,painless,1
+925,joy,few,1
+926,Dr. Wellish,amazing,1
+927,Taylor,very knowledgeable,1
+928,I,not wait,1
+929,Dr. McCandless,pre-op,1
+930,Gaby,pre-op,1
+931,Gaby,so nice,1
+932,Gaby,also explain,1
+933,I,so nervous,1
+934,nothing,afraid,1
+935,Dr. Wellish,so awesome,1
+936,staff,so awesome,1
+937,I,completely relax,1
+938,music playing,cool,1
+939,recommend,amazing,1
+940,thing,most important,1
+941,time,irrelevant,1
+942,doc,rare,1
+943,doc,patient-centric,1
+944,glass,coke-bottle,1
+945,result,excellent,1
+946,year,fast,1
+947,it,stable,1
+948,year,stable,1
+949,dr w,stable,1
+950,stability,solid,1
+951,stability,long-term,1
+952,result,post-surgical,1
+953,reputation,well-deserved,1
+954,issue,surgical,1
+955,record,surgical,1
+956,cataract surgeon,local,1
+957,charge,extra,1
+958,time,excellent,1
+959,everyone,knowledgable,1
+960,department,friendly,1
+961,department,knowledgable,1
+962,opportunity,many,1
+963,lunch,quick,1
+964,time,most,1
+965,they,sensative,1
+966,they,tear,1
+967,feeling,very normal,1
+968,vision,new,1
+969,healing,great,1
+970,research,diligent,1
+971,eye,own,1
+972,surgeon,most reputable,1
+973,surgeon,experienced,1
+974,detail,intricate,1
+975,technique,newest,1
+976,procedure,newest,1
+977,surgery,refractive,1
+978,patient,individual,1
+979,surgeon,many,1
+980,condition,optimal,1
+981,post operative outcome,most successful,1
+982,tear,artificial,1
+983,supplement,unique,1
+984,supplement,oral,1
+985,health,optimal,1
+986,surgery,optimal,1
+987,quality care,excellent,1
+988,staff,strong,1
+989,quality,impeccable,1
+990,eye,healthy,1
+991,eye,new,1
+992,vision,happier,1
+993,astigmatism,very high,1
+994,surgeon,such,1
+995,make,such,1
+996,surgeon,great,1
+997,make,great,1
+998,staff,make,1
+999,life,too short,1
+1000,it,amazing,1
+1001,process,awesome,1
+1002,Dr. Wellish,so helpful,1
+1003,staff,so helpful,1
+1004,office,medical,1
+1005,reviewer,other,1
+1006,Pretty,efficient,1
+1007,optometry side,regular,1
+1008,scans/images,few,1
+1009,time,whole,1
+1010,eye sight,pretty bad,1
+1011,she,totally tactful,1
+1012,she,informative,1
+1013,option,other,1
+1014,option,totally tactful,1
+1015,option,informative,1
+1016,PRK,totally tactful,1
+1017,PRK,informative,1
+1018,icl,totally tactful,1
+1019,icl,informative,1
+1020,package,different,1
+1021,package,available,1
+1022,she,also honest,1
+1023,pricing,also honest,1
+1024,what,available,1
+1025,option,available,1
+1026,Care Credit,pretty much,1
+1027,Care Credit,available,1
+1028,s,oil/omega,1
+1029,concerns/questions,other,1
+1030,someone,able,1
+1031,session,second,1
+1032,month,overdue,1
+1033,reminder,friendly,1
+1034,'cause,alternative,1
+1035,eyesight,really bad,1
+1036,astigmatism,really bad,1
+1037,vision assessment,last,1
+1038,thing,too 'cause,1
+1039,everything,complete,1
+1040,floor,1st,1
+1041,information,post-op,1
+1042,guy,nice,1
+1043,conversation,post-op,1
+1044,recovery,painful,1
+1045,way,nice,1
+1046,way,just really uncomfortable,1
+1047,it,irritating,1
+1048,eye,totally sensitive,1
+1049,everything,totally sensitive,1
+1050,follow-up appointment,always courteous,1
+1051,follow-up appointment,extremely friendly,1
+1052,everyone,always courteous,1
+1053,everyone,extremely friendly,1
+1054,sp.,tehani,1
+1055,Dr. McCandless,always nice,1
+1056,laser eye surgery,alternative,1
+1057,payment,late,1
+1058,drop,store-bought,1
+1059,oil,3-fish,1
+1060,eye vitamin,other,1
+1061,eye vitamin,dry,1
+1062,decision,final,1
+1063,member,misogynistic,1
+1064,he,prompt,1
+1065,guy,only,1
+1066,one,only,1
+1067,he,pushy,1
+1068,he,be,1
+1069,something,slimy,1
+1070,kind,slimy,1
+1071,kind,creepy,1
+1072,he,really condescending,1
+1073,he,alternate,1
+1074,child,uninformed,1
+1075,it,really off-putting,1
+1076,response,clear,1
+1077,way,same,1
+1078,makeover,mommy,1
+1079,breast augmentation,mommy,1
+1080,eye surgery,common,1
+1081,it,too bad,1
+1082,visit,yearly,1
+1083,eye care,professional,1
+1084,place,best,1
+1085,Vegas,best,1
+1086,quality,top,1
+1087,consultation process,great,1
+1088,consultation process,be,1
+1089,push,crazy,1
+1090,visit,post-op,1
+1091,visit,timely,1
+1092,visit,thorough,1
+1093,surgery experience,pretty crazy,1
+1094,Dr Wellish,courteous,1
+1095,staff,courteous,1
+1096,consultation appointment,first,1
+1097,experience,first,1
+1098,optometrist,several,1
+1099,it,safe,1
+1100,surgery,safest,1
+1101,vision,possible,1
+1102,vision,clearest,1
+1103,procedure,pre-operation,1
+1104,procedure,very friendly,1
+1105,procedure,professional,1
+1106,they,very approachable,1
+1107,they,glad,1
+1108,day,very nervous,1
+1109,all-i,best,1
+1110,pain,such,1
+1111,you,too busy,1
+1112,appointment,too much,1
+1113,knowledge,best,1
+1114,caring,very professional,1
+1115,caring,knowledgeable,1
+1116,caring,accommodate,1
+1117,they,very confident,1
+1118,beginning,very confident,1
+1119,team,honest,1
+1120,team,very knowledgeable,1
+1121,team,professional,1
+1122,customer service ive,worst,1
+1123,care,worst,1
+1124,care,medical,1
+1125,eye exam,dilated,1
+1126,eye exam,first,1
+1127,we,very sweet,1
+1128,Gladys,very sweet,1
+1129,Celia,very sweet,1
+1130,Dr Ortiz,bilingual,1
+1131,staff,bilingual,1
+1132,job caring,excellent,1
+1133,father,very happy,1
+1134,result,very happy,1
+1135,care,follow-up,1
+1136,care,exemplary,1
+1137,Dr Ortiz,exemplary,1
+1138,he,thorough,1
+1139,he,answer,1
+1140,lack,total,1
+1141,room,front,1
+1142,room,rear,1
+1143,practice,unacceptable,1
+1144,shame,unacceptable,1
+1145,scheduling efficiency,poor,1
+1146,example,more,1
+1147,surgery,first,1
+1148,wait time,shortest,1
+1149,whoever,responsible,1
+1150,scheduling,responsible,1
+1151,practice,whole,1
+1152,injustice,gross,1
+1153,appointment,follow-up,1
+1154,eye,severely dry,1
+1155,they,not good,1
+1156,it,not good,1
+1157,difficulty,great,1
+1158,process,very difficult,1
+1159,month,many,1
+1160,visit,tedious,1
+1161,I,disappointed,1
+1162,I,leave,1
+1163,vision,wellish,1
+1164,patient,new,1
+1165,question,many,1
+1166,fortune,great,1
+1167,fortune,good,1
+1168,order,very short,1
+1169,nicole,so pleasant,1

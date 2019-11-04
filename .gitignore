@@ -1,4 +1,8 @@
 Pipfile
 Pipfile.lock
-Data/*.json
-Data/*.png
+data/*
+!data/f_sample_reviews.py
+server/*
+!server/placeholder.txt
+lib/*
+!lib/placeholder.txt

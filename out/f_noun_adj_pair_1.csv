@@ -1,0 +1,634 @@
+rank,noun,adj,count
+1,fnb,hot,14
+2,fnb,cold,14
+3,fnb,best,14
+4,fnb,good,12
+5,fnb,other,11
+6,fnb,large,8
+7,fnb,sweet,8
+8,fnb,vegetarian,7
+9,person,friendly,6
+10,fnb,delicious,6
+11,fnb,quick,6
+12,fnb,fresh,5
+13,fnb,italian,5
+14,fnb,great,5
+15,fnb,small,5
+16,fnb,free,5
+17,fnb,generous,5
+18,fnb,amazing,4
+19,person,good,4
+20,time,last,4
+21,thing,good,4
+22,person,favorite,4
+23,fnb,huge,4
+24,fnb,really good,4
+25,location,other,4
+26,fnb,veggie,4
+27,time,first,4
+28,option,vegetarian,4
+29,fnb,warm,4
+30,fnb,soft,3
+31,fnb,better,3
+32,fnb,philly,3
+33,place,other,3
+34,fnb,favorite,3
+35,fnb,awesome,3
+36,fnb,moist,3
+37,fnb,usual,3
+38,week,last,3
+39,time,next,3
+40,option,great,3
+41,fnb,sliced,3
+42,fnb,buttery,3
+43,fnb,swiss,2
+44,person,italian,2
+45,person,seem,2
+46,order,online,2
+47,quality,good,2
+48,fnb,ok,2
+49,location,different,2
+50,person,hubby,2
+51,price,great,2
+52,fnb,famous,2
+53,fnb,leftover,2
+54,person,very friendly,2
+55,favorite,new,2
+56,option,vegan,2
+57,fnb,roasted,2
+58,something,cheap,2
+59,person,ok,2
+60,fnb,memorable,2
+61,person,frequent,2
+62,fnb,same,2
+63,fnb,extra,2
+64,rock casino,red,2
+65,person,special,2
+66,fnb,full,2
+67,person,small,2
+68,fnb,real,2
+69,person,few,2
+70,person,other,2
+71,fnb,pillowy,2
+72,fnb,dry,2
+73,Thanksgiving,traditional,2
+74,fan,big,2
+75,review,great,2
+76,person,great,2
+77,fnb,melted,2
+78,person,rude,2
+79,time,long,2
+80,fnb,russian,2
+81,fnb,absolutely yummy,2
+82,it,definitely worth,2
+83,it,delicious,2
+84,value,great,2
+85,fnb,key,2
+86,joint,other,2
+87,person,disheartened,2
+88,location,retail,2
+89,marketplace,disheartened,2
+90,fnb,mock,2
+91,fnb,meatless,2
+92,lettuce,generous,2
+93,gobble,gobble,2
+94,location,good,2
+95,fnb,super,2
+96,option,other,2
+97,option,faux-meat,2
+98,sandwich spot,decent,1
+99,spot,other,1
+100,kind,good,1
+101,nothing,special,1
+102,fnb,absolutely delicious,1
+103,memory,pleasant,1
+104,wheat,whole,1
+105,sandwich shop,very solid,1
+106,order,ready,1
+107,person,best,1
+108,time,third,1
+109,pickle,hot,1
+110,pickle,italian,1
+111,person,helpful,1
+112,way,fastest,1
+113,person,so pleasantly surprised,1
+114,PA.,eastern,1
+115,lettuce,shredded,1
+116,lil sammy shop,best,1
+117,fnb,quality,1
+118,stuff,good,1
+119,flavor,good,1
+120,flavor,soft,1
+121,experience,first,1
+122,person,glad,1
+123,visit,first,1
+124,visit,just not impressive,1
+125,person,picky,1
+126,fnb,picky,1
+127,fnb,really expensive,1
+128,philly,other,1
+129,it,not even comparable,1
+130,philly,not even comparable,1
+131,it,still quite good,1
+132,person,large,1
+133,it,delicous,1
+134,fnb,delicous,1
+135,handed,short,1
+136,service,slow,1
+137,bit,slow,1
+138,complaint,other,1
+139,problem,small,1
+140,Grilled Italian,delicious,1
+141,person,not very hungry,1
+142,fnb,largest,1
+143,ton,soft,1
+144,place,soft,1
+145,stuff,much,1
+146,cheesteak,forgettable,1
+147,experience,best,1
+148,person,same,1
+149,its,close,1
+150,im,sorry,1
+151,im,then go,1
+152,rating,better,1
+153,im,:-lrb-,1
+154,fnb,friendly,1
+155,person,just amazing,1
+156,fnb,just amazing,1
+157,fnb,homemade,1
+158,its,good,1
+159,person,nice,1
+160,its,best,1
+161,person,famous,1
+162,fnb,bundt,1
+163,belief,moist,1
+164,smile,jolly,1
+165,favorite,second,1
+166,medium,small,1
+167,side,pricey,1
+168,its,worth,1
+169,penny,worth,1
+170,sandwich shop,favorite,1
+171,person,little,1
+172,crunch roll mmmmmm,dutch,1
+173,pastrami meat,soft,1
+174,pastrami meat,not stringy,1
+175,cheese steak meat,also soft,1
+176,gawd,so yummy,1
+177,time,whole,1
+178,person,over-exaggerating,1
+179,devour,large,1
+180,person,petite,1
+181,fnb,to-go,1
+182,block,few,1
+183,DELICIOUS,mouth-watering,1
+184,recommend,most-def,1
+185,fnb,too mild,1
+186,service,awesome,1
+187,upgrade,free,1
+188,upgrade,long,1
+189,person,always friendly,1
+190,person,very clean,1
+191,night,late,1
+192,night munchie,fest,1
+193,night,fest,1
+194,wine event,fest,1
+195,gas station,next,1
+196,fnb,many,1
+197,tasting,worth,1
+198,reason,only,1
+199,decision,different,1
+200,ham,hot,1
+201,person,hungry,1
+202,something,want,1
+203,fnb,always great,1
+204,matter,always great,1
+205,park,closest,1
+206,highway,closest,1
+207,casino floor,clear,1
+208,fnb,french,1
+209,person,unable,1
+210,fnb,fast,1
+211,time,more,1
+212,fnb,baked,1
+213,wait,ridiculous,1
+214,bag,mixed,1
+215,location,many,1
+216,other,much better,1
+217,fnb,surprisingly huge,1
+218,price,same,1
+219,price,frequent,1
+220,fnb,much bigger,1
+221,person,so impressed,1
+222,service,painfully slow,1
+223,person,busy,1
+224,person,very nice,1
+225,bit,confused,1
+226,order,initial,1
+227,person,so hungry,1
+228,it,good,1
+229,it,not get,1
+230,person,wrong,1
+231,spot,bad,1
+232,service,good,1
+233,fnb,typical,1
+234,location,so not very busy,1
+235,it,right,1
+236,ton,next,1
+237,restaurant,other,1
+238,timer,first,1
+239,sandwich person,not much,1
+240,thing,most familiar,1
+241,notch,top,1
+242,it,better,1
+243,lot,better,1
+244,version,better,1
+245,kind,pricey,1
+246,person,not sure,1
+247,casino,not sure,1
+248,shop,standalone,1
+249,place,horrible,1
+250,anniversary,special,1
+251,advantage,special,1
+252,size,full,1
+253,price,special,1
+254,scrap,few,1
+255,amount,huge,1
+256,fnb,your,1
+257,scrap,going,1
+258,fnb,in-n-out,1
+259,business,not available,1
+260,Hawaii,not available,1
+261,Panda Express,nearby,1
+262,taste,little,1
+263,taste,great,1
+264,visit,next,1
+265,buffet,rediculously busy,1
+266,casino,rediculously busy,1
+267,fnb,quite good,1
+268,price,quite good,1
+269,ambiance,pleasant,1
+270,day,same,1
+271,day,nice,1
+272,person,clear,1
+273,fnb,very popular,1
+274,person,aware,1
+275,pack,refrigerated,1
+276,pack,frozen,1
+277,pack,vacuum-sealed,1
+278,shelf life,decent,1
+279,choice,second,1
+280,fnb,red,1
+281,it,extremely easy,1
+282,fnb,separate,1
+283,marinara sauce,separate,1
+284,fnb,extremely easy,1
+285,person,so disappointed,1
+286,Red Rock,so disappointed,1
+287,mix,great,1
+288,mix,sweet,1
+289,mix,savory,1
+290,service,excellent,1
+291,time,amazing,1
+292,service,amazing,1
+293,which,amazing,1
+294,choice,so many,1
+295,choice,yummy,1
+296,rating,5-star,1
+297,fnb,just about perfect,1
+298,melty cheese,pillowy,1
+299,fnb,no,1
+300,experience,terrible,1
+301,person,located,1
+302,Beverly Hills,located,1
+303,opportunity,perfect,1
+304,turkey meat,home-made,1
+305,stuffing,cold,1
+306,stuffing,soft/soggy,1
+307,Thanksgiving,american,1
+308,its,just too bad,1
+309,person,just too bad,1
+310,fnb,heavy,1
+311,fnb,port,1
+312,fnb,nearby,1
+313,time,nearby,1
+314,shop,amazing,1
+315,person,responsive,1
+316,person,timely,1
+317,person,so accommodate,1
+318,order,special,1
+319,person,very specific,1
+320,time,very specific,1
+321,delivery,correct,1
+322,person,ontime,1
+323,food quality,awesome,1
+324,item,few,1
+325,person,impressed,1
+326,shop,impressed,1
+327,representative,great,1
+328,work,great,1
+329,person,usual,1
+330,person,damn good,1
+331,town,small,1
+332,Pretty,impressed,1
+333,option,quick,1
+334,option,inexpensive,1
+335,fnb,smallest,1
+336,sausage,italian,1
+337,fnb,grilled,1
+338,piece,very long,1
+339,fnb,very long,1
+340,location,most other,1
+341,location,friendly,1
+342,food court,pretty busy,1
+343,fnb,more,1
+344,fnb,ready,1
+345,ok,fine,1
+346,customer sandwich,other,1
+347,person,speechless,1
+348,person,not answer,1
+349,discount nothing,speechless,1
+350,discount nothing,not answer,1
+351,question,simple,1
+352,customer service,horrible,1
+353,person,regular,1
+354,casino,regular,1
+355,attention,more,1
+356,problem,main,1
+357,onion,hot,1
+358,kind sandwich,different,1
+359,point,open,1
+360,house,also closest,1
+361,deal,big,1
+362,choice,excellent,1
+363,fnb,unique,1
+364,location,convenient,1
+365,person,heavenly,1
+366,person,ideal,1
+367,fnb,not too salty,1
+368,mix,perfect,1
+369,it,easily accessible,1
+370,food court,easily accessible,1
+371,casino,easily accessible,1
+372,service,quick,1
+373,service,friendly,1
+374,help,more,1
+375,person,so nice,1
+376,service,always quick,1
+377,person,high,1
+378,calorie,high,1
+379,it,better alternative,1
+380,person,sad,1
+381,person,hesitant,1
+382,one,hot,1
+383,trip,short,1
+384,restaurant,located,1
+385,Red Rock Hotel,located,1
+386,Casino,located,1
+387,sandwich chain,large,1
+388,fnb,long,1
+389,it,really good,1
+390,fnb,excellent,1
+391,fnb,have,1
+392,experience,great,1
+393,person,fellow,1
+394,its,obvious,1
+395,person,obvious,1
+396,line,wrong,1
+397,review,actual,1
+398,review,consistently delicious,1
+399,fnb,consistently delicious,1
+400,something,so perfect,1
+401,bit,little,1
+402,it,pricey,1
+403,moral,pricey,1
+404,fnb,worthwhile,1
+405,fnb,pricey,1
+406,person,very interesting,1
+407,pep,definite,1
+408,person,tasty,1
+409,sandwich shop,nice,1
+410,feel,italian,1
+411,fnb,bent,1
+412,option,nice,1
+413,menu selection,broadest,1
+414,it,convenient,1
+415,Red Rock,convenient,1
+416,want,convenient,1
+417,line,big,1
+418,fnb,special,1
+419,it,ok,1
+420,thing,not sure,1
+421,thing,bad,1
+422,fnb,half,1
+423,way,under-seasoned,1
+424,texture,hot,1
+425,texture,cold,1
+426,pastrami sandwich,good,1
+427,Towers Deli,venetian,1
+428,it,not bad,1
+429,fnb,most famous,1
+430,day,absolutely yummy,1
+431,choice,great,1
+432,choice,:-rrb-,1
+433,place,good,1
+434,refill,free,1
+435,sub place,typical,1
+436,quality,not horrible,1
+437,quality,not amazing,1
+438,good.they,definitely better,1
+439,subway,definitely better,1
+440,person,way better,1
+441,subway sandwich,way better,1
+442,inch,largest,1
+443,movie theater,right next,1
+444,fnb,real good,1
+445,fnb,white,1
+446,price,pricey,1
+447,price,most,1
+448,bit,pricey,1
+449,bit,most,1
+450,time,most,1
+451,time,definitely worth,1
+452,person,absolutely amazing,1
+453,person,amazing,1
+454,favorite,amazing,1
+455,location,specific,1
+456,fnb,most,1
+457,size,different,1
+458,movie choice,current,1
+459,noturkey,vegetarian,1
+460,fnb,delish,1
+461,fnb,deeeeelish,1
+462,service,just as good,1
+463,fnb,just as good,1
+464,fnb,very good,1
+465,farm,philly,1
+466,farm,better,1
+467,sub place,favorite,1
+468,person,most,1
+469,spicy,amazing,1
+470,stuffing,sliced,1
+471,fnb,flavorful,1
+472,fnb,the,1
+473,fnb,original,1
+474,person,always good,1
+475,pairing,perfect,1
+476,pairing,always good,1
+477,place,more expensive,1
+478,fnb,more expensive,1
+479,location,more expensive,1
+480,nap,optional,1
+481,nap,encouraged,1
+482,person,disappointed,1
+483,bit,disappointed,1
+484,person,not too sure,1
+485,check-in offer,amazing,1
+486,person,twice,1
+487,fnb,twice,1
+488,fnb,tasty,1
+489,selection,nice,1
+490,item,cold,1
+491,item,warm,1
+492,let,key,1
+493,it,large,1
+494,floor apartment,third,1
+495,person,generous,1
+496,it,fresh,1
+497,time,second,1
+498,it,not good,1
+499,it,consider,1
+500,med,better,1
+501,person,ready,1
+502,it,ready,1
+503,month,sometime early next,1
+504,month,ready,1
+505,side,higher,1
+506,nothing,outrageous,1
+507,quality sandwich,higher,1
+508,its,totally reasonable,1
+509,location,particular,1
+510,menu,same,1
+511,menu,full,1
+512,spot,great,1
+513,door,right next,1
+514,sub sandwich,favorite,1
+515,meat portion,disheartened,1
+516,Durango,disheartened,1
+517,Las Vegas,disheartened,1
+518,Nevada,disheartened,1
+519,Irvine Blvd,disheartened,1
+520,Irvine California,disheartened,1
+521,MacArthur,disheartened,1
+522,dove,disheartened,1
+523,Irvine,disheartened,1
+524,California,disheartened,1
+525,Tustin,disheartened,1
+526,county,orange,1
+527,it,disappointing,1
+528,person,young,1
+529,bin,nasty,1
+530,thing,other,1
+531,fnb,older,1
+532,person,able,1
+533,place,only,1
+534,section,vegetarian,1
+535,%,meatless,1
+536,it,still frozen,1
+537,it,not ready,1
+538,fnb,sub,1
+539,seasoning,italian,1
+540,mayonnaise,vegan,1
+541,Wildwood Garlic Aioli,excellent,1
+542,fnb,creamy,1
+543,sub cuisine,sublime,1
+544,door,front,1
+545,window,front,1
+546,food kinda girl,leftover,1
+547,anything,cold,1
+548,person,fancy,1
+549,slice,thick,1
+550,size,pretty good,1
+551,it,too messy,1
+552,time,much,1
+553,love,really great,1
+554,option,good,1
+555,option,fast,1
+556,place,same,1
+557,time,same,1
+558,minute,extra,1
+559,it,third,1
+560,salty,extremley,1
+561,salty,dry,1
+562,minute,last,1
+563,it,open,1
+564,minute,open,1
+565,night,last,1
+566,month,past,1
+567,month,few,1
+568,sponsor,very generous,1
+569,price,higher,1
+570,bit,higher,1
+571,competition,higher,1
+572,container,big,1
+573,fnb,next,1
+574,cole slaw,moist,1
+575,complaint,only,1
+576,fnb,just too big,1
+577,person,just too big,1
+578,price,smaller,1
+579,person,not too many,1
+580,hour,simply too tired,1
+581,restaurant,italian,1
+582,fnb,casual,1
+583,trip,many,1
+584,issue,short,1
+585,person,short,1
+586,incher,huge,1
+587,fnb,consume,1
+588,fnb,cheap,1
+589,wiz,cheap,1
+590,option,few,1
+591,fnb,faux,1
+592,person,not willing,1
+593,person,think,1
+594,option,interesting,1
+595,option,same,1
+596,bite,quick,1
+597,fnb,nice,1
+598,service,new,1
+599,person,new,1
+600,boy,bad,1
+601,sandwhich,great,1
+602,service,fast,1
+603,offer,fast,1
+604,service,riendly,1
+605,offer,riendly,1
+606,Regal Cinema,right,1
+607,door,next,1
+608,door,right,1
+609,dog,hot,1
+610,fnb,fill,1
+611,job,good,1
+612,dude,super,1
+613,dude,hungry,1
+614,price,slightly higher,1
+615,location,slightly higher,1
+616,time,clueless,1
+617,person,clueless,1
+618,patty,other,1
+619,place,such,1
+620,flavor,very good,1
+621,person,really happy,1
+622,fnb,healthy,1
+623,fnb,nutritious,1
+624,it,great,1
+625,stop,occasional,1
+626,cheeseburger,vegetarian,1
+627,fnb,located,1
+628,Red Rock Casino,located,1
+629,customer service,excellent,1
+630,selection,great,1
+631,tastey,fresh,1
+632,filling,fresh,1
+633,person,really hungry,1

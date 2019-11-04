@@ -1,0 +1,866 @@
+rank,noun,adj,count
+0,sauce,hot,14
+1,food,good,10
+2,sauce,white,10
+3,portion,huge,9
+4,time,first,7
+5,food,amazing,6
+6,food,best,5
+7,food,ready,5
+8,it,busy,4
+9,price,reasonable,4
+10,food,great,4
+11,medium,rare,3
+12,place,other,3
+13,food,delicious,3
+14,restaurant,other,3
+15,wait,long,3
+16,portion,big,3
+17,day,next,3
+18,food,afghan,3
+19,place,busy,3
+20,time,few,3
+21,restaurant,halal,3
+22,its,dry,2
+23,place,best,2
+24,place,nice,2
+25,staff,friendly,2
+26,place,great,2
+27,hour,peak,2
+28,visit,next,2
+29,it,ready,2
+30,I,impressed,2
+31,nothing,special,2
+32,Food,great,2
+33,item,other,2
+34,option,veggie,2
+35,meat,good,2
+36,dish,main,2
+37,time,next,2
+38,part,worst,2
+39,they,busy,2
+40,thing,same,2
+41,hand,bare,2
+42,type,different,2
+43,cashier,friendly,2
+44,it,totally worth,2
+45,wait,totally worth,2
+46,quality food,good,2
+47,it,very busy,2
+48,flavour,good,2
+49,item,not available,2
+50,half,not available,2
+51,pickings,slim,2
+52,food place,fast,2
+53,time,long,2
+54,price,decent,2
+55,plate,full,2
+56,staff,front,2
+57,mignon,filet,2
+58,rice,fragrant,2
+59,salad,fresh,2
+60,meal,full,2
+61,table,many,2
+62,experience,good,2
+63,sauce,amazing,2
+64,seat,own,2
+65,customer service,terrible,2
+66,time,last,2
+67,salad,plain,2
+68,restaurant,afghani,2
+69,people,only,2
+70,bread,fresh,2
+71,decor,nice,2
+72,portion,good,2
+73,lineup,busy,2
+74,trip,second,2
+75,evening,usually very busy,2
+76,food,very delicious,2
+77,taste,great,2
+78,my,favourite,2
+79,sauce,extra,2
+80,day,busy,2
+81,restaurant,big,2
+82,drink,free,2
+83,staff,counter,2
+84,food,halal,2
+85,minute,few,1
+86,place,still open,1
+87,kind,still open,1
+88,bolanus,undercooked,1
+89,bolanus,fill,1
+90,bolanus,worst,1
+91,box,less,1
+92,consist,less,1
+93,end,less,1
+94,quantity,equal,1
+95,throat burning sauce,super,1
+96,throat burning sauce,spicy,1
+97,lady,other,1
+98,experience,recent,1
+99,week,last,1
+100,it,average,1
+101,yogurt salad,average,1
+102,salad,green,1
+103,temperature,wrong,1
+104,chop,second,1
+105,they,medium,1
+106,they,too hard,1
+107,medium,medium,1
+108,medium,too hard,1
+109,its,awful,1
+110,location,new,1
+111,it,spicy,1
+112,it,really really tasty,1
+113,occasion,numerous,1
+114,year,past,1
+115,I,not wrong,1
+116,pm,perfect,1
+117,chandelier,fancy,1
+118,picture,great,1
+119,image,great,1
+120,seat,foward,1
+121,staff,accommodate,1
+122,kebab,sultani,1
+123,Kandahar Kebab,sultani,1
+124,spicy sauce,little,1
+125,spicy sauce,orange,1
+126,yum,good,1
+127,place,soon busy,1
+128,place,pack,1
+129,kabob place,best,1
+130,it,so worth,1
+131,wait,so worth,1
+132,beef kabob,great,1
+133,rice,tasty,1
+134,juicy,huge,1
+135,value,much better,1
+136,food,very similar,1
+137,style,very similar,1
+138,style,similar,1
+139,fill sauce,creamy,1
+140,sauce,absolutely delicious,1
+141,rice,very similar,1
+142,basmatus,brown,1
+143,basmatus,long,1
+144,way,nice,1
+145,doll sauce,creamy,1
+146,sauce,also really tasty,1
+147,flavour,so much,1
+148,it,actually spicy,1
+149,sauce,actually spicy,1
+150,naan,also good,1
+151,veggie kabab,nice,1
+152,spice,few,1
+153,option,great,1
+154,it,present,1
+155,dish,few,1
+156,dish,indian,1
+157,dish,present,1
+158,portion,massive,1
+159,price,massive,1
+160,quality,massive,1
+161,day,2nd,1
+162,rice,too much,1
+163,it,disproportionate,1
+164,food,better,1
+165,Bamyan,better,1
+166,Naan/Kabab,better,1
+167,atmosphere,very noisy,1
+168,people,so many,1
+169,restaurant,only,1
+170,place,pretty similar,1
+171,fountain,huge,1
+172,fixture,huge,1
+173,restaurant,huge,1
+174,restaurant,decorate,1
+175,Bamiyan,also similar,1
+176,order,ready,1
+177,microphone,ready,1
+178,bit,long,1
+179,sauce,yogurt-like,1
+180,Rice,great,1
+181,naan,warm,1
+182,tomato,sliced,1
+183,chicken kabob,delicious,1
+184,chicken kofta,also good,1
+185,mix,interesting,1
+186,restaurant,areal,1
+187,environment,areal,1
+188,self-service,mcdonald-style,1
+189,meat,well-marinaded,1
+190,food court fare,above-average,1
+191,section,special,1
+192,option,available,1
+193,menu,available,1
+194,option,other,1
+195,bucket,water/liquid,1
+196,service,poor,1
+197,place,messy,1
+198,kabob odor,harsh,1
+199,idea,amazing,1
+200,food,fresh,1
+201,food,flavourful,1
+202,spicy,fresh,1
+203,spicy,flavourful,1
+204,meat,white,1
+205,sauce,delicious,1
+206,spicy,delicious,1
+207,it,too good,1
+208,pricing,expensive,1
+209,pillar,nice,1
+210,lighting,nice,1
+211,step,nice,1
+212,restaurant,old,1
+213,kabob,kandahar,1
+214,min,ready,1
+215,cashier,ready,1
+216,nothing,great,1
+217,nothing,not even decent,1
+218,kabob,dry,1
+219,rice,very little,1
+220,bread,despicable,1
+221,restaurant,afghan,1
+222,one,so many,1
+223,one,good,1
+224,flavour,excellent,1
+225,value,great,1
+226,we,big,1
+227,kabob meal,big,1
+228,House,special,1
+229,vegetable,grilled,1
+230,challenge,big,1
+231,challenge,busy,1
+232,meal,worth,1
+233,it,worth,1
+234,place,horrible,1
+235,food,dry,1
+236,it,sooo hot,1
+237,experience,terrible,1
+238,quality,not good,1
+239,time,2nd,1
+240,time,shorter,1
+241,food,pretty good,1
+242,service,horrendous,1
+243,who,completely clueless,1
+244,server,completely clueless,1
+245,cashier,completely clueless,1
+246,themselves,confused,1
+247,no-no,big,1
+248,time,several,1
+249,finger,same,1
+250,food cleanliness,basic,1
+251,people,basic,1
+252,food,nasty,1
+253,food,not great,1
+254,veggie mantoo,veggie,1
+255,bread,never available,1
+256,service,hordenous,1
+257,take,back,1
+258,he,annoyed,1
+259,place,indeed superior,1
+260,Bamiyan,indeed superior,1
+261,kebab spot,nice,1
+262,try,most,1
+263,end,east,1
+264,sauce,spiced,1
+265,meal,best,1
+266,restaurant,beautiful,1
+267,dip,awesome,1
+268,meat,awesome,1
+269,dip,hot,1
+270,meat,hot,1
+271,reviewer,few,1
+272,menu,good,1
+273,value,amazing,1
+274,I,only able,1
+275,value,only able,1
+276,taste,okay,1
+277,it,little,1
+278,I,too salty,1
+279,Bamiyan,better,1
+280,garlic,extra,1
+281,Atmosphere,very cute,1
+282,Service,friendly,1
+283,Food,excellent,1
+284,day,bad,1
+285,system,electronic,1
+286,meat,succulent,1
+287,bit,little,1
+288,size,massive,1
+289,kebab,best,1
+290,time,disappointed,1
+291,decor,good,1
+292,process,too slow,1
+293,horde,too slow,1
+294,it,difficult,1
+295,order,difficult,1
+296,pay,difficult,1
+297,it,even remotely busy,1
+298,size,fair,1
+299,patience,fair,1
+300,take,huge,1
+301,charge,additional,1
+302,portion,small,1
+303,salad portion,big,1
+304,rice,small,1
+305,way,other,1
+306,it,understandable,1
+307,sauce,enough,1
+308,order,first,1
+309,size,good,1
+310,chicken,good,1
+311,salad,hot,1
+312,size,full,1
+313,chicken,full,1
+314,flavour,full,1
+315,item,true,1
+316,offering,traditional,1
+317,offering,true,1
+318,rice,cold,1
+319,customer service,best,1
+320,juicy,super,1
+321,tender,super,1
+322,marinate,super,1
+323,rice,moist,1
+324,rice,fluffy,1
+325,naan,typical,1
+326,it,harder,1
+327,it,smaller,1
+328,it,thicker,1
+329,it,nonetheless really good,1
+330,naan,harder,1
+331,naan,smaller,1
+332,naan,thicker,1
+333,naan,nonetheless really good,1
+334,garlic sauce,hot,1
+335,Service,self-serve,1
+336,food court,self-serve,1
+337,meat,fresh,1
+338,night,very busy,1
+339,food place,popular,1
+340,food place,self-serve,1
+341,food,own,1
+342,food restaurant,fast,1
+343,plate,real,1
+344,cutlery,real,1
+345,portion,generous,1
+346,pricing,fair,1
+347,they,relatively new,1
+348,design,interior,1
+349,item,free,1
+350,quality,good,1
+351,kebab,nice,1
+352,kebab,juicy,1
+353,rice,flavorful,1
+354,bit,pricey,1
+355,service restaurant,full,1
+356,quality,extremely slow,1
+357,restaurant,almost empty,1
+358,hour,almost empty,1
+359,environment,very fancy,1
+360,kofta chicken skewer,kandahar,1
+361,kofta chicken skewer,juicy,1
+362,kofta chicken skewer,flavourful,1
+363,sauce,juicy,1
+364,sauce,flavourful,1
+365,chance,second,1
+366,thing,such,1
+367,thing,great,1
+368,meat,tough,1
+369,Ramadan,tough,1
+370,time,iftar,1
+371,pack,iftar,1
+372,its,so disappointing,1
+373,food,okay,1
+374,staff isnt,okay,1
+375,it,big,1
+376,delicacy,other,1
+377,Mintoo,such,1
+378,waitress,slim,1
+379,quantity,reasonable,1
+380,it,easily possible,1
+381,rice,amazing,1
+382,rice,make,1
+383,price,very reasonable,1
+384,it,prepare,1
+385,improvement,major,1
+386,I,not afraid,1
+387,size,larger,1
+388,meat,juicier,1
+389,tender,larger,1
+390,they,literally grilled,1
+391,perfection,literally grilled,1
+392,they,delicious,1
+393,everything,delicious,1
+394,rice,flavourful,1
+395,salad,fragrant,1
+396,salad,flavourful,1
+397,contrast,nice,1
+398,yogurt sauce,more,1
+399,side,pricey,1
+400,it,definitely worth,1
+401,it,just unappetizing,1
+402,bone,full,1
+403,rice,full,1
+404,half,full,1
+405,seat,many,1
+406,experience,enough,1
+407,experience,overall,1
+408,service,just okay,1
+409,we,okay,1
+410,it,pretty bland,1
+411,it,not have,1
+412,flavour,enough,1
+413,it,not horrible,1
+414,food,not horrible,1
+415,flavour,more,1
+416,price,worth,1
+417,piece,huge,1
+418,sauce,so good,1
+419,salad,so good,1
+420,water,free,1
+421,chicken breast kabob,very dry,1
+422,chicken breast kabob,overcooked,1
+423,time,very dry,1
+424,time,overcooked,1
+425,quality,amazing,1
+426,taste,amazing,1
+427,food,so authentic,1
+428,quality,so authentic,1
+429,taste,so authentic,1
+430,skewer,amazing,1
+431,main,amazing,1
+432,kebob meal,double,1
+433,sauce,one,1
+434,spice,little,1
+435,price,cheap,1
+436,time,only,1
+437,food,same,1
+438,bit,pricy,1
+439,I,so annoyed,1
+440,inconsistency,so annoyed,1
+441,wrap,so hard,1
+442,it,hard,1
+443,it,too soft,1
+444,it,perfect,1
+445,time,perfect,1
+446,thing,exact,1
+447,pic,few,1
+448,time,different,1
+449,you,able,1
+450,wait,ready,1
+451,hour,busy,1
+452,it,too much,1
+453,guy,too much,1
+454,management,better,1
+455,fan,big,1
+456,think,big,1
+457,kabob,there chapli,1
+458,kabob,best,1
+459,it,alright,1
+460,naan,usually dry,1
+461,naan,stale,1
+462,naan,reheat,1
+463,time,fixed,1
+464,time,usually dry,1
+465,time,stale,1
+466,time,reheat,1
+467,door,front,1
+468,review,above,1
+469,form,kabab,1
+470,colouring,yellow,1
+471,seasoning,great,1
+472,glance,first,1
+473,people,couple,1
+474,kabab,:-lrb-,1
+475,kabab,other,1
+476,chicken,sliced,1
+477,seasoning,similar,1
+478,bed,giant,1
+479,rice,plain,1
+480,something,little,1
+481,menu,decent,1
+482,it,halal,1
+483,you,not sure,1
+484,something,not sure,1
+485,place,beautiful,1
+486,ambience,nice,1
+487,love,nice,1
+488,Bamiyaan,much better,1
+489,guy,also pretty good,1
+490,ambience,also pretty good,1
+491,love,also pretty good,1
+492,chicken,super,1
+493,fan,spicier,1
+494,restaurant,true,1
+495,option,vegetarian,1
+496,seed,full,1
+497,bread,vegan,1
+498,bread,regular,1
+499,bread,dry,1
+500,bit,dry,1
+501,plate,tasty,1
+502,portion,very big,1
+503,serving,single,1
+504,mast,good,1
+505,yogurt,plain,1
+506,restaurant,fancy,1
+507,menu,very small,1
+508,menu,tough,1
+509,folk,older,1
+510,people,other,1
+511,I,sorry,1
+512,professionalism,extremely unimpressed,1
+513,service,extremely unimpressed,1
+514,Reno,gorgeous,1
+515,gym,former,1
+516,food,mediocre,1
+517,staff,mediocre,1
+518,decor,very nice,1
+519,booth,very comfortable,1
+520,spicy sauce,amazing,1
+521,plate,huge,1
+522,sign,big,1
+523,sign,orange,1
+524,style service,disorganized,1
+525,style service,self-serve,1
+526,night,busy,1
+527,place,huge,1
+528,place,unable,1
+529,décor,huge,1
+530,décor,unable,1
+531,volume,high,1
+532,food quality,pretty good,1
+533,Quality,pretty good,1
+534,overall,pretty good,1
+535,chicken meat,average,1
+536,kofta,pretty high-quality,1
+537,seasoning,aromatic,1
+538,chicken breast meat,dry,1
+539,Sardari Kabab,dry,1
+540,seasoning,dry,1
+541,sauce,dry,1
+542,kabab,seasoned,1
+543,kabab,soft,1
+544,juicy,seasoned,1
+545,juicy,soft,1
+546,quantity,huge,1
+547,consistency,same,1
+548,kofta,same,1
+549,it,less expensive,1
+550,chicken meat,same,1
+551,overall,overall,1
+552,platter,really good,1
+553,platter,come,1
+554,portion,large,1
+555,line,long,1
+556,seating,limited,1
+557,thing,good,1
+558,cuisine,afgan,1
+559,price,higher,1
+560,bit,higher,1
+561,customer,other,1
+562,price,lower,1
+563,kebab,single,1
+564,tad,lower,1
+565,stick,lower,1
+566,dine-in,very different,1
+567,kebab,very tasty,1
+568,foods/dips,super,1
+569,foods/dips,spicy,1
+570,craving,future,1
+571,nothing,really special,1
+572,advantage,only,1
+573,advantage,main,1
+574,restaurant,better,1
+575,content,fully comfortable,1
+576,kebab,good,1
+577,chicken,exceptional,1
+578,I,not happy,1
+579,thing,not happy,1
+580,piece,uncooked,1
+581,dessert,free,1
+582,dessert,delicious,1
+583,place,alright,1
+584,make,alright,1
+585,mignon,delicious,1
+586,mignon,worth,1
+587,trip,delicious,1
+588,trip,worth,1
+589,overall,good,1
+590,sauce,also wonderful,1
+591,work,little,1
+592,meal,very good,1
+593,speaker system,better,1
+594,minute,not acceptable,1
+595,service,much better,1
+596,Bamiyan,much better,1
+597,kabab,amazing,1
+598,size,fantastic,1
+599,fan,very big,1
+600,weekend,usually very busy,1
+601,I,extremely impressed,1
+602,food,extremely impressed,1
+603,reason,reluctant,1
+604,I,reluctant,1
+605,restaurant,second,1
+606,restaurant,afgan,1
+607,experience,first,1
+608,Kandahar Kabab,quite large,1
+609,Kandahar Kabab,become,1
+610,crowd,larger,1
+611,portion,very generous,1
+612,naan,free,1
+613,amount,decent,1
+614,stomach,empty,1
+615,Naan,too full,1
+616,cashier,rude,1
+617,quality meat,good,1
+618,spot,favourite,1
+619,cuisine,afghan,1
+620,Sardari Kabab,favourite,1
+621,lot,spicier,1
+622,kind,spicier,1
+623,kabab,always juicy,1
+624,tender,always juicy,1
+625,bonus,always juicy,1
+626,case,serious,1
+627,time,numerous,1
+628,restaurant,favourite,1
+629,couple,past,1
+630,experience,worse,1
+631,rate,same,1
+632,lineup,huge,1
+633,kind,similar,1
+634,customer,loyal,1
+635,warehouse,very close,1
+636,place,very close,1
+637,restaurant,very good,1
+638,atmosphere,nice,1
+639,layout,nice,1
+640,eye,own,1
+641,everything,fresh,1
+642,sauce,very good,1
+643,lady,older,1
+644,lady,nice,1
+645,lady,helpful,1
+646,rice,good,1
+647,thing,worst,1
+648,Food,good,1
+649,Food,not worth,1
+650,rest,nice,1
+651,food,nice,1
+652,Food,amazing,1
+653,impression,not too bad,1
+654,waterfall glass decor,nice,1
+655,it,not too busy,1
+656,they,tasty,1
+657,part,burnt,1
+658,they,pricey,1
+659,time,good,1
+660,time,great,1
+661,mayo/ranch sauce,white,1
+662,food,pricey,1
+663,desk,front,1
+664,people,more,1
+665,inside,nice,1
+666,inside,clean,1
+667,potion,good,1
+668,food,decent,1
+669,restaurant,good,1
+670,price,pretty fair,1
+671,thing,only,1
+672,kabob,usual,1
+673,location,very busy,1
+674,food,typical,1
+675,Mentu,ok,1
+676,herati kebab,favourite,1
+677,they,pretty stingy,1
+678,meal,entire,1
+679,portion,also outrageous,1
+680,portion,share,1
+681,I,also outrageous,1
+682,I,share,1
+683,devour,also outrageous,1
+684,devour,share,1
+685,thing,whole,1
+686,problem,only,1
+687,time,multiple,1
+688,it,much,1
+689,problem,much,1
+690,food,worth,1
+691,problem,worth,1
+692,wait,worth,1
+693,restaurant,best,1
+694,chicken kebab,amazing,1
+695,kofta,amazing,1
+696,sauce,so delicious,1
+697,sauce,garlic,1
+698,sauce,red,1
+699,everything,fantastic,1
+700,location,best,1
+701,chicken,worth,1
+702,kabob,worth,1
+703,bit,odd,1
+704,waiter,odd,1
+705,food,still very good,1
+706,price,fair,1
+707,service,excellent,1
+708,veal filet mignon,most tender,1
+709,chicken,extremely flavourful,1
+710,chicken,moist,1
+711,beef kofta,extremely flavourful,1
+712,beef kofta,moist,1
+713,naan,best,1
+714,time,ridiculously long,1
+715,dish,huge,1
+716,dish,easily feed,1
+717,orange sauce,spicy,1
+718,orange sauce,delicious,1
+719,restaurant,airy,1
+720,lot,big,1
+721,lot,airy,1
+722,service,quite slow,1
+723,service,witness,1
+724,min,extra,1
+725,benefit,much,1
+726,restaurant,very busy,1
+727,restaurant,as soon,1
+728,drink,soft,1
+729,way,very tasty,1
+730,food,very flavourful,1
+731,decor,also beautiful,1
+732,experience,bad,1
+733,staff,young,1
+734,customer service,wonderful,1
+735,food,very good,1
+736,flavour,overall,1
+737,sauce,yummy,1
+738,patient service,slow,1
+739,price,affordable,1
+740,staff,enough,1
+741,I,pregnant,1
+742,kebab,afghan,1
+743,family,so many,1
+744,group,so many,1
+745,kebab,better,1
+746,naan,better,1
+747,decor,pretty nice,1
+748,self seating/self service type establishment,pretty nice,1
+749,it,usually very busy,1
+750,dinner time,usually very busy,1
+751,nightmare,big,1
+752,family,other,1
+753,family,nice,1
+754,it,less chaotic,1
+755,diner,fellow,1
+756,look,glaring,1
+757,table,dirty,1
+758,holiday,special,1
+759,Ramadan,special,1
+760,holiday,islamic,1
+761,Ramadan,islamic,1
+762,it,very noisy,1
+763,family,large,1
+764,family,very noisy,1
+765,child,young,1
+766,kid,young,1
+767,nightmare,similar,1
+768,cleanliness,different,1
+769,staff,different,1
+770,restaurant,nice,1
+771,glass water,nice,1
+772,place,spacious,1
+773,staff,few,1
+774,staff,spacious,1
+775,they,best,1
+776,tray,dirty,1
+777,plate,empty,1
+778,tray,empty,1
+779,music playing,afghani,1
+780,area,separate,1
+781,kabob,chapli,1
+782,style,new,1
+783,fork,very small,1
+784,fork,hard,1
+785,salad,average,1
+786,meat,very flavourful,1
+787,tender,very flavourful,1
+788,meat,specific,1
+789,grain,long,1
+790,hit,big,1
+791,bread,afghani,1
+792,meal,main,1
+793,number,ready,1
+794,portion,great,1
+795,hair,big,1
+796,hair,disgusting,1
+797,food,so good,1
+798,rice fan,huge,1
+799,dining,casual,1
+800,ambiance,modern,1
+801,it,marinaded,1
+802,it,just perfect,1
+803,palow,also delicious,1
+804,palow,very flavorful,1
+805,rice,brown,1
+806,month,again next,1
+807,make,loud,1
+808,make,amazing,1
+809,food,ur,1
+810,it,finally ready,1
+811,food,not worth,1
+812,food,authentic,1
+813,size,very big,1
+814,order,very big,1
+815,people,normal,1
+816,food,afghani,1
+817,portion,same,1
+818,price,same,1
+819,Bamiyan Kabob,popular,1
+820,Bamiyan Kabob,same,1
+821,flavour,far superior,1
+822,taste,far superior,1
+823,ground beef,filet,1
+824,person,average,1
+825,rice,so much,1
+826,bit,plain,1
+827,taste,plain,1
+828,sauce,tangy,1
+829,sauce,great,1
+830,sauce,not too hot,1
+831,sauce,taste,1
+832,naan,crispy,1
+833,naan,tasty,1
+834,naan,not taste,1
+835,part,best,1
+836,tender,so flavourful,1
+837,Food,tasty,1
+838,Service,hopeless,1
+839,staff,pretty un-aware,1
+840,time,pretty un-aware,1
+841,they,not familiar,1
+842,industry standard,not familiar,1
+843,staff,arrogant,1
+844,staff,obnoxious,1
+845,cashier,polite,1
+846,guest,incoming,1
+847,service,standard,1
+848,interior,very nice,1
+849,cash,open,1
+850,cash,weird,1
+851,minute,ready,1
+852,bamiyan customer,regular,1
+853,rice,too dry,1
+854,experience,overall good,1
+855,bamiyan,overall good,1
+856,food,far superior,1
+857,food,come,1
+858,rice,extra,1
+859,meal,good,1
+860,people,good,1
+861,portion,come,1
+862,meal,great,1
+863,wait,huge,1
+864,crowd,huge,1

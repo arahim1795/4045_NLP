@@ -1,0 +1,906 @@
+rank,noun,adj,count
+1,fnb,good,14
+2,fnb,great,14
+3,fnb,prime,13
+4,fnb,excellent,12
+5,fnb,very good,8
+6,fnb,delicious,8
+7,fnb,amazing,7
+8,fnb,awesome,7
+9,person,great,7
+10,fnb,main,7
+11,person,very attentive,6
+12,service,excellent,6
+13,fnb,mashed,6
+14,person,attentive,6
+15,fnb,tasty,5
+16,person,best,5
+17,medium,rare,4
+18,person,amazing,4
+19,price,reasonable,4
+20,service,exceptional,4
+21,service,impeccable,4
+22,fnb,perfect,4
+23,person,favorite,4
+24,service,good,4
+25,place,favorite,4
+26,fnb,rare,3
+27,gem,hidden,3
+28,place,nice,3
+29,fnb,worst,3
+30,fnb,wonderful,3
+31,night,last,3
+32,fnb,white,3
+33,service,friendly,3
+34,place,great,3
+35,person,entire,3
+36,fnb,bottle-shaped,3
+37,fnb,red,3
+38,service,amazing,3
+39,fnb,bad,3
+40,fnb,best,3
+41,fnb,fantastic,3
+42,fnb,grilled,3
+43,dining experience,best,3
+44,service,great,3
+45,person,excellent,3
+46,fnb,absolutely wonderful,3
+47,fnb,small,3
+48,fnb,entire,3
+49,thing,only,3
+50,fnb,sour,3
+51,time,next,3
+52,visit,first,2
+53,part,best,2
+54,person,soooo nice,2
+55,experience,pleasant,2
+56,fnb,mediocre,2
+57,person,happy,2
+58,service,prompt,2
+59,person,able,2
+60,person,just so-so,2
+61,it,nice,2
+62,fnb,fresh,2
+63,decor,nice,2
+64,person,fine,2
+65,ambiance,nice,2
+66,flavor,great,2
+67,fnb,garlic,2
+68,onion,red,2
+69,fnb,huge,2
+70,fnb,superb,2
+71,service,superb,2
+72,fnb,petite,2
+73,price,good,2
+74,fnb,not worth,2
+75,service,always great,2
+76,fnb,green,2
+77,fnb,fine,2
+78,casino,entire,2
+79,person,new,2
+80,person,usual,2
+81,person,delicious,2
+82,fnb,have,2
+83,fnb,cook,2
+84,medium,perfect,2
+85,it,close,2
+86,service,fine,2
+87,fnb,fabulous,2
+88,fnb,other,2
+89,fnb,french,2
+90,person,other,2
+91,pianist,live,2
+92,customer service,friendly,2
+93,customer service,very professional,2
+94,customer service,outstanding,2
+95,customer service,better,2
+96,top5,better,2
+97,star,great,2
+98,fnb,large,2
+99,service,attentive,2
+100,person,friendly,2
+101,fnb,warm,2
+102,fnb,really good,2
+103,fnb,sweet,2
+104,work,good,2
+105,fnb,filet,2
+106,everything,fantastic,2
+107,person,have,2
+108,fnb,second,2
+109,it,good,2
+110,quality,same,2
+111,fnb,baked,2
+112,piano music,live,2
+113,fnb,devine,2
+114,fnb,creative,2
+115,tasting,however not very prime,2
+116,tasting,good,2
+117,person,wonderful,2
+118,person,nice,2
+119,chive,sour,2
+120,person,good,2
+121,year,many,2
+122,variety,nice,2
+123,fnb,rich,2
+124,it,well worth,2
+125,something,nice,1
+126,Cannery Hotel,nice,1
+127,person,terrible,1
+128,service,terrible,1
+129,restaurant closing,fairly close,1
+130,salty,little,1
+131,star,overall,1
+132,place,really nice,1
+133,it,really good,1
+134,customer service,great,1
+135,person,better,1
+136,experience,better,1
+137,Sunday,here last,1
+138,rib-eye steak,awesome,1
+139,deal,pretty awesome,1
+140,service,very good,1
+141,fnb,most likely,1
+142,cut,prime,1
+143,price,prime,1
+144,cut,most likely,1
+145,price,most likely,1
+146,it,delicious,1
+147,price,delicious,1
+148,time,way better,1
+149,experience,way better,1
+150,fnb,last,1
+151,fnb,exceptionally bad,1
+152,management,new,1
+153,get,new,1
+154,feedback,positive,1
+155,dining,high,1
+156,presentation,nice,1
+157,Crab Meat,top,1
+158,medium,second,1
+159,medium,heavy,1
+160,flavor,nice,1
+161,order,generous,1
+162,order,expect,1
+163,average,far above,1
+164,make,far above,1
+165,comp,partial,1
+166,discount,other,1
+167,customer need,very attentive,1
+168,lighting,perfect,1
+169,seating,perfect,1
+170,time,first,1
+171,place,classy,1
+172,clothes,casual,1
+173,request,different,1
+174,bread basket,good,1
+175,be,good,1
+176,Veal Oscar Roll,very tasty,1
+177,Veal Oscar Roll,pretty unique,1
+178,entrée,larger,1
+179,fan,big,1
+180,fnb,just so-so,1
+181,person,very mushroomy,1
+182,size,decent,1
+183,bowl,rather large,1
+184,price,disappointing,1
+185,it,meatier,1
+186,it,really just more,1
+187,crab bisque,really just more,1
+188,fnb,so many,1
+189,person,already pretty full,1
+190,room,little,1
+191,fnb,hearty,1
+192,it,little,1
+193,person,too rich,1
+194,steak restaurant,fantastic,1
+195,horse radish,right,1
+196,money,right,1
+197,stuff,good,1
+198,everything,good,1
+199,kind,different,1
+200,home,warm,1
+201,beef burger,amazing,1
+202,spinach,yummy,1
+203,spinach,fresh,1
+204,decor,classic,1
+205,school service,wonderful,1
+206,school service,old,1
+207,dining feel,overall,1
+208,experience,overall,1
+209,dining feel,fine,1
+210,experience,fine,1
+211,fnb,unknown,1
+212,opinion,pricey,1
+213,strawberry,fresh,1
+214,fnb,spiced,1
+215,fnb,watery,1
+216,iceberg lettuce,plain,1
+217,fnb,blue,1
+218,cucumber,seedless,1
+219,fnb,seedless,1
+220,intent,good,1
+221,fnb,complimentary,1
+222,restaurant,very nice,1
+223,it,top,1
+224,service,fabulous,1
+225,service,top,1
+226,place,most,1
+227,place,other,1
+228,place,not too salty,1
+229,fnb,scrumptious,1
+230,place,enough,1
+231,person,so thankful,1
+232,it,quiet,1
+233,star,nice,1
+234,star,quiet,1
+235,person,always amazing,1
+236,house,favorite,1
+237,service,always excellent,1
+238,fnb,elegant,1
+239,steakhouse,perfectly serviceable,1
+240,steakhouse,other,1
+241,price,reasonably reasonable,1
+242,decor,bland-swanky,1
+243,couple,boring,1
+244,retiree,boring,1
+245,couple,married,1
+246,retiree,married,1
+247,star,extra,1
+248,name,stupid,1
+249,name,all-caps,1
+250,fnb,deconstructed,1
+251,fusion,deconstructed,1
+252,wine list,decent,1
+253,care,good,1
+254,person,really rude,1
+255,dining experience,overall,1
+256,dining experience,good,1
+257,pastry,way bigger,1
+258,fnb,way bigger,1
+259,burn,way bigger,1
+260,fnb,separate,1
+261,name,big,1
+262,fnb,coarse,1
+263,kind,same,1
+264,kind,cheaper,1
+265,truth,good,1
+266,truth,not worth,1
+267,work,great,1
+268,fnb,always delicious,1
+269,service,best,1
+270,fnb,very small,1
+271,time,very small,1
+272,money,very small,1
+273,performance,really fine,1
+274,orchestra,live,1
+275,orchestra,12-piece,1
+276,New Year,special,1
+277,bit,atypical,1
+278,fare,normal,1
+279,fare,everyday,1
+280,offering,fancy,1
+281,fnb,fairly high-end,1
+282,hit,immediate,1
+283,fruit bread,great,1
+284,fnb,smooth,1
+285,fnb,serve,1
+286,hunk,big,1
+287,hunk,tasty,1
+288,demi-glace,warm,1
+289,crab cake,deliberately cold,1
+290,array,interesting,1
+291,Potatoes,hot,1
+292,Potatoes,cheesy,1
+293,fnb,glistening,1
+294,side,second,1
+295,side,fine,1
+296,refill,very fast,1
+297,refill,iced,1
+298,refill,good,1
+299,treat,unusual,1
+300,name,unusual,1
+301,filling,creamy,1
+302,filling,cannoli-like,1
+303,fnb,crisp,1
+304,fnb,upscale,1
+305,quality beef,lower,1
+306,serving,smaller,1
+307,management,indifferent,1
+308,Choice,best,1
+309,Choice,not prime,1
+310,item,other,1
+311,item,just not worth,1
+312,person,willing,1
+313,end facility,low,1
+314,overhaul,total,1
+315,Dining Room,classy,1
+316,Dining Room,update,1
+317,need,classy,1
+318,need,update,1
+319,fnb,nice,1
+320,decor,wonderful,1
+321,decor,comfortable,1
+322,person,huge,1
+323,time,last,1
+324,fnb,phenominal,1
+325,tast,wonderful,1
+326,wine,best,1
+327,Steak House,very unassuming,1
+328,casino,very unassuming,1
+329,door,single,1
+330,door,double,1
+331,it,small,1
+332,it,lowbrow,1
+333,decor,very upscale,1
+334,dress,fine,1
+335,upscale restaurant,fine,1
+336,amount,right,1
+337,fnb,crunchy,1
+338,way,rare,1
+339,taste,wonderful,1
+340,way,full,1
+341,flavor,full,1
+342,Au Gratin,best,1
+343,seasoning,extra,1
+344,order,not small,1
+345,fnb,so much,1
+346,fnb,so fluffy,1
+347,fnb,light,1
+348,Whenever,also watery,1
+349,fnb,fluffy,1
+350,past,fluffy,1
+351,person,also watery,1
+352,person,so light,1
+353,person,fluffy,1
+354,person,tasty,1
+355,fnb,very tasty,1
+356,service,pretty good,1
+357,person,also very apologetic,1
+358,service score,very low,1
+359,seating,very busy,1
+360,arrange,very busy,1
+361,it,still warm,1
+362,it,wonderful,1
+363,fyi,back open,1
+364,end,back open,1
+365,try,close,1
+366,neighborhood,close,1
+367,person,very disappointed,1
+368,nothing,fine,1
+369,nothing,top,1
+370,steakhouse,recent,1
+371,person,most disappointed,1
+372,fnb,most disappointed,1
+373,fnb,scalloped,1
+374,fnb,too dry,1
+375,fnb,worse,1
+376,grocery,local,1
+377,entree,amazing,1
+378,person,overbearing,1
+379,person,awesome,1
+380,fnb,even better,1
+381,visit,next,1
+382,service,bad,1
+383,service,hopeful,1
+384,word,not pleasant,1
+385,fnb,just awful,1
+386,liver,bad,1
+387,person,pleasant,1
+388,person,listen,1
+389,visit,future,1
+390,coffee shop,not bad,1
+391,evening,special,1
+392,fnb,short,1
+393,fnb,succulent,1
+394,scallop,best,1
+395,haunt,regular,1
+396,dining,nice,1
+397,corner,dimly-lit,1
+398,casino,new-but-second-rate,1
+399,fnb,juicy,1
+400,hell,hot,1
+401,person,so attentive,1
+402,person,almost constantly apologetic,1
+403,party,large,1
+404,party,due,1
+405,fnb,dark,1
+406,fnb,moist,1
+407,person,collective,1
+408,fnb,almost quiveringly rare,1
+409,fnb,delish,1
+410,wine list,good,1
+411,atmosphere compliment,good,1
+412,fnb,mighty,1
+413,price,appropriately high,1
+414,everything,amazing,1
+415,steakhouse,mid-range,1
+416,steakhouse,best,1
+417,person,efficient,1
+418,person,really friendly,1
+419,person,really knowledgeable,1
+420,menu,really knowledgeable,1
+421,piano,live,1
+422,itself,pretty impressive,1
+423,piano,pretty impressive,1
+424,attire,bad,1
+425,restaurant,really fancy,1
+426,year,great,1
+427,person,few,1
+428,Portobello Frites,absolutely amazing,1
+429,it,not any better,1
+430,it,worse,1
+431,restaurant,most,1
+432,restaurant,other,1
+433,restaurant,not any better,1
+434,restaurant,worse,1
+435,service,fantastic,1
+436,fnb,lovely,1
+437,touch,other,1
+438,touch,small,1
+439,feeling evening,surprisingly elegant,1
+440,price,far lower,1
+441,hour,last,1
+442,mile,green,1
+443,dinner date,nice,1
+444,milestone,nice,1
+445,money,not worth,1
+446,it,flavorless,1
+447,person,disappointed,1
+448,spinach,delicious,1
+449,spinach,sautéed,1
+450,everything,excellent,1
+451,constraint,tight,1
+452,service,nice,1
+453,service,awkward,1
+454,vodka gimlet,far too much,1
+455,lime,far too much,1
+456,it,serviceable,1
+457,brûlée,good,1
+458,steak house,darn,1
+459,steak house,good,1
+460,casino,very mediocre,1
+461,rate,first,1
+462,cannery,special,1
+463,price,not nearly whats,1
+464,fnb,similar,1
+465,oz,delicious,1
+466,slab,nice,1
+467,evening,very crowded,1
+468,team effort,true,1
+469,cocktail,potent,1
+470,ambiance,attractive,1
+471,its,pretty positive,1
+472,value,very good,1
+473,value,pretty positive,1
+474,evening,great,1
+475,martini,exceptional,1
+476,martini,dirty,1
+477,point,exceptional,1
+478,party,fabulous,1
+479,person,very pleased,1
+480,fnb,very pleased,1
+481,downfall,only,1
+482,person,free,1
+483,smile,free,1
+484,person,spectacular,1
+485,person,bring,1
+486,lavosh,best,1
+487,fnb,8oz,1
+488,medium,mine,1
+489,hub,rare,1
+490,medium,straight,1
+491,flavor,just full,1
+492,it,particularly nice,1
+493,taste,small,1
+494,experience,beautiful,1
+495,fnb,beautiful,1
+496,fnb,drunk,1
+497,person,wrong,1
+498,person,happily so,1
+499,person,pretty terrific,1
+500,fnb,pretty terrific,1
+501,fnb,most tender,1
+502,time,long,1
+503,fnb,also delicious,1
+504,fnb,unbelievable,1
+505,decide,worth,1
+506,bargain,:-rrb-,1
+507,include,:-rrb-,1
+508,fnb,special,1
+509,fnb,unreal,1
+510,month,other,1
+511,person,really good,1
+512,place,fabulous,1
+513,ambiance,cozy,1
+514,pianist,talented,1
+515,pianist,cozy,1
+516,restaurant,very few,1
+517,restaurant,nice,1
+518,house,close,1
+519,dining,fine,1
+520,fnb,enjoyable,1
+521,course meal,awesome,1
+522,item,different,1
+523,choice,filet,1
+524,fnb,also very tastey,1
+525,rest,amazing,1
+526,point,full,1
+527,point,not enjoy,1
+528,thing,entire,1
+529,tier steakhouse,top,1
+530,item,overly tough,1
+531,person,bad,1
+532,table,other,1
+533,other,more stubborn,1
+534,gem right,fabulous,1
+535,gem right,little,1
+536,atmosphere,fabulous,1
+537,person,impeccable,1
+538,service,have,1
+539,gem,little,1
+540,ambience,great,1
+541,bread bowl variety,nice,1
+542,fnb,really weird,1
+543,lettuce,really weird,1
+544,it,soft,1
+545,it,mushy-looking,1
+546,menu,three-course,1
+547,fnb,battered,1
+548,brisket,battered,1
+549,person,normal,1
+550,it,still too much,1
+551,it,mushy,1
+552,it,inedible,1
+553,fnb,okay,1
+554,jalapeño spoon bread,cold,1
+555,jalapeño spoon bread,crusty,1
+556,it,bad,1
+557,thing,normal,1
+558,restaurant,awesome,1
+559,side,fancy,1
+560,fnb,fried,1
+561,fnb,extremely good,1
+562,fnb,also excellent,1
+563,cooking,fine,1
+564,anything,fine,1
+565,cooking,much,1
+566,anything,much,1
+567,bite,single,1
+568,chocolate cake,also pretty great,1
+569,it,not too sweet,1
+570,dollop,not too sweet,1
+571,fnb,house-made,1
+572,crust,so flavorful,1
+573,au jus,very good,1
+574,night,slow,1
+575,glass,free,1
+576,glass,nice,1
+577,restaurant,very clean,1
+578,review,really great,1
+579,review,due,1
+580,review,most resto,1
+581,review,sad,1
+582,bearer,sad,1
+583,news,bad,1
+584,fnb,so tough,1
+585,almond bread,other,1
+586,nothing,other,1
+587,nothing,worth,1
+588,fnb,dirty,1
+589,nothing,memorable,1
+590,song,great,1
+591,person,incredible,1
+592,fnb,incredible,1
+593,slice,thick,1
+594,serve,thick,1
+595,fnb,creamy,1
+596,fnb,delicate,1
+597,point,delicate,1
+598,point,bland,1
+599,clam,more,1
+600,fnb,more,1
+601,crumble,so small,1
+602,it,hard,1
+603,rind,thick,1
+604,rind,very fatty,1
+605,service,polite,1
+606,fee,small,1
+607,fee,fine,1
+608,side order,full,1
+609,service,spotty,1
+610,busser,spotty,1
+611,fnb,not so much,1
+612,rib end cut,prime,1
+613,concoction,laden,1
+614,fnb,big,1
+615,flavor,good,1
+616,duty,friendly,1
+617,thing,negative,1
+618,person,large,1
+619,person,come,1
+620,casino,quaint,1
+621,casino,cigarette-filled,1
+622,time,very memorable,1
+623,time,beautiful,1
+624,evening,lovely,1
+625,person,old,1
+626,year,old,1
+627,person,3-course,1
+628,choice,special,1
+629,chocolate lava cake,special,1
+630,fnb,extra,1
+631,bread basket,delicious,1
+632,person,comfortable,1
+633,fnb,absolutely delicious,1
+634,steakhouse,favorite,1
+635,top,other,1
+636,person,always friendly,1
+637,person,engaging,1
+638,soup fan,second,1
+639,She-Crab,second,1
+640,none,second,1
+641,fnb,always perfect,1
+642,marbeling,always perfect,1
+643,vegetable,amazing,1
+644,wine selection,great,1
+645,bar,full,1
+646,it,pricey,1
+647,money,worth,1
+648,Whenever,possible,1
+649,selection,great,1
+650,reservation,hubby,1
+651,place,busy,1
+652,reservation,busy,1
+653,piano player,live,1
+654,care,very good,1
+655,person,enough,1
+656,thing,special,1
+657,price,actually reasonable,1
+658,way,only,1
+659,way,nice,1
+660,person,so incredible,1
+661,break basket,extraordinary,1
+662,fnb,extraordinary,1
+663,crème brûlée,free,1
+664,peak,not scary,1
+665,price,so much,1
+666,person,sincerely impressed,1
+667,perfection,absolute,1
+668,side,other,1
+669,night,wonderful,1
+670,all,wonderful,1
+671,excursion,next,1
+672,fnb,very inexpensive,1
+673,quality,very inexpensive,1
+674,fnb,several,1
+675,everything,very good,1
+676,night,first,1
+677,plus,western,1
+678,steakhouse,nice,1
+679,person,not disappointed,1
+680,day,next,1
+681,app,very good,1
+682,pie,ok,1
+683,Jamaica Almond Fudge,similar,1
+684,dining establishment,fine,1
+685,clientele,fine,1
+686,dining establishment,tacky,1
+687,clientele,tacky,1
+688,steak house,really great,1
+689,person,professional,1
+690,person,make,1
+691,night,very enjoyable,1
+692,it,amazing,1
+693,steakhouse,as good,1
+694,player,best,1
+695,person,as good,1
+696,today,as good,1
+697,night,great,1
+698,steakhouse,most,1
+699,person,very slow,1
+700,Bread Basket,always good,1
+701,truffle sauce,excellent,1
+702,come,first,1
+703,occasion,perfect,1
+704,dining experience,pleasurable,1
+705,steakhouse,finest,1
+706,service,unbelievable,1
+707,ambiance,great,1
+708,dining destination,amazing,1
+709,shout,big,1
+710,bartender,top,1
+711,fnb,most common,1
+712,fnb,cheap,1
+713,fnb,cold,1
+714,house salad,tiny,1
+715,iceberg,diced,1
+716,half potato,cold,1
+717,fnb,surprisingly very tasty,1
+718,portion size,healthy,1
+719,fnb,dry,1
+720,ear,dry,1
+721,plate,hot,1
+722,language,first,1
+723,time,fourth,1
+724,fnb,half,1
+725,container,open,1
+726,plate,full,1
+727,shock,such,1
+728,straw,final,1
+729,experience,horrific,1
+730,experience,dinning,1
+731,quality control,better,1
+732,customer service,appalling,1
+733,fnb,ok,1
+734,fnb,tough,1
+735,flavor,tough,1
+736,fnb,quite good,1
+737,price,somewhat reasonable,1
+738,quality,high,1
+739,place,clean,1
+740,steakhouse,better,1
+741,price,better,1
+742,other,better,1
+743,it,worth,1
+744,visit,second,1
+745,visit,worth,1
+746,year,last,1
+747,year,night-new,1
+748,stickler,fantastic,1
+749,glass,always full,1
+750,when,great,1
+751,fnb,favorite,1
+752,fnb,usual,1
+753,twist,own,1
+754,fnb,own,1
+755,twist,delicious,1
+756,fnb,enough,1
+757,fnb,typical,1
+758,fnb,top,1
+759,line,top,1
+760,steak medium,rare,1
+761,talk,sexy,1
+762,sidekick,nice,1
+763,person,hawaiian,1
+764,boy,glad,1
+765,person,glad,1
+766,stop,regular,1
+767,experience,same,1
+768,suggestion,only,1
+769,steak house,fabulous,1
+770,end,very nice,1
+771,flare,upscale,1
+772,menu,pricier,1
+773,person,personable,1
+774,person,exceptional,1
+775,service,personable,1
+776,ambiance,right,1
+777,steak house,favorite,1
+778,time,many,1
+779,offering,wonderful,1
+780,atmosphere,perfect,1
+781,it,intimate,1
+782,it,cozy,1
+783,bonus,intimate,1
+784,bonus,cozy,1
+785,need,attentive,1
+786,attribute,best,1
+787,dining experience,perfect,1
+788,service,absolutely great,1
+789,it,very underrated,1
+790,it,understandably so see,1
+791,establishment,very underrated,1
+792,establishment,understandably so see,1
+793,trip,very underrated,1
+794,trip,understandably so see,1
+795,person,very impressed,1
+796,service,very impressed,1
+797,feeling,personal,1
+798,feeling,individual,1
+799,it,hot,1
+800,it,cold,1
+801,it,well warm,1
+802,job chef,good,1
+803,person,whole,1
+804,attitude,great,1
+805,bit,dry,1
+806,chop,too small,1
+807,fnb,pale,1
+808,cheese potato side,really good,1
+809,experience,good,1
+810,need,good,1
+811,place,awesome,1
+812,Location,outstanding,1
+813,Excellent Food,outstanding,1
+814,nil,outstanding,1
+815,lol,outside,1
+816,plate,warm,1
+817,place,very impressive,1
+818,piano player,very talented,1
+819,menu,new,1
+820,product,new,1
+821,house vinaigrette,very fresh,1
+822,house vinaigrette,flavorful,1
+823,service,outstanding,1
+824,fnb,spicy,1
+825,party,very large,1
+826,service,sporadic,1
+827,side,rare,1
+828,it,black,1
+829,charcoal,black,1
+830,fnb,cubed,1
+831,atmosphere,nice,1
+832,bread basket,really yummy,1
+833,variety,really yummy,1
+834,plenty,rich,1
+835,plenty,excellent,1
+836,fnb,luscious,1
+837,fnb,melted,1
+838,entree,wonderful,1
+839,entree,cook,1
+840,fnb,also outstanding,1
+841,fnb,slightly undercooked,1
+842,dining experience,most amazing,1
+843,fnb,solid,1
+844,everything,so delicious,1
+845,service level,non-comparable,1
+846,end restaurant,high,1
+847,end restaurant,non-comparable,1
+848,way,long,1
+849,rib eye,nice,1
+850,fnb,casual,1
+851,person,very knowledgeable,1
+852,menu,very knowledgeable,1
+853,fnb,come,1
+854,lavash,in-house,1
+855,oscar style,good,1
+856,it,moist,1
+857,juicy,moist,1
+858,style,scallop,1
+859,steakhouse,local,1
+860,price,10x better,1
+861,outback,10x better,1
+862,buck,few,1
+863,buck,10x better,1
+864,expectation,not very high,1
+865,understatement,huge,1
+866,cost,so insane,1
+867,par,so insane,1
+868,thing,main,1
+869,fnb,intrusive,1
+870,coffee,stronger,1
+871,touch,stronger,1
+872,fnb,friendly,1
+873,it,raw,1
+874,it,tough,1
+875,person,special,1
+876,oz,special,1
+877,Sirloin,special,1
+878,buffet,cheap,1
+879,cut,cheaper,1
+880,fnb,much better,1
+881,cut,thicker,1
+882,upscale restaurant,self-proclaimed,1
+883,upscale restaurant,inexcusable,1
+884,cut,inferior,1
+885,cut,smaller,1
+886,restaurant,different,1
+887,return,recent,1
+888,fnb,interesting,1
+889,alternative,nice,1
+890,person,traditional,1
+891,fnb,traditional,1
+892,fnb,cheesy,1
+893,fnb,fast,1
+894,Bearnaise Sauce,good,1
+895,tail,fairly sweet,1
+896,fnb,fairly sweet,1
+897,tail,quite yummy,1
+898,fnb,quite yummy,1
+899,seating,comfortable,1
+900,armchair,wooden,1
+901,armchair,comfortable,1
+902,seat,uphostered,1
+903,scoop,large,1
+904,counterpoint,great,1
+905,star experience,delightful,1

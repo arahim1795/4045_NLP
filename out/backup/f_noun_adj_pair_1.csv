@@ -1,0 +1,748 @@
+rank,noun,adj,count
+0,pepper,hot,6
+1,sandwich,other,6
+2,pepper,sweet,6
+3,sandwich,cold,5
+4,sandwich,best,5
+5,bread,fresh,4
+6,sub,italian,4
+7,time,last,4
+8,thing,good,4
+9,sandwich,good,4
+10,meal,quick,4
+11,location,other,4
+12,drink,free,4
+13,time,first,4
+14,option,vegetarian,4
+15,bread,soft,3
+16,sub,small,3
+17,place,other,3
+18,sub,best,3
+19,sub,favorite,3
+20,my,favorite,3
+21,week,last,3
+22,time,next,3
+23,option,great,3
+24,slaw,cold,3
+25,soda,large,3
+26,cheese,swiss,2
+27,order,online,2
+28,quality,good,2
+29,location,different,2
+30,my,hubby,2
+31,staff,friendly,2
+32,price,great,2
+33,employee,friendly,2
+34,sandwich,delicious,2
+35,favorite,new,2
+36,sandwich,large,2
+37,option,vegan,2
+38,cheese steak,philly,2
+39,something,cheap,2
+40,I,frequent,2
+41,rock casino,red,2
+42,turkey,real,2
+43,cheesesteak,veggie,2
+44,people,few,2
+45,Thanksgiving,traditional,2
+46,sub,cold,2
+47,cranberry sauce,sweet,2
+48,fan,big,2
+49,turkey,cold,2
+50,review,great,2
+51,cheese,melted,2
+52,kid,rude,2
+53,time,long,2
+54,Capriotti,other,2
+55,burger,veggie,2
+56,meal,best,2
+57,drink,large,2
+58,food,good,2
+59,sandwich,hot,2
+60,pastrami,hot,2
+61,it,definitely worth,2
+62,it,delicious,2
+63,value,great,2
+64,joint,other,2
+65,location,retail,2
+66,marketplace,disheartened,2
+67,lettuce,generous,2
+68,gobble,gobble,2
+69,location,good,2
+70,sandwich,super,2
+71,option,other,2
+72,option,faux-meat,2
+73,sandwich spot,decent,1
+74,spot,other,1
+75,kind,good,1
+76,nothing,special,1
+77,sandwich,absolutely delicious,1
+78,memory,pleasant,1
+79,he,italian,1
+80,wife,italian,1
+81,wheat,whole,1
+82,lady,friendly,1
+83,lady,seem,1
+84,sandwich shop,very solid,1
+85,order,ready,1
+86,you,best,1
+87,time,third,1
+88,pickle,hot,1
+89,pepper,italian,1
+90,pickle,italian,1
+91,gentleman,helpful,1
+92,way,fastest,1
+93,I,so pleasantly surprised,1
+94,PA.,eastern,1
+95,bread,amazing,1
+96,lettuce,shredded,1
+97,lil sammy shop,best,1
+98,food,great,1
+99,ingredient,quality,1
+100,staff,good,1
+101,stuff,good,1
+102,flavor,good,1
+103,flavor,soft,1
+104,experience,first,1
+105,I,glad,1
+106,visit,first,1
+107,visit,just not impressive,1
+108,food,ok,1
+109,sandwich,better,1
+110,cheese steak sandwich,philly,1
+111,I,picky,1
+112,sandwich,picky,1
+113,steak,really expensive,1
+114,philly,other,1
+115,it,not even comparable,1
+116,philly,not even comparable,1
+117,it,still quite good,1
+118,Bobbie,large,1
+119,it,delicous,1
+120,sandwich,delicous,1
+121,handed,short,1
+122,service,slow,1
+123,bit,slow,1
+124,complaint,other,1
+125,problem,small,1
+126,Capastromi,delicious,1
+127,Grilled Italian,delicious,1
+128,I,not very hungry,1
+129,sub,largest,1
+130,ton,soft,1
+131,place,soft,1
+132,stuff,much,1
+133,cheesteak,forgettable,1
+134,experience,best,1
+135,owner,same,1
+136,its,close,1
+137,im,sorry,1
+138,im,then go,1
+139,rating,better,1
+140,im,:-lrb-,1
+141,Capriotti,best,1
+142,sub,friendly,1
+143,staff,just amazing,1
+144,sub,just amazing,1
+145,meatball,homemade,1
+146,its,good,1
+147,employee,nice,1
+148,its,best,1
+149,Capriotti,awesome,1
+150,Cole Turkey,awesome,1
+151,bread,great,1
+152,they,famous,1
+153,sandwich,famous,1
+154,sandwich,leftover,1
+155,cake,great,1
+156,cake,bundt,1
+157,cake,moist,1
+158,belief,moist,1
+159,capriottis,best,1
+160,staff,very friendly,1
+161,guest,very friendly,1
+162,smile,jolly,1
+163,favorite,second,1
+164,medium,small,1
+165,side,pricey,1
+166,its,worth,1
+167,penny,worth,1
+168,sandwich shop,favorite,1
+169,Luca,little,1
+170,crunch roll mmmmmm,dutch,1
+171,sub,hot,1
+172,pastrami meat,soft,1
+173,pastrami meat,not stringy,1
+174,cheese steak meat,also soft,1
+175,gawd,so yummy,1
+176,time,whole,1
+177,I,over-exaggerating,1
+178,devour,large,1
+179,female,petite,1
+180,sandwich,to-go,1
+181,block,few,1
+182,DELICIOUS,mouth-watering,1
+183,recommend,most-def,1
+184,bbq chicken salad,good,1
+185,ranch,too mild,1
+186,punch,awesome,1
+187,service,awesome,1
+188,upgrade,free,1
+189,upgrade,long,1
+190,staff,always friendly,1
+191,staff,very clean,1
+192,sub,huge,1
+193,night,late,1
+194,night munchie,fest,1
+195,night,fest,1
+196,wine event,fest,1
+197,steak,best,1
+198,gas station,next,1
+199,beef,roasted,1
+200,sandwich,many,1
+201,tasting,worth,1
+202,reason,only,1
+203,decision,different,1
+204,ham,hot,1
+205,cheese,hot,1
+206,I,hungry,1
+207,something,want,1
+208,sandwich,always great,1
+209,matter,always great,1
+210,park,closest,1
+211,highway,closest,1
+212,casino floor,clear,1
+213,fries,french,1
+214,they,unable,1
+215,food,fast,1
+216,they,ok,1
+217,meal,ok,1
+218,time,more,1
+219,potato,baked,1
+220,potato,memorable,1
+221,wait,ridiculous,1
+222,bag,mixed,1
+223,food,really good,1
+224,location,many,1
+225,other,much better,1
+226,Portions,surprisingly huge,1
+227,price,same,1
+228,price,frequent,1
+229,sub,same,1
+230,sub,much bigger,1
+231,sub,extra,1
+232,we,so impressed,1
+233,service,painfully slow,1
+234,they,busy,1
+235,employee,very nice,1
+236,employee,seem,1
+237,bit,confused,1
+238,order,initial,1
+239,we,so hungry,1
+240,it,good,1
+241,it,not get,1
+242,I,wrong,1
+243,spot,bad,1
+244,Service,good,1
+245,Capriotti,typical,1
+246,location,so not very busy,1
+247,it,right,1
+248,ton,next,1
+249,restaurant,other,1
+250,timer,first,1
+251,sandwich person,not much,1
+252,thing,most familiar,1
+253,notch,top,1
+254,cheese steak sandwich,best,1
+255,it,better,1
+256,lot,better,1
+257,version,better,1
+258,kind,pricey,1
+259,drink,small,1
+260,I,not sure,1
+261,casino,not sure,1
+262,shop,standalone,1
+263,cranberry sauce,extra,1
+264,place,horrible,1
+265,they,special,1
+266,anniversary,special,1
+267,advantage,special,1
+268,sandwich,full,1
+269,size,full,1
+270,Bobbie,special,1
+271,price,special,1
+272,scrap,few,1
+273,amount,huge,1
+274,sandwich,your,1
+275,scrap,going,1
+276,fix,usual,1
+277,fix,in-n-out,1
+278,business,not available,1
+279,Hawaii,not available,1
+280,Bobbie,small,1
+281,Capistrami,small,1
+282,Panda Express,nearby,1
+283,taste,little,1
+284,taste,great,1
+285,visit,next,1
+286,buffet,rediculously busy,1
+287,casino,rediculously busy,1
+288,sandwich,quite good,1
+289,price,quite good,1
+290,ambiance,pleasant,1
+291,day,same,1
+292,day,nice,1
+293,I,clear,1
+294,sandwich,very popular,1
+295,you,aware,1
+296,pack,refrigerated,1
+297,pack,frozen,1
+298,pack,vacuum-sealed,1
+299,shelf life,decent,1
+300,choice,second,1
+301,sauce,red,1
+302,it,extremely easy,1
+303,meatball,separate,1
+304,marinara sauce,separate,1
+305,sauce,extremely easy,1
+306,I,so disappointed,1
+307,Red Rock,so disappointed,1
+308,mix,great,1
+309,mix,sweet,1
+310,mix,savory,1
+311,service,excellent,1
+312,time,amazing,1
+313,sandwich,amazing,1
+314,service,amazing,1
+315,which,amazing,1
+316,tuna,amazing,1
+317,choice,so many,1
+318,choice,yummy,1
+319,people,other,1
+320,rating,5-star,1
+321,pepper,just about perfect,1
+322,bread,pillowy,1
+323,tender steak,pillowy,1
+324,melty cheese,pillowy,1
+325,meatball sub,good,1
+326,meatball sub,no,1
+327,experience,terrible,1
+328,sandwich,dry,1
+329,she,located,1
+330,Beverly Hills,located,1
+331,opportunity,perfect,1
+332,turkey meat,home-made,1
+333,stuffing,cold,1
+334,stuffing,soft/soggy,1
+335,Thanksgiving,american,1
+336,sub,really good,1
+337,its,just too bad,1
+338,I,just too bad,1
+339,sandwich,heavy,1
+340,lunch,quick,1
+341,customer,other,1
+342,sub,port,1
+343,capriottis,nearby,1
+344,time,nearby,1
+345,shop,amazing,1
+346,they,responsive,1
+347,they,timely,1
+348,they,so accommodate,1
+349,order,special,1
+350,we,very specific,1
+351,time,very specific,1
+352,delivery,correct,1
+353,they,ontime,1
+354,food quality,awesome,1
+355,item,few,1
+356,I,impressed,1
+357,shop,impressed,1
+358,representative,great,1
+359,work,great,1
+360,my,usual,1
+361,my,damn good,1
+362,town,small,1
+363,Pretty,impressed,1
+364,staff,great,1
+365,option,quick,1
+366,option,inexpensive,1
+367,steak,smallest,1
+368,sausage,italian,1
+369,pepper,grilled,1
+370,piece,very long,1
+371,sandwich,very long,1
+372,location,most other,1
+373,location,friendly,1
+374,food court,pretty busy,1
+375,sandwich,more,1
+376,sandwich,ready,1
+377,ok,fine,1
+378,customer sandwich,other,1
+379,kid,speechless,1
+380,kid,not answer,1
+381,discount nothing,speechless,1
+382,discount nothing,not answer,1
+383,question,simple,1
+384,customer service,horrible,1
+385,I,regular,1
+386,casino,regular,1
+387,attention,more,1
+388,problem,main,1
+389,onion,hot,1
+390,kind sandwich,different,1
+391,point,open,1
+392,house,also closest,1
+393,deal,big,1
+394,choice,excellent,1
+395,sandwich,unique,1
+396,location,convenient,1
+397,Capastrami,heavenly,1
+398,Capastrami,ideal,1
+399,meat,not too salty,1
+400,portion,huge,1
+401,mix,perfect,1
+402,it,easily accessible,1
+403,food court,easily accessible,1
+404,casino,easily accessible,1
+405,Service,quick,1
+406,Service,friendly,1
+407,help,more,1
+408,girl,so nice,1
+409,Service,always quick,1
+410,Bobbie,good,1
+411,Capistrami,good,1
+412,they,high,1
+413,calorie,high,1
+414,it,better alternative,1
+415,I,sad,1
+416,I,hesitant,1
+417,one,hot,1
+418,trip,short,1
+419,restaurant,located,1
+420,Red Rock Hotel,located,1
+421,Casino,located,1
+422,sandwich chain,large,1
+423,meatball sub,long,1
+424,it,really good,1
+425,sauce,excellent,1
+426,sauce,have,1
+427,experience,great,1
+428,yelper,ok,1
+429,yelper,fellow,1
+430,its,obvious,1
+431,people,obvious,1
+432,line,wrong,1
+433,review,actual,1
+434,review,consistently delicious,1
+435,sandwich,consistently delicious,1
+436,Capistrami,favorite,1
+437,something,so perfect,1
+438,slaw,russian,1
+439,bit,little,1
+440,it,pricey,1
+441,moral,pricey,1
+442,meal,worthwhile,1
+443,meal,pricey,1
+444,Bobbie,very interesting,1
+445,turkey,hot,1
+446,pep,definite,1
+447,Capastrami,tasty,1
+448,sandwich shop,nice,1
+449,feel,italian,1
+450,turkey,bent,1
+451,option,nice,1
+452,menu selection,broadest,1
+453,it,convenient,1
+454,Red Rock,convenient,1
+455,want,convenient,1
+456,line,big,1
+457,sandwich,special,1
+458,it,ok,1
+459,thing,not sure,1
+460,thing,bad,1
+461,slaw,half,1
+462,way,under-seasoned,1
+463,texture,hot,1
+464,texture,cold,1
+465,pastrami sandwich,good,1
+466,Towers Deli,venetian,1
+467,it,not bad,1
+468,sandwich,most famous,1
+469,turkey,absolutely yummy,1
+470,sandwich,absolutely yummy,1
+471,day,absolutely yummy,1
+472,choice,great,1
+473,choice,:-rrb-,1
+474,Pastrami,really good,1
+475,place,good,1
+476,sub,good,1
+477,refill,free,1
+478,sub place,typical,1
+479,quality,not horrible,1
+480,quality,not amazing,1
+481,good.they,definitely better,1
+482,subway,definitely better,1
+483,they,way better,1
+484,subway sandwich,way better,1
+485,inch,largest,1
+486,movie theater,right next,1
+487,chicken sandwich,real good,1
+488,bread,white,1
+489,price,pricey,1
+490,price,most,1
+491,bit,pricey,1
+492,bit,most,1
+493,time,most,1
+494,time,definitely worth,1
+495,Bobby,absolutely amazing,1
+496,roll,delicious,1
+497,Bobby,amazing,1
+498,favorite,amazing,1
+499,location,specific,1
+500,Capriottis,most,1
+501,Capriottis,other,1
+502,size,different,1
+503,movie choice,current,1
+504,food,vegetarian,1
+505,sub,vegetarian,1
+506,sub,great,1
+507,noturkey,vegetarian,1
+508,they,good,1
+509,pepper,delish,1
+510,pastrami,deeeeelish,1
+511,soda,free,1
+512,service,just as good,1
+513,food,just as good,1
+514,bread,very good,1
+515,turkey,vegetarian,1
+516,meat,better,1
+517,farm,philly,1
+518,cheese steak,better,1
+519,farm,better,1
+520,veggy,fresh,1
+521,sub place,favorite,1
+522,people,most,1
+523,pepper,amazing,1
+524,spicy,amazing,1
+525,turkey,sliced,1
+526,stuffing,sliced,1
+527,cranberry sauce,sliced,1
+528,mayo,sliced,1
+529,meat,flavorful,1
+530,meat,the,1
+531,sandwich,huge,1
+532,roll,good,1
+533,sandwich,original,1
+534,Bobbi,always good,1
+535,sauce,russian,1
+536,pairing,perfect,1
+537,pairing,always good,1
+538,place,more expensive,1
+539,Capriotti,more expensive,1
+540,location,more expensive,1
+541,nap,optional,1
+542,nap,encouraged,1
+543,bread,hot,1
+544,I,disappointed,1
+545,bit,disappointed,1
+546,I,not too sure,1
+547,check-in offer,amazing,1
+548,I,twice,1
+549,Capriotti,twice,1
+550,sandwich,tasty,1
+551,selection,nice,1
+552,sandwich,warm,1
+553,item,cold,1
+554,item,warm,1
+555,bread,key,1
+556,let,key,1
+557,sandwich,key,1
+558,it,large,1
+559,floor apartment,third,1
+560,they,generous,1
+561,meat,generous,1
+562,veggy,generous,1
+563,it,fresh,1
+564,time,second,1
+565,it,not good,1
+566,it,consider,1
+567,pastrami,warm,1
+568,coleslaw,warm,1
+569,mayo,warm,1
+570,pastrami,buttery,1
+571,coleslaw,buttery,1
+572,mayo,buttery,1
+573,med,better,1
+574,signature sandwich,other,1
+575,signature sandwich,famous,1
+576,thanksgiving meal,full,1
+577,I,ready,1
+578,it,ready,1
+579,month,sometime early next,1
+580,month,ready,1
+581,side,higher,1
+582,nothing,outrageous,1
+583,quality sandwich,higher,1
+584,its,totally reasonable,1
+585,location,particular,1
+586,menu,same,1
+587,menu,full,1
+588,spot,great,1
+589,door,right next,1
+590,sub sandwich,favorite,1
+591,I,disheartened,1
+592,meat portion,disheartened,1
+593,Sahara,disheartened,1
+594,Durango,disheartened,1
+595,Las Vegas,disheartened,1
+596,Nevada,disheartened,1
+597,Irvine Blvd,disheartened,1
+598,Irvine California,disheartened,1
+599,MacArthur,disheartened,1
+600,dove,disheartened,1
+601,Irvine,disheartened,1
+602,California,disheartened,1
+603,Tustin,disheartened,1
+604,county,orange,1
+605,it,disappointing,1
+606,cashier,friendly,1
+607,man,young,1
+608,bin,nasty,1
+609,thing,other,1
+610,tomato,older,1
+611,I,able,1
+612,place,only,1
+613,meat,mock,1
+614,section,vegetarian,1
+615,meat,vegetarian,1
+616,meat,meatless,1
+617,%,meatless,1
+618,it,still frozen,1
+619,it,not ready,1
+620,portion,mock,1
+621,portion,generous,1
+622,roll,sub,1
+623,roll,generous,1
+624,tomato,generous,1
+625,seasoning,italian,1
+626,mayonnaise,vegan,1
+627,Wildwood Garlic Aioli,excellent,1
+628,cheese steak,vegetarian,1
+629,coleslaw,creamy,1
+630,sub cuisine,sublime,1
+631,door,front,1
+632,window,front,1
+633,dinner,leftover,1
+634,food kinda girl,leftover,1
+635,pizza,cold,1
+636,spaghetti,cold,1
+637,anything,cold,1
+638,my,fancy,1
+639,slice,thick,1
+640,turkey,roasted,1
+641,they,great,1
+642,size,pretty good,1
+643,it,too messy,1
+644,time,much,1
+645,love,really great,1
+646,option,good,1
+647,option,fast,1
+648,place,same,1
+649,time,same,1
+650,minute,extra,1
+651,it,third,1
+652,chicken,dry,1
+653,salty,extremley,1
+654,salty,dry,1
+655,minute,last,1
+656,it,open,1
+657,minute,open,1
+658,night,last,1
+659,month,past,1
+660,month,few,1
+661,sponsor,very generous,1
+662,price,higher,1
+663,bit,higher,1
+664,competition,higher,1
+665,container,big,1
+666,salad,next,1
+667,turkey,moist,1
+668,provolone,moist,1
+669,provolone,really good,1
+670,cole slaw,moist,1
+671,complaint,only,1
+672,sandwich,small,1
+673,sandwich,just too big,1
+674,I,just too big,1
+675,price,smaller,1
+676,people,not too many,1
+677,dinner,usual,1
+678,hour,simply too tired,1
+679,restaurant,italian,1
+680,dinner,quick,1
+681,dinner,casual,1
+682,trip,many,1
+683,issue,short,1
+684,I,short,1
+685,incher,huge,1
+686,sandwich,consume,1
+687,cheese,cheap,1
+688,wiz,cheap,1
+689,option,few,1
+690,veggie sub,usual,1
+691,veggie sub,other,1
+692,meat,faux,1
+693,I,not willing,1
+694,I,think,1
+695,option,interesting,1
+696,option,same,1
+697,bite,quick,1
+698,cheese,nice,1
+699,sandwich,memorable,1
+700,service,new,1
+701,girl,new,1
+702,soda,huge,1
+703,boy,bad,1
+704,sandwhich,great,1
+705,service,fast,1
+706,offer,fast,1
+707,service,riendly,1
+708,offer,riendly,1
+709,Regal Cinema,right,1
+710,door,next,1
+711,door,right,1
+712,dog,hot,1
+713,sub,large,1
+714,sub,fill,1
+715,meat,good,1
+716,job,good,1
+717,dude,super,1
+718,dude,hungry,1
+719,sandwich,same,1
+720,sandwich,great,1
+721,price,slightly higher,1
+722,location,slightly higher,1
+723,time,clueless,1
+724,I,clueless,1
+725,patty,other,1
+726,place,such,1
+727,turkey,meatless,1
+728,meal,good,1
+729,flavor,very good,1
+730,I,really happy,1
+731,meal,healthy,1
+732,meal,vegetarian,1
+733,meal,delicious,1
+734,meal,nutritious,1
+735,it,great,1
+736,stop,occasional,1
+737,cheesesteak,vegetarian,1
+738,cheeseburger,vegetarian,1
+739,Capriotti,located,1
+740,Red Rock Casino,located,1
+741,customer service,excellent,1
+742,food,delicious,1
+743,selection,great,1
+744,tastey,fresh,1
+745,filling,fresh,1
+746,I,really hungry,1

@@ -1,0 +1,712 @@
+rank,noun,adj,count
+1,fnb,red,19
+2,fnb,fresh,13
+3,fnb,vietnamese,8
+4,fnb,green,7
+5,fnb,real,7
+6,fnb,other,6
+7,fnb,black,6
+8,time,next,5
+9,person,favorite,5
+10,coffee,vietnamese,5
+11,person,friendly,5
+12,time,few,4
+13,door,next,4
+14,fnb,good,4
+15,fnb,favorite,4
+16,person,happy,4
+17,amount,right,4
+18,fnb,refreshing,4
+19,time,first,4
+20,person,good,4
+21,fnb,special,4
+22,person,special,4
+23,it,refreshing,4
+24,trio,awesome,4
+25,fnb,various,4
+26,fnb,such,4
+27,person,so glad,3
+28,person,awesome,3
+29,fnb,delicious,3
+30,person,frequent,3
+31,place,new,3
+32,person,very friendly,3
+33,service,good,3
+34,person,very nice,3
+35,fnb,asian,3
+36,person,not sure,3
+37,person,nice,3
+38,table,small,3
+39,it,good,3
+40,person,excited,3
+41,fnb,new,3
+42,place,awesome,3
+43,fnb,white,3
+44,fnb,dessert-like,3
+45,fnb,mung,3
+46,it,nice,2
+47,fan,huge,2
+48,person,younger,2
+49,fnb,sweet,2
+50,service,great,2
+51,week,few,2
+52,it,tasty,2
+53,person,so excited,2
+54,dog,due,2
+55,something,sweet,2
+56,thing,good,2
+57,it,not too sweet,2
+58,person,located,2
+59,person,unhappy,2
+60,person,such,2
+61,it,extremely sweet,2
+62,it,soft,2
+63,type,different,2
+64,spot,new,2
+65,dairy,free,2
+66,time,long,2
+67,fnb,crushed,2
+68,fnb,creamy,2
+69,it,hard,2
+70,place,clean,2
+71,fnb,same,2
+72,person,tell,2
+73,fnb,amazing,2
+74,fnb,fantastic,2
+75,person,fast,2
+76,person,fine,2
+77,place,only,2
+78,fan,big,2
+79,opening,soft,2
+80,time,second,2
+81,enjoy,second,2
+82,bathroom,public,2
+83,seating,public,2
+84,person,delicious,2
+85,fnb,free,2
+86,fnb,located,2
+87,person,only,2
+88,fnb,chewy,2
+89,atmosphere,clean,2
+90,person,able,2
+91,person,last,2
+92,place,cute,2
+93,person,sure,2
+94,person,weird,2
+95,place,great,2
+96,cool,super,2
+97,fnb,=,2
+98,person,hubby,2
+99,person,other,2
+100,it,not bad,2
+101,fnb,different,2
+102,opening,grand,2
+103,fnb,several,2
+104,fnb,rich,2
+105,fnb,yummy,2
+106,location,other,2
+107,location,different,2
+108,person,welcome,2
+109,thing,only,2
+110,person,1st,2
+111,person,oldest,2
+112,place,located,1
+113,fact,located,1
+114,person,very helpful,1
+115,transplant,nice,1
+116,face,familiar,1
+117,land,boba-deficient,1
+118,part,favorite,1
+119,fnb,comparable,1
+120,alternative,crunchier,1
+121,alternative,seaweed-based,1
+122,quality,traditional,1
+123,quality,tapioca-based,1
+124,experience,comparable,1
+125,handed,heavy,1
+126,time,past,1
+127,fnb,less,1
+128,drink quality,reliable,1
+129,person,too tired,1
+130,person,busy,1
+131,it,perfect,1
+132,sweetness level,perfect,1
+133,factor,different,1
+134,complement,other,1
+135,complement,not too sweet,1
+136,complement,overbearing,1
+137,fnb,not impressed,1
+138,person,really friendly,1
+139,person,do,1
+140,it,frequent,1
+141,treat,little,1
+142,impress,few,1
+143,person,disappointed,1
+144,bit,disappointed,1
+145,flavor,not much,1
+146,anything,not much,1
+147,goodness,treatishly,1
+148,environment,clean,1
+149,che place,favorite,1
+150,che place,vietnamese,1
+151,one,only,1
+152,hide,only,1
+153,it,great,1
+154,picture menu wall,large,1
+155,combination,creative,1
+156,combination,colorful,1
+157,have,too sweet,1
+158,taste,too sweet,1
+159,tooth,pretty sweet,1
+160,fnb,as good,1
+161,one,as good,1
+162,time,less sweet,1
+163,trip,cali,1
+164,person,extremely friendly,1
+165,fnb,blended,1
+166,addition,great,1
+167,part,asian,1
+168,spot,cute,1
+169,spot,little,1
+170,star,good,1
+171,smell,off,1
+172,person,quite full,1
+173,time,quite full,1
+174,something,cold,1
+175,person,fellow,1
+176,bean drink,red,1
+177,person,quite happy,1
+178,it,well balanced,1
+179,door,located,1
+180,something,refreshing,1
+181,shopping,refreshing,1
+182,choice,excellent,1
+183,fnb,not so pleasant,1
+184,experience,not so pleasant,1
+185,person,different,1
+186,beanie,net,1
+187,cap,net,1
+188,person,very disgusted,1
+189,experience,very disgusted,1
+190,today,very disappointed,1
+191,person,ecstatic,1
+192,soursop smoothie,delicious,1
+193,person,welcoming,1
+194,area,very unique,1
+195,flavor,asian,1
+196,audience,broader,1
+197,appeal,sweet,1
+198,walk,much,1
+199,traffic,much,1
+200,seat,cozy,1
+201,wifus,cozy,1
+202,dam,such,1
+203,fnb,not overly sweet,1
+204,syrup,simple,1
+205,fnb,generous,1
+206,bit,generous,1
+207,side,pricey,1
+208,fnb,very pleased,1
+209,bunch,whole,1
+210,che,vietnamese,1
+211,fnb,average,1
+212,person,sweet,1
+213,time,here several,1
+214,person,here several,1
+215,hand,other,1
+216,price,hefty,1
+217,price,relative,1
+218,price,usual,1
+219,portion size,sizeable,1
+220,portion size,share,1
+221,place,other,1
+222,average,above,1
+223,time,very disappointed,1
+224,taste,very disappointed,1
+225,taste,few,1
+226,sweetener,overpriced,1
+227,book,overpriced,1
+228,person,adventurous,1
+229,anything,crazy,1
+230,something,new,1
+231,review,low,1
+232,fnb,most popular,1
+233,person,sweetest,1
+234,person,deserve,1
+235,fnb,too sweet,1
+236,fnb,really difficult,1
+237,coffee,blended,1
+238,kick,big,1
+239,service,friendly,1
+240,place,immaculate,1
+241,chè,awesome,1
+242,it,free,1
+243,night,here last,1
+244,today,here last,1
+245,sugar,enough,1
+246,person,also friendly,1
+247,person,have,1
+248,customer service,good,1
+249,anything,not bad,1
+250,anything,spectacular,1
+251,anything,out,1
+252,world,spectacular,1
+253,world,out,1
+254,item,second,1
+255,coffee,french,1
+256,coffee,iced,1
+257,flavor,creamy,1
+258,cup cost,small,1
+259,chè,other,1
+260,dessert che,vietnamese,1
+261,gummy,colorful,1
+262,gummy,squishy,1
+263,texture,different,1
+264,fnb,iced,1
+265,fruit addict,hard,1
+266,fnb,so much,1
+267,fnb,very little,1
+268,price,wise,1
+269,credit card,little higher,1
+270,asian place,most,1
+271,combo,preset,1
+272,person,definitely different,1
+273,it,definitely different,1
+274,person,full,1
+275,size,full,1
+276,it,pricey,1
+277,bit,pricey,1
+278,person,comparable,1
+279,grande,comparable,1
+280,store,nice,1
+281,store,same,1
+282,fnb,unmatched,1
+283,person,very happy,1
+284,something,very happy,1
+285,person,young,1
+286,it,creamy,1
+287,bit,little,1
+288,guess,little,1
+289,fnb,still good,1
+290,strawberry,simple,1
+291,banana,simple,1
+292,fnb,simple,1
+293,strawberry,very little,1
+294,banana,very little,1
+295,flavor,ok,1
+296,it,expensive,1
+297,smoothie,healthy,1
+298,service,fantastic,1
+299,person,thirsty,1
+300,person,just come,1
+301,place,sooo clean,1
+302,person,sooo clean,1
+303,place,favorite,1
+304,che,also good,1
+305,coconut milk tea,best,1
+306,experience,very bad,1
+307,fnb,slow,1
+308,it,really sweet,1
+309,Super,slow,1
+310,nothing,slow,1
+311,nothing,good,1
+312,goodness,so much,1
+313,menu item,permanent,1
+314,chance,second,1
+315,it,really slow,1
+316,it,suitable,1
+317,thing,new,1
+318,bit,chewier,1
+319,mochus,chewier,1
+320,didnt,front,1
+321,sop smoothie,sour,1
+322,atmosphere,very clean,1
+323,price,more expensive,1
+324,atmosphere,more expensive,1
+325,price,similar,1
+326,person,similar,1
+327,place,similar,1
+328,place,best,1
+329,crap,powdered,1
+330,fruit smoothie,delicious,1
+331,fruit smoothie,fresh,1
+332,fnb,best,1
+333,it,totally worth,1
+334,wait,totally worth,1
+335,experience,repeatable,1
+336,week,next,1
+337,experience,stellar,1
+338,experience,less,1
+339,time,more,1
+340,it,same,1
+341,fnb,weirdly disgusting,1
+342,fnb,last,1
+343,fnb,sour,1
+344,it,just too hit-or-miss,1
+345,point,just too hit-or-miss,1
+346,thing,same,1
+347,it,really good,1
+348,Sunday,warm,1
+349,person,open,1
+350,month,open,1
+351,storefront,small,1
+352,seating,limited,1
+353,seating,small,1
+354,table,even more limited,1
+355,it,still nice,1
+356,it,clean,1
+357,service,always amazing,1
+358,thanks,always amazing,1
+359,time,fresh,1
+360,time,good,1
+361,it,pretty good,1
+362,number,pretty good,1
+363,choice,boba,1
+364,option,great,1
+365,person,picky,1
+366,boba texture,picky,1
+367,service,always very nice,1
+368,service,happy,1
+369,option,iced,1
+370,have,iced,1
+371,baker,local,1
+372,trip,horrid,1
+373,a/c,cold,1
+374,seed,special,1
+375,person,quench,1
+376,it,sweet,1
+377,weather,hot,1
+378,shop,pretty empty,1
+379,fnb,have,1
+380,flavor,good,1
+381,coconut flesh,hard,1
+382,bit,hard,1
+383,fnb,mature,1
+384,fnb,hard,1
+385,it,okay,1
+386,pricing,steeper,1
+387,bit,steeper,1
+388,dollar,steeper,1
+389,something,familiar,1
+390,it,better,1
+391,table,unscented,1
+392,table,cleaner,1
+393,kind,chlorox-smelling,1
+394,kind,cleaner,1
+395,card system,loyalty/frequent,1
+396,service,fast,1
+397,person,pretty hooked,1
+398,fnb,tasty,1
+399,fnb,regular,1
+400,fnb,soft,1
+401,consistency,springy,1
+402,consistency,spongey,1
+403,consistency,more,1
+404,taro flavor,great,1
+405,fnb,tropical,1
+406,person,grateful,1
+407,place,refreshing,1
+408,summer,hot,1
+409,summer,cute,1
+410,summer,refreshing,1
+411,price,reasonable,1
+412,fnb,oolong,1
+413,coffee,best,1
+414,it,clear,1
+415,person,regular,1
+416,person,really impressed,1
+417,selection,available,1
+418,selection,really impressed,1
+419,fnb,cold,1
+420,%,sure,1
+421,che,sure,1
+422,it,weird,1
+423,smell,not sure,1
+424,if,not sure,1
+425,tasting something,funny,1
+426,option,different,1
+427,side,thicker,1
+428,side,little,1
+429,add-one,free,1
+430,chill,also super,1
+431,desserts/drinks,vietnamese,1
+432,fnb,young,1
+433,order,whole,1
+434,happen,whole,1
+435,it,fine,1
+436,fnb,maximum,1
+437,visit,next,1
+438,person,generous,1
+439,topping,generous,1
+440,goodness,great,1
+441,goodness,natural,1
+442,type,many,1
+443,hype,so excited,1
+444,eventhough,overly sweet,1
+445,boba milk tea,regular,1
+446,oolong,regular,1
+447,fnb,much better,1
+448,nothing,okay,1
+449,nothing,special,1
+450,fnb,mixed,1
+451,while,little,1
+452,side,plus,1
+453,person,most,1
+454,fnb,bad,1
+455,favorite,special,1
+456,tooth,sweet,1
+457,date,traditional,1
+458,smile,warm,1
+459,smile,welcoming,1
+460,person,annoyed,1
+461,lol,annoyed,1
+462,upgrade,free,1
+463,fnb,large,1
+464,pt,large,1
+465,treat,new,1
+466,fnb,very very large,1
+467,it,unenjoyable,1
+468,time,limited,1
+469,today,special,1
+470,it,delicious,1
+471,twist,nice,1
+472,feel,nice,1
+473,addition,new,1
+474,time,last,1
+475,kind,hard,1
+476,slice,hard,1
+477,boba place,new,1
+478,year,last,1
+479,get,few,1
+480,bambu,favorite,1
+481,stop,great,1
+482,it,located,1
+483,plaza,located,1
+484,person,amazing,1
+485,everything,amazing,1
+486,month,few,1
+487,time,so many,1
+488,area,small,1
+489,area,doable,1
+490,bit,small,1
+491,bit,doable,1
+492,party,small,1
+493,party,doable,1
+494,fnb,most,1
+495,smoothie,other,1
+496,fnb,fine,1
+497,snack,fine,1
+498,boy,good,1
+499,chuck,huge,1
+500,thing,whole,1
+501,person,pretty much full,1
+502,point,pretty much full,1
+503,person,happier,1
+504,boba place,so happy,1
+505,store,so happy,1
+506,store,delicious,1
+507,person,so happy,1
+508,it,right,1
+509,hit,right,1
+510,person,unable,1
+511,group,small,1
+512,it,very clean,1
+513,plus,very clean,1
+514,minute,few,1
+515,order,ready,1
+516,minute,ready,1
+517,its,own,1
+518,it,too bland,1
+519,plaza,same,1
+520,plaza,exact,1
+521,behold,low,1
+522,East Valley,open,1
+523,success,much,1
+524,get,big,1
+525,glance,first,1
+526,place,simple,1
+527,flavor,tastiest,1
+528,atmosphere,comfortable,1
+529,vibes,good,1
+530,price,kick-ass,1
+531,fnb,own,1
+532,person,professional,1
+533,:-rrb-,friendly,1
+534,:-rrb-,professional,1
+535,trio,pretty tasty,1
+536,trio,very heavy,1
+537,combination,great,1
+538,crunch,unique,1
+539,it,very different,1
+540,person,there everyday,1
+541,tho,halo-halo,1
+542,stop,first,1
+543,fnb,great,1
+544,selection,just right.however,1
+545,fnb,quick,1
+546,opening,first,1
+547,service,literary,1
+548,consumer,last,1
+549,pm,sharp,1
+550,improvement,much,1
+551,sugar,less,1
+552,person,always sweet,1
+553,desk,front,1
+554,desk,always sweet,1
+555,fnb,not good,1
+556,satisfaction,absolute,1
+557,time,single,1
+558,commitment,devoted,1
+559,commitment,dedicated,1
+560,visit,first,1
+561,smoothie,real,1
+562,smoothie,unsurpassed,1
+563,person,not disappointed,1
+564,treat,unique,1
+565,game,available,1
+566,drink spot,go-to,1
+567,thing,favorite,1
+568,fruit tea,fresh,1
+569,it,so delicious,1
+570,fnb,not very sweet,1
+571,strawberry,fresh,1
+572,strawberry,sweet,1
+573,fnb,whole,1
+574,fnb,not nice,1
+575,side,mushy,1
+576,side,not nice,1
+577,side,chewy,1
+578,vibes,very friendly,1
+579,vibes,great,1
+580,selection,different,1
+581,person,visual,1
+582,Fruit Addict,so so delicious,1
+583,place,little,1
+584,side,sweeter,1
+585,customer service,nice,1
+586,seed,fresh,1
+587,piece,fresh,1
+588,like,fresh,1
+589,texture,extra,1
+590,hook,refreshing,1
+591,person,so friendly,1
+592,person,always have,1
+593,item,so many,1
+594,wait,so many,1
+595,item,other,1
+596,wait,other,1
+597,spot,favorite,1
+598,taste,really refreshing,1
+599,taste,especially great,1
+600,degree weather,really refreshing,1
+601,degree weather,especially great,1
+602,flavor,slight,1
+603,flavor,tart,1
+604,dessert shop,refreshing,1
+605,style dessert,vietnamese,1
+606,revolutionary,argentine,1
+607,revolutionary,marxist,1
+608,bubble tea,too much,1
+609,fnb,too much,1
+610,shop,small,1
+611,variety,large,1
+612,tasting drink,light,1
+613,tasting drink,good,1
+614,someone,good,1
+615,refreshment,more,1
+616,refreshment,hydrating,1
+617,texture,slippery,1
+618,texture,weird,1
+619,day,hot,1
+620,way,favorite,1
+621,person,ok,1
+622,fnb,light,1
+623,everything taste,delicious,1
+624,caramel coffee,salted,1
+625,trust,good,1
+626,person,also pretty good,1
+627,order,last,1
+628,quality,good,1
+629,quality,not better,1
+630,taste,good,1
+631,taste,not better,1
+632,location,good,1
+633,location,not better,1
+634,what,different,1
+635,ability,different,1
+636,custom drink,own,1
+637,name,different,1
+638,fnb,preselected,1
+639,location,small,1
+640,table,few,1
+641,experience,first,1
+642,customer service,excellent,1
+643,halo halo,normal,1
+644,jar,fresh,1
+645,person,skeptical,1
+646,charge,extra,1
+647,person,best,1
+648,person,not too sweet,1
+649,tastebud,not too sweet,1
+650,kind,different,1
+651,it,amazing,1
+652,Starbucks lol,better,1
+653,coffee,bitter,1
+654,taste,bitter,1
+655,place,most,1
+656,place,little longer,1
+657,month,finally open,1
+658,person,finally open,1
+659,pea,black,1
+660,pea,eyed,1
+661,store,small,1
+662,table,limited,1
+663,Fruit Addict,awesome,1
+664,panda,red,1
+665,panda,white,1
+666,panda,mung,1
+667,restaurant,vietnamese,1
+668,it,unpleasant,1
+669,menu,blank,1
+670,casher,friendly,1
+671,casher,lack,1
+672,line,last,1
+673,minute,mine,1
+674,thing,extremely sweet,1
+675,coffee,better,1
+676,thing,decent,1
+677,top,delicious,1
+678,fnb,very good,1
+679,person,very good,1
+680,boyfriend,very picky,1
+681,star,sure,1
+682,time,many,1
+683,curiosity,pure,1
+684,piece,generous,1
+685,fnb,dense,1
+686,it,lighter,1
+687,drive,long,1
+688,wish,long,1
+689,fnb,so fresh,1
+690,crap,holy,1
+691,month,pregnant,1
+692,month,wish,1
+693,person,there early,1
+694,face,sad,1
+695,opening,official,1
+696,person,certain,1
+697,visitor,youngest,1
+698,week,whopping,1
+699,week,old,1
+700,wish,super,1
+701,success,great,1
+702,spot,go-to,1
+703,ice dessert,vietnamese,1
+704,person,new,1
+705,brand,new,1
+706,table,clean,1
+707,suggestion,only,1
+708,mango,fresh,1
+709,flavor,other,1
+710,atmosphere,nice,1
+711,it,worth,1
