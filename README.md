@@ -48,3 +48,4 @@
 1. Input in _cmd_ : python main.py
 2. There will a prompt to install `en_ewt` and `en_gum` models, enter `y` to install
 3. Await till program ends
+4. Outputs accessible in project folder _out_
