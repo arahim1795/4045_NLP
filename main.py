@@ -5,7 +5,7 @@ import subprocess
 import time
 
 from data.f_sample_reviews import sample_business_reviews
-from apps.common_functions import import_data, bundle_sentences
+from apps.common_functions import converter, import_data, bundle_sentences
 from apps.b_sentence_segmentor.sentence_segmentor import sentence_segmentor
 from apps.c_tokenise_stem.tokenise_stem import tokenise_stem
 from apps.d_pos_tagger.pos_tagger import pos_tagger
@@ -29,6 +29,10 @@ stanfordnlp.download("en_gum")
 
 # parameters
 num_business = 5
+
+# convert dataset to useful form
+filenames = ["reviewSamples20", "reviewSelected100"]
+converter(filenames[1])
 
 # import data
 data = import_data("processed_data")  # processed_data.json
@@ -62,7 +66,7 @@ summariser(num_business)
 # g: application
 negation_app(data)
 
-# closer corenlp server
+# close corenlp server
 os.chdir("server/stanford-corenlp-full-2018-10-05")
 subprocess.call(["taskkill", "/F", "/T", "/PID", str(server_process.pid)])
 os.chdir("../..")

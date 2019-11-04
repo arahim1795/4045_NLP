@@ -136,7 +136,7 @@ def export_indicative_data(data):
 def frequent_adjectives(bundled_data):
     # process data
     tokenise(bundled_data)
-    # adjectives = extract_adjective(bundled_data)
+    adjectives = extract_adjective(bundled_data)
 
     adj_file_list = [
         "adjective_1.txt",

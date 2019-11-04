@@ -2,6 +2,7 @@ Pipfile
 Pipfile.lock
 data/*
 !data/f_sample_reviews.py
+!data/__init__.py
 server/*
 !server/placeholder.txt
 lib/*
